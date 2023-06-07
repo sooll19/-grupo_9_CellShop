@@ -6,6 +6,7 @@ INTEGRANTES:
 Alejandra Santamarina
 Roxana Fernandez
 *José Maiorano
+    -Edad : 34 años
     -Ciudad : Grand Bourg            
     -Hobby : Jugar al tenis
 Gisela Vargas
