@@ -5,7 +5,9 @@ El sitio de venta de celulares apunta al público interesado en adquirir disposi
 INTEGRANTES: 
 Alejandra Santamarina
 Roxana Fernandez
-jose Maiorano
+*José Maiorano
+    -Ciudad : Grand Bourg            
+    -Hobby : Jugar al tenis
 Gisela Vargas
 
 sitios por productos que ofrecemos, y los que apunta los cliente:
