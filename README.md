@@ -3,12 +3,28 @@ Este sitio de venta de celulares ofrece una amplia variedad de productos y servi
 El sitio de venta de celulares apunta al público interesado en adquirir dispositivos móviles de última generación. El público objetivo puede estar compuesto por personas de todas las edades y géneros, desde jóvenes hasta adultos mayores que necesiten un teléfono celular para su vida diaria.
 
 INTEGRANTES: 
-Alejandra Santamarina
-Roxana Fernandez
-*José Maiorano
-    -Ciudad : Grand Bourg            
-    -Hobby : Jugar al tenis
-Gisela Vargas
+
+Alejandra Santamarina:
+
+- Ciudad: Villa Martelli, Vicente López, Buenos Aires
+- Edad: 34 años
+- Hobby: Ir a la cancha 
+
+Roxana Fernandez:
+
+-
+-
+-
+
+José Maiorano:
+
+- Ciudad : Grand Bourg            
+- Hobby : Jugar al tenis
+Gisela Vargas:
+
+-
+-
+-
 
 sitios por productos que ofrecemos, y los que apunta los cliente:
 
