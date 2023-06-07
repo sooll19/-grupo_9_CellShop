@@ -2,8 +2,19 @@ Este sitio de venta de celulares ofrece una amplia variedad de productos y servi
 
 El sitio de venta de celulares apunta al público interesado en adquirir dispositivos móviles de última generación. El público objetivo puede estar compuesto por personas de todas las edades y géneros, desde jóvenes hasta adultos mayores que necesiten un teléfono celular para su vida diaria.
 
-
+INTEGRANTES: 
 Alejandra Santamarina
 Roxana Fernandez
 jose Maiorano
 Gisela Vargas
+
+SITIOS POR ESTÉTICA:
+
+- https://www.motorola.com.ar/
+- https://tienda.movistar.com.ar/
+- https://www.tcl.com/ar/es
+
+SITIOS POR FUNCIONALIDAD:
+
+ - https://shop.samsung.com.ar/dispositivos-moviles/smartphones
+ - https://www.tcl.com/ar/es
