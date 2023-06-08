@@ -12,9 +12,9 @@ Alejandra Santamarina:
 
 Roxana Fernandez:
 
-- Ciudad:
-- Edad:
-- Hobby:
+- Ciudad:Monte Grande
+- Edad:35
+- Hobby:Escuchar música
 
 José Maiorano:
 
