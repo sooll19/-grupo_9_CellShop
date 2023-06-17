@@ -24,9 +24,9 @@ José Maiorano:
 
 Gisela Vargas:
 
-- Ciudad:
-- Edad:
-- Hobby:
+- Ciudad: San Miguel
+- Edad: 32 años
+- Hobby: jugar juegos de computadora y movil
 
 SITIOS POR PRODUCTOS QUE OFRECEN Y CLIENTES A LOS QUE APUNTAN:
 
