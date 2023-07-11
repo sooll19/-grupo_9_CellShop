@@ -1,0 +1,16 @@
+{
+  "name": "-grupo_9_nombre",
+  "version": "1.0.0",
+  "description": "Este sitio de venta de celulares ofrece una amplia variedad de productos y servicios relacionados con la telefonía móvil. Ofrece celulares de diferentes marcas, modelos y precios, para satisfacer todas necesidades  Los clientes pueden comprar en línea o en la tienda física, y el sitio también ofrece envío a domicilio y garantía en sus productos. Con una amplia selección de productos y servicios, este sitio de venta de celulares es el lugar perfecto para encontrar todo lo que necesitas en cuanto a la tecnología móvil.",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
