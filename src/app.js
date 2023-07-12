@@ -5,7 +5,8 @@ const PORT = 3030;
 
 app.use(express.static('public'));
 
-/* rutas */
+/* RUTAS */
+
 app.get('/', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','index.html'))
 });
