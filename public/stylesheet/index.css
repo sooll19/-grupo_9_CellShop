@@ -5,7 +5,7 @@
 }
 body{
   background-color: var(--colorAzulOscuro);
-color:  rgb(91, 89, 89);
+color: var(--colorOro);
   width: 100%;
   font-family: var(--tipografiaGeneral);
 
