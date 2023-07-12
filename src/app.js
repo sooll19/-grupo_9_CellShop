@@ -15,6 +15,8 @@ app.get('/header', (req, res) =>{
 app.get('/footer', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','partial','footer.html'))
 });
-
+app.get('/detail', (req, res) =>{
+  res.sendFile(path.join(__dirname, 'views','productDetail.html'))
+});
 app.listen(PORT, () =>
   console.log(`http://localhost:${PORT}`))
