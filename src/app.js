@@ -9,6 +9,13 @@ app.use(express.static('public'));
 app.get('/', (req, res) =>{
   res.sendFile(path.join(__dirname, './views/index.html'))
 });
+app.get('/header',(req,res) =>{
+  res.sendFile(path.join(__dirname,'views','partial','header.html'))
+});
+
+app.get('/footer',(req,res) =>{
+  res.sendFile(path.join(__dirname,'views','partial','footer.html'))
+});
 
 app.listen(PORT, () =>
   console.log(`http://localhost:${PORT}`))
