@@ -4,73 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Header</title>
+    <script src="https://kit.fontawesome.com/226408a02c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/stylesheet/styles.css">
 </head>
 
 <body>
     <header>
-        <header>
 
-            <!-- LOGO -->
-            <figure>
-                <img src="" alt="img-logo">
-            </figure>
+        <!-- LOGO -->
+        <div class="contenedor-logo">
+            <img src="/imgs/Imagen_de_WhatsApp_2023-06-07_a_las_18.57.12-removebg-preview.png" alt="img-logo">
+        </div>
 
-            <!-- BUSCADOR -->
-            <form action="/" class="contenedor-buscador">
-                <input type="text" placeholder="Buscar productos, marcas">
-            </form>
-            <button class="btn-busqueda"><i class="fas fa-search busqueda"></i></button>
+        <!-- BUSCADOR -->
+        <form action="/" class="contenedor-buscador">
+            <input type="text" placeholder="Buscar producto">
+            <button><i class="fas fa-search"></i></button> 
+        </form>
 
-            <!-- COMPRA -->
-            <div class="contenedor-compra">
-                <i class="fas fa-hand-holding-usd"></i>
-                <span class="text">
-                    Comprá en cuotas y sin tarjeta de crédito
-                </span>
-            </div>
+        <!-- BURGUER MENU -->
+        <div class="contenedor-burger-menu">
+            <button class="burguer-menu" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
 
-            <!-- MENU -->
-            <nav class="contenedor-menu">
-                <ul>
-                    <li>
-                        <a href="">Ofertas</a>
-                    </li>
-                    <li>
-                        <a href="">Tiendas Oficiales</a>
-                    </li>
-                    <li>
-                        <a href="">Vender</a>
-                    </li>
-                    <li>
-                        <a href="">Ayuda</a>
-                    </li>
-                </ul>
-            </nav>
+        <!-- OPCIONES -->
+        <nav class="contenedor-opciones">
+            <ul>
+                <li>
+                    <a href="">Suscribite <i class="fas fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="">Soporte <i class="fas fa-headset"></i></a>
+                </li>
+                <li>
+                    <a href="">Mi cuenta <i class="fas fa-users"></i></a>
+                </li>
+                <li>
+                    <a href="">Mi Carrito <i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
 
-            <!-- OPCIONES -->
-            <nav class="contenedor-opciones">
-                <ul>
-                    <li>
-                        <a href="">Creá tu cuenta <i class="far fa-id-card"></i></a>
-                    </li>
-                    <li>
-                        <a href="">Ingresá <i class="fa-sharp fa-solid fa-right-to-bracket"></i></a>
-                    </li>
-                    <li>
-                        <a href="">Mis compras <i class="fas fa-shopping-basket"></i></a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- BURGUER MENU -->
-            <div class="contenedor-burger-menu">
-                <button class="burguer-menu" type="button">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-
-        </header>
     </header>
 </body>
 
