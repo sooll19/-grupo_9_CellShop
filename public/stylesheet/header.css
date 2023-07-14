@@ -1,37 +1,181 @@
-header {}
+header {
+    margin: 2%;  
+}
 
 /* LOGO */
 
-.contenedor-logo {}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.contenedor-logo img {}
-
-/* BUSCADOR */
-
-.contenedor-buscador {}
-
-.contenedor-buscador input {}
-
-.contenedor-buscador button {}
-
-.contenedor-buscador .contenedor-opciones {}
+header .container img {
+    width: 100px;
+}
 
 /* BURGUER MENU */
 
-.contenedor-burguer-menu {}
+header .contenedor-burger-menu {
+    text-align: center;
+    order: -1;
+}
 
-.contenedor-burguer-menu button {}
+header button.burguer-menu {
+    background: none;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
 
-.contenedor-burguer-menu button i {}
+header button.burguer-menu i {
+    font-size: 1.3rem;
+}
+
+/* BUSCADOR */
+
+.buscador {
+    padding-top: 5%;
+}
+
+header form.contenedor-buscador {
+    display: inline;
+}
+
+header form.contenedor-buscador input {
+    width: 90%;
+}
+
+header form.contenedor-buscador button.btn-busqueda {
+    margin-top: 2px;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/* header form.contenedor-buscador button.btn-busqueda i{} */
+
+/* MENU */
+
+/* header .contenedor-menu {} */
+
+header .contenedor-menu ul {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+/* header .contenedor-menu ul li {} */
+
+/* header .contenedor-menu ul li a {} */
 
 /* OPCIONES */
 
-.contenedor-opciones {}
+/* header .contenedor-opciones {} */
 
-.contenedor-opciones nav {}
+header .contenedor-opciones ul {
+    padding: 0;
+    font-size: 12px;
+}
 
-.contenedor-opciones nav ul {}
+header .contenedor-opciones ul li {
+    list-style: none;
+}
 
-.contenedor-opciones nav ul li {}
+/* header .contenedor-opciones ul li a {} */
 
-.contenedor-opciones nav ul li a {}
+header .contenedor-opciones ul li a i {
+    margin-left: 7px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.ocult {
+    display: none;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* SMARTPHONES */
+
+@media (max-width: 360px) {
+    /* HEADER */
+
+    /* BUSCADOR */
+    header form.contenedor-buscador input {
+    }
+
+    /* OPCIONES */
+    .opciones1 {
+        display: none;
+    }
+
+    .opciones2 {
+        display: inline-flex;
+    }
+}
+
+/* TABLETS */
+
+@media (min-width:361px) {
+
+    /* HEADER */
+
+    /* LOGO */
+
+    header .container {
+        width: 200px;
+    }
+
+    header .container img {
+        width: 70%;
+        padding-bottom: 10px;
+    }
+
+    /* BUSCADOR */
+
+    header form.contenedor-buscador {
+        display: inline;
+    }
+
+    header form.contenedor-buscador input {
+        width: 32%;
+    }
+
+    .contenedor-burger-menu {
+        display: none;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width:769px) {
+
+    /* HEADER */
+
+    /* LOGO */
+
+    header .container {
+        width: 200px;
+    }
+
+    header .container img {
+        width: 70%;
+        padding-bottom: 10px;
+    }
+
+    /* BUSCADOR */
+
+    header form.contenedor-buscador {
+        display: inline;
+    }
+
+    header form.contenedor-buscador input {
+        width: 32%;
+    }
+
+    /* BURGUER MENU*/
+    .contenedor-burger-menu {
+        display: none;
+    }
+}

@@ -6,47 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
     <script src="https://kit.fontawesome.com/226408a02c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/public/stylesheet/styles.css">
+    <link rel="stylesheet" href="/stylesheet/styles.css">
 </head>
 
 <body>
     <header>
 
         <!-- LOGO -->
-        <div class="contenedor-logo">
-            <img src="/imgs/Imagen_de_WhatsApp_2023-06-07_a_las_18.57.12-removebg-preview.png" alt="img-logo">
+        <div class="container">
+            <img src="/imgs/Logo.jpeg" alt="img-logo">
+            <!-- BURGUER MENU -->
+            <div class="contenedor-burger-menu">
+                <button class="burguer-menu" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- OPCIONES -->
+            <nav class="contenedor-opciones">
+                <ul class="opciones1">
+                    <li>
+                        <a href="">Suscribite <i class="far fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="">Soporte <i class="fas fa-headset"></i></a>
+                    </li>
+                </ul>
+                <ul class="opciones2">
+                    <li>
+                        <a href="/login" class="ocult">Mi cuenta </a> 
+                        <a href=""><i class="fas fa-user user"></i></a>
+                    </li>
+                    <li>
+                        <a href="/carrito" class="ocult">Mi carrito </a>
+                        <a href=""><i class="fas fa-shopping-cart carrito"></i></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
         <!-- BUSCADOR -->
-        <form action="/" class="contenedor-buscador">
-            <input type="text" placeholder="Buscar producto">
-            <button><i class="fas fa-search"></i></button> 
-        </form>
-
-        <!-- BURGUER MENU -->
-        <div class="contenedor-burger-menu">
-            <button class="burguer-menu" type="button">
-                <i class="fas fa-bars"></i>
-            </button>
+        <div class="buscador">
+            <form action="/" class="contenedor-buscador">
+                <input type="text" placeholder="Buscar...">
+            </form>
+            <button class="btn-busqueda"><i class="fas fa-search busqueda"></i></button>
         </div>
-
-        <!-- OPCIONES -->
-        <nav class="contenedor-opciones">
-            <ul>
-                <li>
-                    <a href="">Suscribite <i class="fas fa-envelope"></i></a>
-                </li>
-                <li>
-                    <a href="">Soporte <i class="fas fa-headset"></i></a>
-                </li>
-                <li>
-                    <a href="">Mi cuenta <i class="fas fa-users"></i></a>
-                </li>
-                <li>
-                    <a href="">Mi Carrito <i class="fas fa-shopping-cart"></i></a>
-                </li>
-            </ul>
-        </nav>
+        
 
     </header>
 </body>
