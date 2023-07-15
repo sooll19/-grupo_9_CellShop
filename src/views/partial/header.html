@@ -12,46 +12,72 @@
 <body>
     <header>
 
+        <!-- MENSAJE -->
+        <div class="mensaje">
+            <p>Envìos gratis a CABA y Gran Buenos Aires</p>
+        </div>
+
         <!-- LOGO -->
         <div class="container">
             <img src="/imgs/Logo.jpeg" alt="img-logo">
+
             <!-- BURGUER MENU -->
             <div class="contenedor-burger-menu">
                 <button class="burguer-menu" type="button">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-            <!-- OPCIONES -->
-            <nav class="contenedor-opciones">
-                <ul class="opciones1">
-                    <li>
-                        <a href="/suscript">Suscribite <i class="far fa-envelope"></i></a>
-                    </li>
-                    <li>
-                        <a href="/support">Soporte <i class="fas fa-headset"></i></a>
-                    </li>
-                </ul>
-                <ul class="opciones2">
-                    <li>
-                        <a href="/login" class="ocult">Mi cuenta </a> 
-                        <a href=""><i class="fas fa-user user"></i></a>
-                    </li>
-                    <li>
-                        <a href="/carrito" class="ocult">Mi carrito </a>
-                        <a href=""><i class="fas fa-shopping-cart carrito"></i></a>
-                    </li>
-                </ul>
-            </nav>
+
+            <!-- MENU Y OPCIONES -->
+            <div class="contenedor-menu">
+                <nav>
+                    <ul class="menu-desplegable">
+                        <li><a href="/samsung">Samsung</a></li>
+                        <li><a href="/motorola">Motorola</a></li>
+                        <li><a href="/lg">LG</a></li>
+                        <li><a href="/xiomi">Xiomi</a></li>
+                        <li><a href="/tcl">TCL</a></li>
+                        <li><a href="/accesorios">Accesorios</a></li>
+                    </ul>
+                </nav>
+
+                <div class="opciones">
+                    <ul class="opciones1">
+                        <li>
+                            <a href="/suscript">Suscribite <i class="far fa-envelope"></i></a>
+                        </li>
+                        <li>
+                            <a href="/support">Soporte <i class="fas fa-headset"></i></a>
+                        </li>
+                    </ul>
+
+                    <ul class="opciones2">
+                        <li>
+                            <a href="/login" class="ocult">Mi cuenta </a>
+                            <a href=""><i class="fas fa-user user"></i></a>
+                        </li>
+                        <li>
+                            <a href="/carrito" class="ocult">Mi carrito </a>
+                            <a href=""><i class="fas fa-shopping-cart carrito"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
         </div>
+
+
 
         <!-- BUSCADOR -->
         <div class="buscador">
             <form action="/" class="contenedor-buscador">
-                <input type="text" placeholder="Buscar...">
+                <div class="contenedor-input">
+                    <input type="text" placeholder="Buscar...">
+                    <button class="btn-busqueda"><i class="fas fa-search busqueda"></i></button>
+                </div>
             </form>
-            <button class="btn-busqueda"><i class="fas fa-search busqueda"></i></button>
         </div>
-        
 
     </header>
 </body>

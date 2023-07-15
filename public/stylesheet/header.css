@@ -1,27 +1,37 @@
-header {
-    margin: 2%;  
+header {}
+
+/* MENSAJE */
+
+.mensaje {
+    background-color: rgb(137, 184, 206);
+    color: #fff;
+    font-size: 7px;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* LOGO */
 
-header .container {
+.container {
+    margin: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .container img {
-    width: 100px;
+.container img {
+    width: 30%;
 }
 
 /* BURGUER MENU */
 
-header .contenedor-burger-menu {
+.container .contenedor-burger-menu {
     text-align: center;
     order: -1;
 }
 
-header button.burguer-menu {
+.container .contenedor-burger-menu button {
     background: none;
     color: #fff;
     border: none;
@@ -29,153 +39,288 @@ header button.burguer-menu {
     padding: 8px 10px;
 }
 
-header button.burguer-menu i {
-    font-size: 1.3rem;
+.container .contenedor-burger-menu button i {
+    font-size: 1.2rem;
+}
+
+/* MENU */
+
+.contenedor-menu {}
+
+.contenedor-menu nav {}
+
+.contenedor-menu nav ul.menu-desplegable {
+    display: none;
+}
+
+.contenedor-menu nav ul.menu-desplegable li {}
+
+.contenedor-menu nav ul.menu-desplegable li a {}
+
+/* OPCIONES */
+
+.opciones {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.opciones1 {
+    display: none;
+}
+
+.opciones1 li {}
+
+.opciones1 li a {}
+
+.opciones1 li a i {}
+
+.opciones2 {}
+
+.opciones2 li {
+    display: inline-block;
+}
+
+.opciones2 li a.ocult {
+    display: none;
+}
+
+.opciones2 li a i {
+    color: #fff;
+}
+
+.opciones2 li a i:first-child {
+    margin: 0;
+}
+
+.opciones2 li a i:last-child {
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 /* BUSCADOR */
 
 .buscador {
-    padding-top: 5%;
+    padding: 2%;
 }
 
-header form.contenedor-buscador {
+.buscador .contenedor-buscador {
     display: inline;
 }
 
-header form.contenedor-buscador input {
-    width: 90%;
+.buscador .contenedor-buscador .contenedor-input {
+    position: relative;
 }
 
-header form.contenedor-buscador button.btn-busqueda {
-    margin-top: 2px;
-    border-radius: 3px;
-    padding: 2px;
+.buscador .contenedor-buscador input {
+    width: 100%;
+    border: 1px solid silver;
+    padding: 5px;
+    padding-right: 30px;
+    border-radius: 5px;
 }
 
-/* header form.contenedor-buscador button.btn-busqueda i{} */
-
-/* MENU */
-
-/* header .contenedor-menu {} */
-
-header .contenedor-menu ul {
-    list-style: none;
-    padding: 0;
-    font-size: 12px;
+.buscador .contenedor-buscador button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
-/* header .contenedor-menu ul li {} */
-
-/* header .contenedor-menu ul li a {} */
-
-/* OPCIONES */
-
-/* header .contenedor-opciones {} */
-
-header .contenedor-opciones ul {
-    padding: 0;
-    font-size: 12px;
-}
-
-header .contenedor-opciones ul li {
-    list-style: none;
-}
-
-/* header .contenedor-opciones ul li a {} */
-
-header .contenedor-opciones ul li a i {
-    margin-left: 7px;
-    font-size: 15px;
-    margin: 10px;
-}
-
-.ocult {
-    display: none;
-}
+.buscador .contenedor-buscador button i {}
 
 /* ---------- MEDIA QUERIES ---------- */
 
 /* SMARTPHONES */
 
-@media (max-width: 360px) {
-    /* HEADER */
+@media (min-width:481px) {}
 
-    /* BUSCADOR */
-    header form.contenedor-buscador input {
+/* TABLET */
+
+@media (min-width:768px) {
+    header {
+        display: flex;
+        flex-direction: column;
     }
 
-    /* OPCIONES */
-    .opciones1 {
-        display: none;
+    /* MENSAJE */
+
+    .mensaje {
+        font-size: 12px;
     }
-
-    .opciones2 {
-        display: inline-flex;
-    }
-}
-
-/* TABLETS */
-
-@media (min-width:361px) {
-
-    /* HEADER */
 
     /* LOGO */
 
-    header .container {
-        width: 200px;
+    .container {}
+
+    .container img {
+        width: 20%;
     }
 
-    header .container img {
-        width: 70%;
-        padding-bottom: 10px;
+    /* BURGUER MENU */
+
+    .container .contenedor-burger-menu {}
+
+    .container .contenedor-burger-menu button {}
+
+    .container .contenedor-burger-menu button i {}
+
+    /* MENU */
+
+    .contenedor-menu {}
+
+    .contenedor-menu nav {}
+
+    .contenedor-menu nav ul.menu-desplegable {}
+
+    .contenedor-menu nav ul.menu-desplegable li {}
+
+    .contenedor-menu nav ul.menu-desplegable li a {}
+
+    /* OPCIONES */
+
+    .opciones {}
+
+    .opciones1 {
+        display: inline-flex;
+        font-size: 1rem;
+    }
+
+    .opciones1 li {}
+
+    .opciones1 li a {
+        color: #fff;
+        margin-right: 15px;
+    }
+
+    .opciones1 li a i {}
+
+    .opciones2 {
+        font-size: 1rem;
+    }
+
+    .opciones2 li {}
+
+    .opciones2 li a.ocult {
+        display: inline-flex;
+        color: #fff;
+    }
+
+    .opciones2 li a i {}
+
+    .opciones2 li a i:first-child {}
+
+    .opciones2 li a i:last-child {
+        margin-left: 0;
     }
 
     /* BUSCADOR */
 
-    header form.contenedor-buscador {
-        display: inline;
+    .buscador {
+        padding-top: 1%;
     }
 
-    header form.contenedor-buscador input {
-        width: 32%;
-    }
+    .buscador .contenedor-buscador {}
 
-    .contenedor-burger-menu {
-        display: none;
-    }
+    .buscador .contenedor-buscador .contenedor-input {}
+
+    .buscador .contenedor-buscador input {}
+
+    .buscador .contenedor-buscador button {}
+
+    .buscador .contenedor-buscador button i {}
 }
 
 /* DESKTOP */
 
-@media (min-width:769px) {
+@media (min-width:1024px) {
+    header {}
 
-    /* HEADER */
+    /* MENSAJE */
+
+    .mensaje {
+        font-size: 15px;
+    }
 
     /* LOGO */
 
-    header .container {
-        width: 200px;
+    .container {}
+
+    .container img {}
+
+    /* BURGUER MENU */
+
+    .container .contenedor-burger-menu {}
+
+    .container .contenedor-burger-menu button {}
+
+    .container .contenedor-burger-menu button i {
+        font-size: 2rem;
     }
 
-    header .container img {
-        width: 70%;
-        padding-bottom: 10px;
+    /* MENU */
+
+    .contenedor-menu {}
+
+    .contenedor-menu nav {}
+
+    .contenedor-menu nav ul.menu-desplegable {}
+
+    .contenedor-menu nav ul.menu-desplegable li {}
+
+    .contenedor-menu nav ul.menu-desplegable li a {}
+
+    /* OPCIONES */
+
+    .opciones {}
+
+    .opciones1 {
+        font-size: 1.5rem;
     }
+
+    .opciones1 li {
+        margin-left: 10px;
+    }
+
+    .opciones1 li a {}
+
+    .opciones1 li a i {}
+
+    .opciones2 {
+        font-size: 1.5rem;
+    }
+
+    .opciones2 li {
+        margin-left: 10px;
+    }
+
+    .opciones2 li a.ocult {}
+
+    .opciones2 li a i {}
+
+    .opciones2 li a i:first-child {}
+
+    .opciones2 li a i:last-child {}
 
     /* BUSCADOR */
 
-    header form.contenedor-buscador {
-        display: inline;
+    .buscador {
+        padding-top: 1%;
     }
 
-    header form.contenedor-buscador input {
-        width: 32%;
+    .buscador .contenedor-buscador {}
+
+    .buscador .contenedor-buscador .contenedor-input {}
+
+    .buscador .contenedor-buscador input {
+        font-size: 1rem;
     }
 
-    /* BURGUER MENU*/
-    .contenedor-burger-menu {
-        display: none;
-    }
+    .buscador .contenedor-buscador button {}
+
+    .buscador .contenedor-buscador button i {}
 }
