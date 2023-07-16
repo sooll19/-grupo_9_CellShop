@@ -22,5 +22,8 @@ app.get('/lg', (req, res) =>{
 app.get('/moto', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_moto.html'))
 });
+app.get('/samsung', (req, res) =>{
+  res.sendFile(path.join(__dirname, 'views','productDetail','product_samsung.html'))
+});
 app.listen(PORT, () =>
   console.log(`http://localhost:${PORT}`))
