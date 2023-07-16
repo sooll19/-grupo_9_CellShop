@@ -31,5 +31,8 @@ app.get('/tcl', (req, res) =>{
 app.get('/xiaomi', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_xiaomi.html'))
 });
+app.get('/accesorios', (req, res) =>{
+  res.sendFile(path.join(__dirname, 'views','productDetail','product_accesorios.html'))
+});
 app.listen(PORT, () =>
   console.log(`http://localhost:${PORT}`))
