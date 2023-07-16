@@ -15,8 +15,12 @@ app.get('/header', (req, res) =>{
 app.get('/footer', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','partial','footer.html'))
 });
-app.get('/product1', (req, res) =>{
-  res.sendFile(path.join(__dirname, 'views','productDetail','product1.html'))
+
+app.get('/lg', (req, res) =>{
+  res.sendFile(path.join(__dirname, 'views','productDetail','product_lg.html'))
+});
+app.get('/moto', (req, res) =>{
+  res.sendFile(path.join(__dirname, 'views','productDetail','product_moto.html'))
 });
 app.listen(PORT, () =>
   console.log(`http://localhost:${PORT}`))
