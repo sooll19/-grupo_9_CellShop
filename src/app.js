@@ -34,5 +34,8 @@ app.get('/xiaomi', (req, res) =>{
 app.get('/accesorios', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_accesorios.html'))
 });
+app.get('/detalle', (req, res) =>{
+  res.sendFile(path.join(__dirname, 'views','productDetail','detalle.html'))
+});
 app.listen(PORT, () =>
   console.log(`http://localhost:${PORT}`))
