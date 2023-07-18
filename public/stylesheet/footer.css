@@ -1,0 +1,9 @@
+.footer-contenedor{
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+.footer-contenedor-redes-sociales{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
