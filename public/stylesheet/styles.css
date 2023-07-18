@@ -10,8 +10,9 @@
 
 
 /*import views*/
-@import 'index.css';
+@import './index.css';
 
-
+/*glider*/
+@import './glider.css';
 
 
