@@ -1,98 +1,33 @@
-/*home*/
 .home{
   background-color: var(--colorAzulOscuro);
-  margin-top: 100px;
+  font-family: var(--tipografiaGeneral);
 }
 
-/*banner*/
-.carousel-inner h5{
-  font-family: var(--tipografiaGeneral);
-  font-size: 50px;
-  color: aqua;
-}
-/*carousel*/
-.carousel{
-  position: relative;
-  margin-bottom: 50px;
-}
-/*ofertas*/
-.celulares-ofertas{
-  border: 2px dashed gray;
-  border-radius: 20px;
-  margin: 20px;
-}
 .celulares-ofertas h1{
   text-decoration: none;
   text-align: center;
   font-size: 50px;
-margin: 50px 10px;
-border:5px dotted gray
+border:5px dotted gray;
+color: antiquewhite;
+}
 
-}
-/*sticker*/
-.sticker{
-  position: absolute;
-  top: 0px;
-  right: 20px;
-  width: 150px;
-  height: 100px;
-}
-/*nuevos*/
-.celulares-nuevos{
-  border: 2px dashed gray;
-  border-radius: 20px;
-  margin: 20px;
-}
-.celulares-nuevos h1{
-  text-decoration: none;
-  text-align: center;
-  font-size: 50px;
-margin: 50px 10px;
-border:5px dotted var(--colorOro)
+.main__banner-carousel
+.carousel-inner
+.carousel-item
+img {
+  object-fit: contain;
 
-}
-.marcas img{
-  width: 100%
-
-}
-.marcas h1{
-  text-decoration: none;
-  text-align: center;
-  font-size: 30px;
-margin: 10px 10px;
-border:5px dotted gray
-
-}
-/*medias*/
-@media (min-width:768px) {
-  .sticker{
-    width: 300px;
-    height: 200px;
-
-  }
-  .celulares-ofertas{
-    margin: 40px;
-  }
-  .celulares-nuevos{
-
-    margin: 40px;
-  }
- 
-}
-@media (min-width:1024px) {
-.carousel{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 
-  .celulares-ofertas{
-    width: 40%;
- 
-  }
-  .celulares-nuevos{
-    width: 40%;
-  
-  }
+@media (min-width:768px){
+  .main__banner-carousel
+.carousel-inner
+.carousel-item
+img {
+  object-fit: cover;
+  height: 500px;
 }
+}
+
+@media (min-width:1024px){}
