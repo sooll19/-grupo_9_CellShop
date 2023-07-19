@@ -1,33 +1,68 @@
-.home{
+.home {
   background-color: var(--colorAzulOscuro);
   font-family: var(--tipografiaGeneral);
 }
 
-.celulares-ofertas h1{
+.celulares-ofertas h1 {
   text-decoration: none;
   text-align: center;
   font-size: 50px;
-border:5px dotted gray;
-color: antiquewhite;
+  border: 5px dotted gray;
+  color: antiquewhite;
+  margin: 10px;
 }
 
-.main__banner-carousel
-.carousel-inner
-.carousel-item
-img {
+.accesorios img{
+  width: 80%;
+  margin: 30px;
+}
+
+.main__banner-carousel .carousel-inner .carousel-item img {
   object-fit: contain;
 
 }
+.accesorios h1 {
+  text-decoration: none;
+  text-align: center;
+  font-size: 50px;
+  border: 5px dotted gray;
+  color: antiquewhite;
+  margin: 10px;
+}
 
 
-@media (min-width:768px){
-  .main__banner-carousel
-.carousel-inner
-.carousel-item
-img {
-  object-fit: cover;
-  height: 500px;
+@media (min-width:768px) {
+  .main__banner-carousel .carousel-inner .carousel-item img {
+    object-fit: cover;
+    height: 500px;
+  }
+
+  .celulares-ofertas h1 {
+    font-size: 100px;
+    border: 5px dotted gray;
+    margin: 100px;
+
+  }
+  .accesorios h1 {
+    font-size: 100px;
+    border: 5px dotted gray;
+    margin: 100px;
+
+  }
+ 
+  .accesorios__img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img{
+flex-direction:row;
+width: 50%;
 }
 }
 
-@media (min-width:1024px){}
+@media (min-width:1024px) {
+  .img{
+margin-left: 25px;
+    width: 30%;
+    }
+}
