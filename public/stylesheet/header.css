@@ -21,7 +21,9 @@ header {}
 }
 
 .container a img {
-    width: 30%;
+    width: 60%;
+    position: relative;
+    left: 20%;
 }
 
 /* BURGUER MENU */
@@ -45,17 +47,17 @@ header {}
 
 /* MENU */
 
-.contenedor-menu {}
+/* .contenedor-menu {}
 
-.contenedor-menu nav {}
+.contenedor-menu nav {} */
 
 .contenedor-menu nav ul.menu-desplegable {
     display: none;
 }
 
-.contenedor-menu nav ul.menu-desplegable li {}
+/* .contenedor-menu nav ul.menu-desplegable li {}
 
-.contenedor-menu nav ul.menu-desplegable li a {}
+.contenedor-menu nav ul.menu-desplegable li a {} */
 
 /* OPCIONES */
 
@@ -69,13 +71,13 @@ header {}
     display: none;
 }
 
-.opciones1 li {}
+/* .opciones1 li {}
 
 .opciones1 li a {}
 
 .opciones1 li a i {}
 
-.opciones2 {}
+.opciones2 {} */
 
 .opciones2 li {
     display: inline-block;
@@ -131,7 +133,7 @@ header {}
     background-color: transparent;
 }
 
-.buscador .contenedor-buscador button i {}
+/* .buscador .contenedor-buscador button i {} */
 
 /* ---------- MEDIA QUERIES ---------- */
 
@@ -155,23 +157,25 @@ header {}
 
     /* LOGO */
 
-    .container {}
+    /*  .container {} */
 
-    .container img {
-        width: 20%;
+    .container a img {
+        width: 80%;
+        position: relative;
+        left: 0;
     }
 
     /* BURGUER MENU */
 
-    .container .contenedor-burger-menu {}
+    /* .container .contenedor-burger-menu {}
 
     .container .contenedor-burger-menu button {}
 
-    .container .contenedor-burger-menu button i {}
+    .container .contenedor-burger-menu button i {} */
 
     /* MENU */
 
-    .contenedor-menu {}
+    /* .contenedor-menu {}
 
     .contenedor-menu nav {}
 
@@ -179,40 +183,40 @@ header {}
 
     .contenedor-menu nav ul.menu-desplegable li {}
 
-    .contenedor-menu nav ul.menu-desplegable li a {}
+    .contenedor-menu nav ul.menu-desplegable li a {} */
 
     /* OPCIONES */
 
-    .opciones {}
+    /*   .opciones {} */
 
     .opciones1 {
         display: inline-flex;
         font-size: 1rem;
     }
 
-    .opciones1 li {}
+    /* .opciones1 li {} */
 
     .opciones1 li a {
         color: #fff;
         margin-right: 15px;
     }
 
-    .opciones1 li a i {}
+    /*  .opciones1 li a i {} */
 
     .opciones2 {
         font-size: 1rem;
     }
 
-    .opciones2 li {}
+    /* .opciones2 li {} */
 
     .opciones2 li a.ocult {
         display: inline-flex;
         color: #fff;
     }
 
-    .opciones2 li a i {}
+    /* .opciones2 li a i {} */
 
-    .opciones2 li a i:first-child {}
+    /*  .opciones2 li a i:first-child {} */
 
     .opciones2 li a i:last-child {
         margin-left: 0;
@@ -224,7 +228,7 @@ header {}
         padding-top: 1%;
     }
 
-    .buscador .contenedor-buscador {}
+    /* .buscador .contenedor-buscador {}
 
     .buscador .contenedor-buscador .contenedor-input {}
 
@@ -232,13 +236,13 @@ header {}
 
     .buscador .contenedor-buscador button {}
 
-    .buscador .contenedor-buscador button i {}
+    .buscador .contenedor-buscador button i {} */
 }
 
 /* DESKTOP */
 
 @media (min-width:1024px) {
-    header {}
+    /* header {} */
 
     /* MENSAJE */
 
@@ -248,15 +252,20 @@ header {}
 
     /* LOGO */
 
-    .container {}
+    /* .container {}
 
-    .container img {}
+    .container img {} */
+
+    .container a img {
+        width: 100%;
+      
+    }
 
     /* BURGUER MENU */
 
-    .container .contenedor-burger-menu {}
+    /* .container .contenedor-burger-menu {}
 
-    .container .contenedor-burger-menu button {}
+    .container .contenedor-burger-menu button {} */
 
     .container .contenedor-burger-menu button i {
         font-size: 2rem;
@@ -264,7 +273,7 @@ header {}
 
     /* MENU */
 
-    .contenedor-menu {}
+    /* .contenedor-menu {}
 
     .contenedor-menu nav {}
 
@@ -272,11 +281,11 @@ header {}
 
     .contenedor-menu nav ul.menu-desplegable li {}
 
-    .contenedor-menu nav ul.menu-desplegable li a {}
+    .contenedor-menu nav ul.menu-desplegable li a {} */
 
     /* OPCIONES */
 
-    .opciones {}
+    /*   .opciones {} */
 
     .opciones1 {
         font-size: 1.5rem;
@@ -286,9 +295,9 @@ header {}
         margin-left: 10px;
     }
 
-    .opciones1 li a {}
+    /*  .opciones1 li a {}
 
-    .opciones1 li a i {}
+    .opciones1 li a i {} */
 
     .opciones2 {
         font-size: 1.5rem;
@@ -298,13 +307,13 @@ header {}
         margin-left: 10px;
     }
 
-    .opciones2 li a.ocult {}
+    /*  .opciones2 li a.ocult {}
 
     .opciones2 li a i {}
 
     .opciones2 li a i:first-child {}
 
-    .opciones2 li a i:last-child {}
+    .opciones2 li a i:last-child {} */
 
     /* BUSCADOR */
 
@@ -312,15 +321,15 @@ header {}
         padding-top: 1%;
     }
 
-    .buscador .contenedor-buscador {}
+    /*  .buscador .contenedor-buscador {}
 
-    .buscador .contenedor-buscador .contenedor-input {}
+    .buscador .contenedor-buscador .contenedor-input {} */
 
     .buscador .contenedor-buscador input {
         font-size: 1rem;
     }
 
-    .buscador .contenedor-buscador button {}
+    /*   .buscador .contenedor-buscador button {}
 
-    .buscador .contenedor-buscador button i {}
+    .buscador .contenedor-buscador button i {} */
 }
