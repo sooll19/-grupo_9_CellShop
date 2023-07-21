@@ -1,0 +1,140 @@
+/* KEYFRAMES */
+
+@keyframes marquee {
+    0% { transform: translateX(100%); } /* Iniciar el texto fuera de la pantalla a la derecha */
+    100% { transform: translateX(-100%); } /* Mover el texto completamente a la izquierda */
+}
+
+/* MAIN */
+
+.cart {
+    color: #fff;
+}
+
+/* MENSAJE */
+
+.contenedor-msj {
+    background-color: var(--colorCeleste);
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.contenedor-msj p {
+    animation: marquee 10s linear infinite;
+}
+
+/* PRODUCTO */
+
+.cart h2 {
+    font-size: 15px;
+    padding: 2% 5%;
+}
+
+.contenedor-producto {
+    text-align: center;
+}
+
+.contenedor-producto img {
+    width: 70%;
+}
+
+/* RESUMEN DE COMPRA */
+
+.contenedor-resumen-compra {padding: 0% 5%;}
+
+.contenedor-resumen-compra h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contenedor-resumen-compra .cupon {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10%;
+    align-items: flex-end;
+}
+
+.contenedor-resumen-compra .cupon label {}
+
+.contenedor-resumen-compra .cupon input {
+    padding: 5px;
+    height: 30px;
+}
+
+.contenedor-resumen-compra .cupon button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: rgb(189, 182, 182);
+    color: var(--colorAzulTenue);
+    border: none;
+    cursor: pointer;
+    height: 30px;
+}
+
+.contenedor-resumen-compra .cupon button:hover {
+    background-color: #45a049;
+}
+
+.contenedor-resumen-compra .contenedor-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+
+.contenedor-resumen-compra .contenedor-item:last-child {
+    padding-top: 3%;
+}
+
+.contenedor-resumen-compra .contenedor-item .item {}
+
+.contenedor-resumen-compra .contenedor-item .precio {}
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones button {
+    background-color: rgb(189, 182, 182);
+    color: var(--colorAzulTenue);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5%;
+    width: 90%;
+    align-self: center;
+}
+
+/* PROMOS */
+
+.promos {
+    display: flex;
+    padding: 10% 3%;
+    justify-content: center;
+}
+
+.promos i {
+    font-size: 30px;
+    padding-top: 8%;
+}
+
+.promos .credit-card {
+    padding-left: 3%;
+    text-align: center;
+}
+
+.promos .credit-card p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.promos a {
+    color: var(--colorCeleste);
+    text-decoration: underline;
+}
