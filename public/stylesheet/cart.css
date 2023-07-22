@@ -87,6 +87,7 @@
     border: none;
     cursor: pointer;
     height: 30px;
+    border-radius: 2px;
 }
 
 .contenedor-resumen-compra .cupon button:hover {
