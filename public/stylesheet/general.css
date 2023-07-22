@@ -11,7 +11,6 @@ body {
   font-family: var(--tipografiaGeneral);
 }
 
-<<<<<<< HEAD
 a {
   text-decoration: none;
 }
@@ -19,19 +18,3 @@ a {
 li {
   list-style:none;
 }
-=======
-}
-ul li {
-  list-style: none;
-  padding-left: 0%;
-}
-ul {
-  padding-left: 5%;
-}
-
-a{
-  text-decoration: none;
-  color: var(--colorOro);
-}
-
->>>>>>> gisela_vargas
