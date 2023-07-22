@@ -4,285 +4,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cell Shop</title>
     <link rel="stylesheet" href="/stylesheet/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="glider.css">
     <script src="https://kit.fontawesome.com/47ad367b33.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body class="home">
-    <header class="home__header">
-        <div class="home__header--top">
-            <img src="/imgs/Imagen_de_WhatsApp_2023-06-07_a_las_18.57.12-removebg-preview.png" alt="">
-    </header>
+    <header>
+
+        <!-- MENSAJE -->
+        <div class="mensaje">
+            <p>Envìos gratis a CABA y Gran Buenos Aires</p>
+        </div>
+
+        <!-- LOGO -->
+        <div class="container">
+            <a href="/"><img src="/imgs/Logo.jpeg" alt="img-logo"></a>
+
+            <!-- BURGUER MENU -->
+            <div class="contenedor-burger-menu">
+                <button class="burguer-menu" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- MENU Y OPCIONES -->
+            <div class="contenedor-menu">
+                <nav>
+                    <ul class="menu-desplegable">
+                        <li><a href="/samsung">Samsung</a></li>
+                        <li><a href="/motorola">Motorola</a></li>
+                        <li><a href="/lg">LG</a></li>
+                        <li><a href="/xiomi">Xiomi</a></li>
+                        <li><a href="/tcl">TCL</a></li>
+                        <li><a href="/accesorios">Accesorios</a></li>
+                    </ul>
+                </nav>
+
+                <div class="opciones">
+                    <ul class="opciones1">
+                        <li>
+                            <a href="/suscript">Suscribite <i class="far fa-envelope"></i></a>
+                        </li>
+                        <li>
+                            <a href="/support">Soporte <i class="fas fa-headset"></i></a>
+                        </li>
+                    </ul>
+
+                    <ul class="opciones2">
+                        <li>
+                            <a href="/login" class="ocult">Mi cuenta </a>
+                            <a href=""><i class="fas fa-user user"></i></a>
+                        </li>
+                        <li>
+                            <a href="/carrito" class="ocult">Mi carrito </a>
+                            <a href=""><i class="fas fa-shopping-cart carrito"></i></a>
+                        </li>
+                    </ul>
+                </div>
 
 
-    <main class="home__main">
-        <div class="home__main__banner">
-            <img src="/imgs/banner1.jpg" alt="banner">
+            </div>
         </div>
 
 
 
-        <section class="celularLG">
-            <h2>celulares LG</h2>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/lg/LG-K61-removebg-preview.png" alt="imagen_lgk61"></a>
-                <div class="home__main__article--description">
-                    <h4>LG K61</h4>
-                    <h5>$80.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
+        <!-- BUSCADOR -->
+        <div class="buscador">
+            <form action="/" class="contenedor-buscador">
+                <div class="contenedor-input">
+                    <input type="text" placeholder="Buscar...">
+                    <button class="btn-busqueda"><i class="fas fa-search busqueda"></i></button>
                 </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/lg/lg-k52-removebg-preview.png" alt="imagen_lgk52"></a>
-                <div class="home__main__article--description">
-                    <h4>LG K52</h4>
-                    <h5>$70.599</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
+            </form>
+        </div>
+
+    </header>
+    <main class="home__main">
+        <div class="main__banner-carousel">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/lg/LG-V40-ThinQ-0-removebg-preview.png" alt="imagen_lgv40"></a>
-                <div class="home__main__article--description">
-                    <h4>LG V40</h4>
-                    <h5>199.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/imgs/banner.jpg" class="d-block w-100" alt="banner">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Todo lo ultimo</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/imgs/banner2.jpg" class="d-block w-100" alt="banner">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Más economico</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/imgs/banner1.jpg" class="d-block w-100" alt="banner3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Todas las gamas</h5>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/lg/LG-Velvet-removebg-preview.png" alt="imagen_lgVelvet"></a>
-                <div class="home__main__article--description">
-                    <h4>LG VELVET</h4>
-                    <h5>$179.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="celulares-ofertas">
+            <h1>Ofertas</h1>
+            <div class="glider-contain">
+                <div class="glider">
+                    <div>
+                        <img src="/imgs/lg/LG-Velvet-removebg-preview.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/imgs/moto/MOTO_G42-removebg-preview.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/imgs/xiomi/xiaomi-mi-9-removebg-preview.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/imgs/samsung/Samsung-Galaxy-A52-removebg-preview.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/imgs/xiomi/xiaomi-redmi-note-6-removebg-preview.png" alt="">
+                    </div>
+
+                    <div>
+                        <img src="/imgs/lg/LG-V40-ThinQ-0-removebg-preview.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/imgs/moto/Moto_Edge_30-removebg-preview.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/imgs/samsung/Samsung-Galaxy-A14-removebg-preview.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/imgs/tcl/TCL-405-removebg-preview.png" alt="">
+                    </div>
                 </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/lg/lg_q60-removebg-preview.png" alt="imagen_lgQ60"></a>
-                <div class="home__main__article--description">
-                    <h4>LG Q60</h4>
-                    <h5>$50.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-        </section>
-        <section class="celularesMoto">
-            <h2>celulares MOTOROLA</h2>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/moto/Moto_Edge_30-removebg-preview.png" alt="imagen_motorola"></a>
-                <div class="home__main__article--description">
-                    <h4>MOTOROLA</h4>
-                    <h5>$249.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/moto/moto_e13-removebg-preview.png" alt="imagen_motorolaE13"></a>
-                <div class="home__main__article--description">
-                    <h4>MOTOROLA E13</h4>
-                    <h5>$50.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/moto/MOTO_G42-removebg-preview.png" alt="imagen_motorolaG42"></a>
-                <div class="home__main__article--description">
-                    <h4>MOTOROLA G42</h4>
-                    <h5>$94.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/moto/Motorola-Moto-E22-removebg-preview.png" alt="imagen_motorolaE22"></a>
-                <div class="home__main__article--description">
-                    <h4>MOTOROLA E22</h4>
-                    <h5>$56.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-        </section>
-        <section class="celularesXiomi">
-            <h2>celulares XIOMI</h2>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/xiomi/xiaomi-mi-9-removebg-preview.png" alt="imagen_xiomiMI9"></a>
-                <div class="home__main__article--description">
-                    <h4>XIOMI MI9</h4>
-                    <h5>$259.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/xiomi/xiaomi-redmi-9c-removebg-preview.png" alt="imagen_xiomiREDMI9c"></a>
-                <div class="home__main__article--description">
-                    <h4>XIOMI REDMI 9c</h4>
-                    <h5>$94.899</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/xiomi/xiaomi-redmi-note-6-removebg-preview.png" alt="imagen_NOTE6"></a>
-                <div class="home__main__article--description">
-                    <h4>XIOMI NOTE 6</h4>
-                    <h5>$50.000</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/xiomi/xiaomi_12T-removebg-preview.png" alt="imagen_"></a>
-                <div class="home__main__article--description">
-                    <h4>XIOMI 12T</h4>
-                    <h5>$950.000</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-<article class="home__main__article">
-    <a href=""><img src="/imgs/xiomi/xiomi_pocophoneM3-removebg-preview.png" alt="imagen_POCOPHONE"></a>
-    <div class="home__main__article--description">
-        <h4>XIOMI POCOPHONE M3</h4>
-        <h5>$139.679</h5>
-        <i class="fas fa-truck"></i>
-        <a href="">ver mas</a>
+
+                <button aria-label="Previous" class="glider-prev">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                </button>
+                <button aria-label="Next" class="glider-next">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+                <div role="tablist" class="dots"></div>
+            </div>
+        </div>
+
+    </main>
+    <script src="/javascript/glider.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            new Glider(document.querySelector(".glider"), {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: '.dots',
+                arrows: {
+                    prev: '.glider-prev',
+                    next: '.glider-next'
+                },
+                draggable: true,
+                responsive: [
+                    {
+                        // screens greater than >= 775px
+                        breakpoint: 768,
+                        settings: {
+                            // Set to `auto` and provide item width to adjust to viewport
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            duration: 0.25,
+                            /* itemWidth: 150, */
+
+                        }
+                    }, {
+                        // screens greater than >= 1024px
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            duration: 0.25,
+
+
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <div class="accesorios">
+        <h1>Accesorios</h1>
+        <div class="accesorios__img">
+            <div class="img">
+                <img src="/imgs/accesorios/61u-BsJ2-eL._AC_SL1000_-removebg-preview.png" alt="">
+            </div>
+            <div class="img">
+                <img src="/imgs/accesorios/auriculares_jbl-removebg-preview.png" alt="">
+            </div>
+            <div class="img">
+                <img src="/imgs/accesorios/cargador-original-motorola-turbo-removebg-preview.png" alt="">
+            </div>
+            <div class="img">
+                <img src="/imgs/accesorios/joystick_celular-removebg-preview.png" alt="">
+            </div>
+            <div class="img">
+            <img src="/imgs/accesorios/para-celular-soporte-removebg-preview.png" alt="">
+        </div>
+        <div class="img">
+            <img src="/imgs/accesorios/anillo2.png" alt="">
+        </div>
     </div>
-        </section>
-        <section class="celularesTCL">
-            <h2>celulares TCL</h2>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/tcl/tcl-30-removebg-preview.png" alt="imagen_TCL30"></a>
-                <div class="home__main__article--description">
-                    <h4>TCL 30</h4>
-                    <h5>$78.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/tcl/TCL-405-removebg-preview.png" alt="imagen_TCL405"></a>
-                <div class="home__main__article--description">
-                    <h4>TCL 405</h4>
-                    <h5>$33.599</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/tcl/TCL-408-removebg-preview.png" alt="imagen_TCL408"></a>
-                <div class="home__main__article--description">
-                    <h4>TCL 408</h4>
-                    <h5>$52.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/tcl/tcl20y-removebg-preview.png" alt="imagen_TCL20y"></a>
-                <div class="home__main__article--description">
-                    <h4>TCL 20y</h4>
-                    <h5>$68.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-        </section>
-        <section class="celularesSamsung">
-            <h2>celulares SAMSUNG</h2>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/samsung/Oppo-A54s-samsung-removebg-preview.png" alt="imagen_SAMSUNGA54s"></a>
-                <div class="home__main__article--description">
-                    <h4>SAMSUNG A52s</h4>
-                    <h5>$169.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/samsung/Samsung-Galaxy-A14-removebg-preview.png" alt="imagen_samsungA14"></a>
-                <div class="home__main__article--description">
-                    <h4>SAMSUNG A14</h4>
-                    <h5>$104.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/samsung/Samsung-Galaxy-A52-removebg-preview.png" alt="imagen_sansungA52"></a>
-                <div class="home__main__article--description">
-                    <h4>SAMSUNG A52</h4>
-                    <h5>$45.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/samsung/samsung-galaxy-z-flip-removebg-preview.png" alt="imagen_samsungZflip"></a>
-                <div class="home__main__article--description">
-                    <h4>SAMSUNG Z FLIP</h4>
-                    <h5>$399.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/samsung/Samsung-ultra-s23-removebg-preview.png" alt="imagen_samsungS23"></a>
-                <div class="home__main__article--description">
-                    <h4>SAMSUNG S23 ultra</h4>
-                    <h5>$609.999</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-        </section>
-<section class="acessorios">
-            <h2>ACCESORIOS</h2>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/accesorios/auriculares_jbl-removebg-preview.png" alt="imagen_auricularesJBL"></a>
-                <div class="home__main__article--description">
-                    <h4>AURICULARES JBL</h4>
-                    <h5>$4.876</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/accesorios/cargador-original-motorola-turbo-removebg-preview.png" alt="imagen_cargadorMOTOROLA"></a>
-                <div class="home__main__article--description">
-                    <h4>CARGADOR MOTOROLA TURBO</h4>
-                    <h5>$8.199</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/accesorios/joystick_celular-removebg-preview.png" alt="imagen_joystick"></a>
-                <div class="home__main__article--description">
-                    <h4>JOYSTICK CELULAR</h4>
-                    <h5>$7.599</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-            <article class="home__main__article">
-                <a href=""><img src="/imgs/accesorios/para-celular-soporte-removebg-preview.png" alt="imagen_SOPORTECELULAR"></a>
-                <div class="home__main__article--description">
-                    <h4>SOPORTE CELULAR</h4>
-                    <h5>$2.219</h5>
-                    <i class="fas fa-truck"></i>
-                    <a href="">ver mas</a>
-                </div>
-            </article>
-        </section>
+    </div>
 </body>
+
 </html>
