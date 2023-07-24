@@ -18,13 +18,14 @@ app.get('/header', (req, res) =>{
 app.get('/footer', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','partial','footer.html'))
 });
-<<<<<<< HEAD
+
 app.get('/registro', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','registro.html'))
 });
+
 app.get('/login', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','login.html'))
-=======
+});
 
 app.get('/cart', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','cart.html'))
@@ -33,24 +34,31 @@ app.get('/cart', (req, res) =>{
 app.get('/lg', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_lg.html'))
 });
+
 app.get('/moto', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_moto.html'))
 });
+
 app.get('/samsung', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_samsung.html'))
 });
+
 app.get('/tcl', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_tcl.html'))
 });
+
 app.get('/xiaomi', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_xiaomi.html'))
 });
+
 app.get('/accesorios', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','product_accesorios.html'))
 });
+
 app.get('/detalle', (req, res) =>{
   res.sendFile(path.join(__dirname, 'views','productDetail','detalle.html'))
->>>>>>> 8169f6018df1416470d6b7f5769b1985cc63f161
 });
+
+
 app.listen(PORT, () =>
   console.log(`http://localhost:${PORT}`))
