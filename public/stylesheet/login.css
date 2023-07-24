@@ -1,0 +1,92 @@
+.login h4{
+    color: white;
+    margin: 20px;
+    text-align:justify;
+    margin-bottom: 30px;
+    font-size: 60px;
+
+}
+.control input{
+    width: 90%;
+    padding: 11px 10px;
+    font-size: 25px;
+    margin:20px;
+}
+.olvidaste input{
+    width: 10px;
+    height: 10px;
+}
+.olvidaste label{
+    font-size: 13px;
+    padding: 15px;
+}
+
+.boton input{
+    width: 50%;
+    margin:40px;
+    font-size: 20px;
+    background-color:var(--colorCeleste);
+}
+.terminos input{
+    width: 10px;
+    height: 10px;
+}
+.terminos label{
+    font-size: 15px;
+    padding:15px;
+}
+
+@media(min-width: 768px){
+    .login h4{
+        text-align: center;
+        font-size: 70px;
+
+    }
+    .control input{
+        width: 90%;
+        font-size: 25px;
+    
+    }
+    .olvidaste input{
+        width: 15px;
+        height: 15px;
+    }
+    .olvidaste label{
+        font-size: 20px;
+    }
+    .boton input{
+        width: 20%;
+        text-align: center;
+    }
+    .terminos input{
+        width: 15px;
+        height: 15px;
+    }
+    .terminos label{
+        font-size: 20px;
+    }
+    
+
+
+
+}
+@media (min-width: 1024px){
+    .login h4{
+        font-size: 80px;
+    }
+    .control {
+    width: 90%;
+
+}
+  .olvidaste label{
+    font-size: 25px;
+  }
+ .boton{
+
+}
+.terminos label{
+    font-size: 25px;
+}
+
+}
+ 
