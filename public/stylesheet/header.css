@@ -3,8 +3,8 @@ header {}
 /* MENSAJE */
 
 .mensaje {
-    background-color: rgb(137, 184, 206);
-    color: #fff;
+    background-color: #fff;
+    color: var(--colorCeleste);
     font-size: 7px;
     padding: 1%;
     text-align: center;

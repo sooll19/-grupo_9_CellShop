@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+    <title>Mi carrito</title>
     <script src="https://kit.fontawesome.com/226408a02c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/stylesheet/styles.css">
 </head>
@@ -57,15 +57,15 @@
                             <a href=""><i class="fas fa-user user"></i></a>
                         </li>
                         <li>
-                            <a href="/cart" class="ocult">Mi carrito </a>
+                            <a href="/carrito" class="ocult">Mi carrito </a>
                             <a href=""><i class="fas fa-shopping-cart carrito"></i></a>
                         </li>
                     </ul>
                 </div>
+
+
             </div>
         </div>
-
-
 
         <!-- BUSCADOR -->
         <div class="buscador">
@@ -78,6 +78,70 @@
         </div>
 
     </header>
+
+    <main class="cart">
+        <!-- MENSAJE -->
+
+        <div class="contenedor-msj">
+            <p>TODOS LOS PRODUCTOS ESTARAN LISTOS PARA ENVIOS 24 HS. DESPUÉS DE EFECTUADA LA COMPRA.</p>
+        </div>
+
+        <!-- PRODUCTO -->
+        <h2>Moto Edge 30</h2>
+        <div class="contenedor-producto">
+            <img src="/imgs/moto/Moto_Edge_30-removebg-preview.png" alt="">
+        </div>
+
+        <!-- RESUMEN DE COMPRA -->
+        <div class="contenedor-resumen-compra">
+            <h3>RESUMEN DE COMPRA</h3>
+
+            <div class="cupon">
+                <label for="cupon"></label>
+                <input type="text" id="cupon" placeholder="Ingresar código descuento">
+                <button type="submit">Aplicar</button>
+            </div>
+
+            <div class="contenedor-item">
+                <p class="item">PRECIO</p>
+                <p class="precio">$60.000,00</p>
+            </div>
+
+            <div class="contenedor-item">
+                <p class="item">DESCUENTOS</p>
+                <p class="precio">$0,00</p>
+            </div>
+            <hr>
+
+            <div class="contenedor-item">
+                <p class="item">TOTAL</p>
+                <p class="precio">$60.000,00</p>
+            </div>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="botones">
+            <button href="/">Seguir Comprando</button>
+            <button type="submit">Finalizar Compra</button>
+            <button type="reset">Vaciar Carrito</button>
+        </div>
+
+        <!-- PROMOS -->
+        <div class="promos">
+            <i class="fas fa-credit-card"></i>
+            <div class="credit-card">
+                <p>Ver medios de pago y cuotas</p>
+                <a href="#">VER PROMOCIONES BANCARIAS</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
 </body>
 
 </html>
