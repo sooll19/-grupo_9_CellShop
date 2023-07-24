@@ -14,7 +14,14 @@
 /*import views*/
 @import './index.css';
 
+/*import footer*/
+@import './footer.css';
+
+/*import registro*/
+@import './registro.css';
+
 /*glider*/
 @import './glider.css';
 
-
+/*import login*/
+@import './login.css';

@@ -1,0 +1,135 @@
+.formulario-registro{
+    text-align: center;
+}
+.formulario-registro h4{
+    margin: 20px;
+    font-size: 35px;
+    color:white;
+}
+.nombre{ 
+    width: 100%;
+    font-size: 25px;
+    padding: 10px;
+}
+.nombre input{
+font-size: 23px;
+width: 100%;
+border-radius: 5px;
+}
+.apellido{ 
+    width: 100%;
+    font-size: 25px;
+    padding: 10px;
+}
+.apellido input{
+font-size: 23px;
+width: 100%;
+border-radius: 5px;
+}
+.email{ 
+     width: 100%;
+    font-size: 25px;
+    padding: 10px;
+}
+.email input{
+font-size: 23px;
+width: 100%;
+border-radius: 5px;        
+}
+.contraseña{ 
+     width: 100%;
+    font-size: 25px;
+    padding: 10px;
+}    
+.contraseña input{
+font-size: 23px;
+width: 100%;
+border-radius: 5px;
+}
+.terminos2 input{
+        width: 10px;
+        height: 10px;
+    }
+.terminos2 label{
+        font-size: 13px;
+        padding: 10px;
+}
+.boton input {
+    width: 90%;
+    margin: 5px;
+    font-size: 15px;
+    padding: 8px;
+}
+.cuenta{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+@media(min-width: 768px){
+.formulario-registro h4{
+    font-size: 40px;
+}
+.nombre input{
+    font-size: 20px;
+    width: 70%;
+}
+.apellido input{
+    font-size: 20px;
+    width: 70%;
+}    
+.email input{
+    font-size: 20px;
+    width: 70%;
+}
+.contraseña input{
+    font-size: 20px;
+    width: 70%;
+}
+.boton input{
+    width: 96%;
+} 
+.terminos2 label{
+    font-size: 15px;
+} 
+.terminos2 input{
+    width: 13px;
+    height: 13px;
+}  
+.cuenta{
+    font-size: 20px;
+}
+}
+@media(min-width: 1024px){ 
+.nombre input{
+    font-size: 25px;
+    width: 60%;
+} 
+.apellido input{
+    font-size: 25px;
+    width: 60%;
+}
+.email input{
+    font-size: 25px;
+    width: 60%;
+}
+.contraseña input{
+    font-size: 25px;
+    width: 60%;
+}
+.terminos2 label{
+    font-size: 20px;
+}
+.boton input{
+    width: 98%;
+    font-size: 30px;
+}
+.cuenta{
+    font-size: 22px;
+}
+}
+
+
+
+
+
+       
