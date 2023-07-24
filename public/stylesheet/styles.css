@@ -12,20 +12,16 @@
 
 
 /*import views*/
-<<<<<<< HEAD
-@import 'index.css';
+@import './index.css';
 
 /*import footer*/
-@import 'footer.css';
+@import './footer.css';
 
 /*import registro*/
-@import 'registro.css';
-=======
-@import './index.css';
+@import './registro.css';
 
 /*glider*/
 @import './glider.css';
->>>>>>> 8169f6018df1416470d6b7f5769b1985cc63f161
 
 /*import login*/
-@import 'login.css';
+@import './login.css';
