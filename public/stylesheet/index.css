@@ -17,7 +17,7 @@
   margin: 30px;
 }
 
-.main__banner-carousel .carousel-inner .carousel-item img {
+.carousel-inner .carousel-item img {
   object-fit: contain;
 
 }
@@ -32,7 +32,7 @@
 
 
 @media (min-width:768px) {
-  .main__banner-carousel .carousel-inner .carousel-item img {
+  .carousel-inner .carousel-item img {
     object-fit: cover;
     height: 500px;
   }
