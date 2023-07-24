@@ -1,0 +1,335 @@
+header {}
+
+/* MENSAJE */
+
+.mensaje {
+    background-color: #fff;
+    color: var(--colorCeleste);
+    font-size: 7px;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* LOGO */
+
+.container {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container a img {
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+/* BURGUER MENU */
+
+.container .contenedor-burger-menu {
+    text-align: center;
+    order: -1;
+}
+
+.container .contenedor-burger-menu button {
+    background: none;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+
+.container .contenedor-burger-menu button i {
+    font-size: 1.2rem;
+}
+
+/* MENU */
+
+/* .contenedor-menu {}
+
+.contenedor-menu nav {} */
+
+.contenedor-menu nav ul.menu-desplegable {
+    display: none;
+}
+
+/* .contenedor-menu nav ul.menu-desplegable li {}
+
+.contenedor-menu nav ul.menu-desplegable li a {} */
+
+/* OPCIONES */
+
+.opciones {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.opciones1 {
+    display: none;
+}
+
+/* .opciones1 li {}
+
+.opciones1 li a {}
+
+.opciones1 li a i {}
+
+.opciones2 {} */
+
+.opciones2 li {
+    display: inline-block;
+}
+
+.opciones2 li a.ocult {
+    display: none;
+}
+
+.opciones2 li a i {
+    color: #fff;
+}
+
+.opciones2 li a i:first-child {
+    margin: 0;
+}
+
+.opciones2 li a i:last-child {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+/* BUSCADOR */
+
+.buscador {
+    padding: 2%;
+}
+
+.buscador .contenedor-buscador {
+    display: inline;
+}
+
+.buscador .contenedor-buscador .contenedor-input {
+    position: relative;
+}
+
+.buscador .contenedor-buscador input {
+    width: 100%;
+    border: 1px solid silver;
+    padding: 5px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+
+.buscador .contenedor-buscador button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* .buscador .contenedor-buscador button i {} */
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* SMARTPHONES */
+
+@media (min-width:481px) {}
+
+/* TABLET */
+
+@media (min-width:768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* MENSAJE */
+
+    .mensaje {
+        font-size: 12px;
+    }
+
+    /* LOGO */
+
+    /*  .container {} */
+
+    .container a img {
+        width: 80%;
+        position: relative;
+        left: 0;
+    }
+
+    /* BURGUER MENU */
+
+    /* .container .contenedor-burger-menu {}
+
+    .container .contenedor-burger-menu button {}
+
+    .container .contenedor-burger-menu button i {} */
+
+    /* MENU */
+
+    /* .contenedor-menu {}
+
+    .contenedor-menu nav {}
+
+    .contenedor-menu nav ul.menu-desplegable {}
+
+    .contenedor-menu nav ul.menu-desplegable li {}
+
+    .contenedor-menu nav ul.menu-desplegable li a {} */
+
+    /* OPCIONES */
+
+    /*   .opciones {} */
+
+    .opciones1 {
+        display: inline-flex;
+        font-size: 1rem;
+    }
+
+    /* .opciones1 li {} */
+
+    .opciones1 li a {
+        color: #fff;
+        margin-right: 15px;
+    }
+
+    /*  .opciones1 li a i {} */
+
+    .opciones2 {
+        font-size: 1rem;
+    }
+
+    /* .opciones2 li {} */
+
+    .opciones2 li a.ocult {
+        display: inline-flex;
+        color: #fff;
+    }
+
+    /* .opciones2 li a i {} */
+
+    /*  .opciones2 li a i:first-child {} */
+
+    .opciones2 li a i:last-child {
+        margin-left: 0;
+    }
+
+    /* BUSCADOR */
+
+    .buscador {
+        padding-top: 1%;
+    }
+
+    /* .buscador .contenedor-buscador {}
+
+    .buscador .contenedor-buscador .contenedor-input {}
+
+    .buscador .contenedor-buscador input {}
+
+    .buscador .contenedor-buscador button {}
+
+    .buscador .contenedor-buscador button i {} */
+}
+
+/* DESKTOP */
+
+@media (min-width:1024px) {
+    /* header {} */
+
+    /* MENSAJE */
+
+    .mensaje {
+        font-size: 15px;
+    }
+
+    /* LOGO */
+
+    /* .container {}
+
+    .container img {} */
+
+    .container a img {
+        width: 100%;
+      
+    }
+
+    /* BURGUER MENU */
+
+    /* .container .contenedor-burger-menu {}
+
+    .container .contenedor-burger-menu button {} */
+
+    .container .contenedor-burger-menu button i {
+        font-size: 2rem;
+    }
+
+    /* MENU */
+
+    /* .contenedor-menu {}
+
+    .contenedor-menu nav {}
+
+    .contenedor-menu nav ul.menu-desplegable {}
+
+    .contenedor-menu nav ul.menu-desplegable li {}
+
+    .contenedor-menu nav ul.menu-desplegable li a {} */
+
+    /* OPCIONES */
+
+    /*   .opciones {} */
+
+    .opciones1 {
+        font-size: 1.5rem;
+    }
+
+    .opciones1 li {
+        margin-left: 10px;
+    }
+
+    /*  .opciones1 li a {}
+
+    .opciones1 li a i {} */
+
+    .opciones2 {
+        font-size: 1.5rem;
+    }
+
+    .opciones2 li {
+        margin-left: 10px;
+    }
+
+    /*  .opciones2 li a.ocult {}
+
+    .opciones2 li a i {}
+
+    .opciones2 li a i:first-child {}
+
+    .opciones2 li a i:last-child {} */
+
+    /* BUSCADOR */
+
+    .buscador {
+        padding-top: 1%;
+    }
+
+    /*  .buscador .contenedor-buscador {}
+
+    .buscador .contenedor-buscador .contenedor-input {} */
+
+    .buscador .contenedor-buscador input {
+        font-size: 1rem;
+    }
+
+    /*   .buscador .contenedor-buscador button {}
+
+    .buscador .contenedor-buscador button i {} */
+}

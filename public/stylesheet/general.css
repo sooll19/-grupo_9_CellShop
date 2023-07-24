@@ -1,12 +1,20 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
+
+body {
   background-color: var(--colorAzulOscuro);
-color: var(--colorOro);
+  color: var(--colorOro);
   width: 100%;
   font-family: var(--tipografiaGeneral);
+}
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

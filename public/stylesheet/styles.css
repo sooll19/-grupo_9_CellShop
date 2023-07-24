@@ -7,9 +7,12 @@
 @import './vars.css';
 @import './header.css';
 @import './footer.css';
+@import './cart.css';
+@import'./productos.css';
 
 
 /*import views*/
+<<<<<<< HEAD
 @import 'index.css';
 
 /*import footer*/
@@ -17,6 +20,12 @@
 
 /*import registro*/
 @import 'registro.css';
+=======
+@import './index.css';
+
+/*glider*/
+@import './glider.css';
+>>>>>>> 8169f6018df1416470d6b7f5769b1985cc63f161
 
 /*import login*/
 @import 'login.css';
