@@ -1,15 +1,18 @@
+.login{
+    text-align: center;
+}
 .login h4{
     color: white;
     margin: 20px;
-    text-align:justify;
+    text-align:center;
     margin-bottom: 30px;
-    font-size: 60px;
+    font-size: 35px;
 
 }
 .control input{
-    width: 90%;
+    width: 60%;
     padding: 11px 10px;
-    font-size: 25px;
+    font-size: 15px;
     margin:20px;
 }
 .olvidaste input{
@@ -22,10 +25,11 @@
 }
 
 .boton input{
-    width: 50%;
+    width: 40%;
     margin:40px;
     font-size: 20px;
     background-color:var(--colorCeleste);
+    padding: 8px;
 }
 .terminos input{
     width: 10px;
@@ -38,7 +42,6 @@
 
 @media(min-width: 768px){
     .login h4{
-        text-align: center;
         font-size: 70px;
 
     }
@@ -74,14 +77,15 @@
     .login h4{
         font-size: 80px;
     }
-    .control {
-    width: 90%;
+    .control input{
+        width: 60%;
 
 }
   .olvidaste label{
     font-size: 25px;
   }
- .boton{
+ .boton {
+
 
 }
 .terminos label{
