@@ -1,25 +1,22 @@
-/* KEYFRAMES */
+/* ----- KEYFRAMES ----- */
 
 @keyframes marquee {
     0% {
         transform: translateX(100%);
     }
 
-    /* Iniciar el texto fuera de la pantalla a la derecha */
     100% {
         transform: translateX(-100%);
     }
-
-    /* Mover el texto completamente a la izquierda */
 }
 
-/* MAIN */
+/* ----- MAIN ----- */
 
 .cart {
     color: #fff;
 }
 
-/* MENSAJE */
+/* --- MENSAJE --- */
 
 .contenedor-msj {
     background-color: var(--colorCeleste);
@@ -34,22 +31,75 @@
     animation: marquee 10s linear infinite;
 }
 
-/* PRODUCTO */
-
-.cart h2 {
-    font-size: 15px;
-    padding: 2% 5%;
-}
+/* --- PRODUCTO --- */
 
 .contenedor-producto {
-    text-align: center;
+    display: flex;
+    margin: 20px 25px;
+    align-items: center;
 }
 
 .contenedor-producto img {
-    width: 70%;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
-/* RESUMEN DE COMPRA */
+/* PRECIO */
+
+.container-precio {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    width: 200px;
+}
+
+.container-precio h2 {
+    font-size: 17px;
+}
+
+.contenedor-precio {}
+
+.contenedor-precio p {
+    font-size: 13px;
+}
+
+/* CANTIDAD */
+
+.container-precio form {}
+
+.container-precio form label {
+    font-size: 15px;
+}
+
+.container-precio form select {
+    height: 18px;
+}
+
+.container-precio form select option {}
+
+/* TRASH */
+
+.contenedor-icon {
+    display: flex;
+    margin-top: 10px;
+    width: 121px;
+    border: 1px solid #fff;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-icon i {
+    margin-right: 10px;
+    font-size: 11px;
+}
+
+.contenedor-icon p {
+    font-size: 10px;
+}
+
+/* --- RESUMEN DE COMPRA --- */
 
 .contenedor-resumen-compra {
     padding: 0% 5%;
@@ -108,7 +158,7 @@
 
 .contenedor-resumen-compra .contenedor-item .precio {}
 
-/* BOTONES */
+/* --- BOTONES --- */
 
 .botones {
     display: flex;
@@ -132,7 +182,7 @@
     background-color: var(--colorCeleste);
 }
 
-/* PROMOS */
+/* --- PROMOS ---- */
 
 .promos {
     display: flex;
@@ -158,42 +208,83 @@
 .promos a {
     color: var(--colorCeleste);
     text-decoration: underline;
+    font-size: 15px;
 }
 
 /* ---------- MEDIA QUERIES ---------- */
 
-/* SMARTPHONES */
+/* ---- SMARTPHONES ----- */
 
 @media (min-width:481px) {}
 
-/* TABLET */
+/* ----- TABLET -----  */
 
 @media (min-width:768px) {
-    /* MAIN */
+    /* --- MAIN --- */
 
     .cart {}
 
-    /* MENSAJE */
+    /* --- MENSAJE --- */
 
     .contenedor-msj {
-    font-size: 15px;
-}
+        font-size: 15px;
+    }
 
     .contenedor-msj p {}
 
-    /* PRODUCTO */
+    /* --- PRODUCTO --- */
 
-    .cart h2 {
-        font-size: 25px;
+    .contenedor-producto {
+        justify-content: space-around;
+        margin-top: 30px;
     }
-
-    .contenedor-producto {}
 
     .contenedor-producto img {
-        width: 300px;
+        width: 250px;
     }
 
-    /* RESUMEN DE COMPRA */
+    /* PRECIO */
+
+    .container-precio {
+        width: 50%;
+    }
+
+    .container-precio h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        width: 210px;
+    }
+
+    .contenedor-precio {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-precio p {
+        font-size: 18px;
+    }
+
+    /* CANTIDAD */
+
+    .container-precio form {
+        margin-bottom: 10px;
+    }
+
+    .container-precio form label {}
+
+    .container-precio form select {}
+
+    .container-precio form select option {}
+
+    /* TRASH */
+
+    .contenedor-icon {}
+
+    .contenedor-icon i {}
+
+    .contenedor-icon p {}
+
+    /* --- RESUMEN DE COMPRA --- */
 
     .contenedor-resumen-compra {
         width: 70%;
@@ -221,8 +312,8 @@
     .contenedor-resumen-compra .cupon button:hover {}
 
     .contenedor-resumen-compra .contenedor-item {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 
     .contenedor-resumen-compra .contenedor-item:last-child {}
 
@@ -230,7 +321,7 @@
 
     .contenedor-resumen-compra .contenedor-item .precio {}
 
-    /* BOTONES */
+    /* --- BOTONES --- */
 
     .botones {
         width: 70%;
@@ -239,7 +330,7 @@
 
     .botones button {}
 
-    /* PROMOS */
+    /* --- PROMOS --- */
 
     .promos {
         width: 50%;
@@ -248,8 +339,8 @@
     }
 
     .promos i {
-    margin-right: 5%;
-}
+        margin-right: 5%;
+    }
 
     .promos .credit-card {}
 
@@ -258,63 +349,114 @@
     .promos a {}
 }
 
-/* DESKTOP */
+/* ----- DESKTOP ----- */
 
 @media (min-width:1024px) {
-    /* MAIN */
+    /* --- MAIN --- */
 
     .cart {}
 
-    /* MENSAJE */
+    /* --- MENSAJE --- */
 
     .contenedor-msj {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 
     .contenedor-msj p {}
 
-    /* PRODUCTO */
-
-    .cart h2 {
-    font-size: 30px;
-}
+    /* --- PRODUCTO --- */
 
     .contenedor-producto {}
 
     .contenedor-producto img {
-    width: 400px;
-}
+        width: 400px;
+    }
 
-    /* RESUMEN DE COMPRA */
+    /* PRECIO */
+
+    .container-precio {
+        width: 70%;
+    }
+
+    .container-precio h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        width: 400px;
+    }
+
+    .contenedor-precio {
+        margin-bottom: 20px;
+    }
+
+    .contenedor-precio p {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    /* CANTIDAD */
+
+    .container-precio form {
+        margin-bottom: 20px;
+    }
+
+    .container-precio form label {
+        font-size: 20px;
+    }
+
+    .container-precio form select {
+        height: 30px;
+        width: 60px;
+    }
+
+    .container-precio form select option {}
+
+    /* TRASH */
+
+    .contenedor-icon {
+        width: 215px;
+        padding: 10px;
+    }
+
+    .contenedor-icon i {
+        font-size: 20px;
+    }
+
+    .contenedor-icon p {
+        font-size: 15px;
+    }
+
+    /* --- RESUMEN DE COMPRA --- */
 
     .contenedor-resumen-compra {
-    width: 80%;
-}
+        width: 80%;
+    }
 
     .contenedor-resumen-compra h3 {
-    font-size: 30px;
-}
+        font-size: 30px;
+    }
 
-    .contenedor-resumen-compra .cupon {padding-bottom: 8%;}
+    .contenedor-resumen-compra .cupon {
+        padding-bottom: 8%;
+    }
 
     .contenedor-resumen-compra .cupon label {}
 
     .contenedor-resumen-compra .cupon input {
-    font-size: 20px;
-    width: 80%;
-    height: 40px;
-}
+        font-size: 20px;
+        width: 80%;
+        height: 40px;
+    }
 
     .contenedor-resumen-compra .cupon button {
-    font-size: 20px;
-    height: 40px;
-}
+        font-size: 20px;
+        height: 40px;
+    }
 
     .contenedor-resumen-compra .cupon button:hover {}
 
     .contenedor-resumen-compra .contenedor-item {
-    font-size: 25px;
-}
+        font-size: 25px;
+    }
 
     .contenedor-resumen-compra .contenedor-item:last-child {}
 
@@ -322,32 +464,31 @@
 
     .contenedor-resumen-compra .contenedor-item .precio {}
 
-    /* BOTONES */
+    /* --- BOTONES --- */
 
-    .botones {
-}
+    .botones {}
 
     .botones button {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 
-    /* PROMOS */
+    /* --- PROMOS --- */
 
     .promos {
-    width: 50%;
-}
+        width: 50%;
+    }
 
     .promos i {
-    font-size: 50px;
-}
+        font-size: 50px;
+    }
 
     .promos .credit-card {}
 
     .promos .credit-card p {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 
     .promos a {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 }
