@@ -24,7 +24,7 @@ h4 a{
 ul li {
     margin: 7px;
 }
-.carrito {
+.car {
 color: var(--colorCeleste);
 text-decoration: none;
 border: solid 2px var(--colorCeleste);
@@ -80,7 +80,7 @@ width: 80px;
         margin: 7px;
         padding-left: 7px;
     }
-    .carrito {
+    .car{
     color: var(--colorCeleste);
     text-decoration: none;
     border: solid 2px var(--colorCeleste);
@@ -131,7 +131,7 @@ width: 80px;
             margin: 7px;
             padding-left: 7px;
         }
-        .carrito {
+        .car {
         color: var(--colorCeleste);
         text-decoration: none;
         border: solid 2px var(--colorCeleste);

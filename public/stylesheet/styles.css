@@ -7,17 +7,21 @@
 @import './vars.css';
 @import './header.css';
 @import './footer.css';
-<<<<<<< HEAD
 @import './cart.css';
-=======
 @import'./productos.css';
->>>>>>> d3d7c2f8364f4755b3304ba966a035ccebcce88c
 
 
 /*import views*/
 @import './index.css';
 
+/*import footer*/
+@import './footer.css';
+
+/*import registro*/
+@import './registro.css';
+
 /*glider*/
 @import './glider.css';
 
-
+/*import login*/
+@import './login.css';
