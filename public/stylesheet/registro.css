@@ -93,26 +93,26 @@ padding: 8px;
 }
 .nombre input{
     font-size: 12px;
-    width: 70%;
+    width: 50%;
 }
 .apellido input{
     font-size: 12px;
-    width: 70%;
+    width: 50%;
     padding: 8px;
 }    
 .email input{
     font-size: 12px;
-    width: 70%;
+    width: 50%;
     padding:8px;
 }
 .contraseña input{
     font-size: 12px;
-    width: 70%;
+    width: 50%;
     padding:8px;
 }
 .confirmar-contraseña input{
     font-size: 12px;
-    width: 70%;
+    width: 50%;
     padding:8px;
 }
 .boton2 input{
@@ -130,6 +130,9 @@ padding: 8px;
 }
 }
 @media(min-width: 1024px){ 
+.formulario-registro h4{
+        font-size: 35px;
+    }
 .nombre input{
     font-size: 12px;
     width: 60%;
