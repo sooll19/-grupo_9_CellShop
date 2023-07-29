@@ -15,7 +15,12 @@
 .accesorios img{
   width: 80%;
   margin: 30px;
+
 }
+.accesorios img:hover{
+  box-shadow: 0px 10px 40px rgb(158, 183, 194);
+}
+
 
 .carousel-inner .carousel-item img {
   object-fit: contain;
