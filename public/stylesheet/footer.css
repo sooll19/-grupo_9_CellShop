@@ -7,19 +7,19 @@
     text-align: center;
     color: white;
     padding-bottom: 5%;
-    font-size: 18px;
+    font-size: 30px;
 }
 .footer {
     text-align: justify;
     padding: 5%;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .footer-redes-sociales {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 .footer-redes-sociales a{
@@ -29,26 +29,26 @@
 
 @media(min-width: 768px) {
     .footer .contenedor1 h4{
-        font-size: 18px;
+        font-size: 35px;
     }
     .footer .contenedor1 p{
-    font-size: 14px;
+    font-size: 25px;
     }
 .footer-redes-sociales{
-    font-size: 20px;
+    font-size: 35px;
     margin: 0 auto;
 }
 }
 
 @media(min-width: 1024px) {
     .footer .contenedor1 h4{
-        font-size: 20px;
+        font-size: 40px;
     }
     .footer .contenedor1 p{
-        font-size: 14px;
+        font-size: 28px;
     }
     .footer-redes-sociales{
-        font-size: 25px;
+        font-size: 40px;
     }
 
 }
