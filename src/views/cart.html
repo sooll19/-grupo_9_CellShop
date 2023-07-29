@@ -80,16 +80,73 @@
     </header>
 
     <main class="cart">
-        <!-- MENSAJE -->
 
+        <!-- MENSAJE -->
         <div class="contenedor-msj">
             <p>TODOS LOS PRODUCTOS ESTARAN LISTOS PARA ENVIOS 24 HS. DESPUÉS DE EFECTUADA LA COMPRA.</p>
         </div>
 
         <!-- PRODUCTO -->
-        <h2>Moto Edge 30</h2>
         <div class="contenedor-producto">
-            <img src="/imgs/moto/Moto_Edge_30-removebg-preview.png" alt="">
+            <img src="/imgs/moto/Moto_Edge_30-removebg-preview.png" alt="Moto Edge 30">
+
+            <!-- Precio -->
+            <div class="container-precio">
+                <h2>Moto Edge 30</h2>
+                <div class="contenedor-precio">
+                    <p>Precio:</p>
+                    <p>$60.000,00</p>
+                </div>
+
+                <!-- Cantidad-->
+                <form action="/" method="get">
+                    <label for="cant">Cantidad:</label>
+                    <select name="cant">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+
+                <!-- Trash-->
+                <div class="contenedor-icon">
+                    <i class="fas fa-trash"></i>
+                    <p>Eliminar Producto</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-producto">
+            <img src="/imgs/accesorios/auriculares_jbl-removebg-preview.png" alt="Auriculares JBL">
+
+            <div class="container-precio">
+                <h2>Auriculares JBL</h2>
+                <!-- Precio -->
+                <div class="contenedor-precio">
+                    <p>Precio:</p>
+                    <p>$15.000,00</p>
+                </div>
+
+                <!-- Cantidad-->
+                <form action="/" method="get">
+                    <label for="cant">Cantidad:</label>
+                    <select name="cant">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+
+                <!-- Trash-->
+                <div class="contenedor-icon">
+                    <i class="fas fa-trash"></i>
+                    <p>Eliminar Producto</p>
+                </div>
+            </div>
         </div>
 
         <!-- RESUMEN DE COMPRA -->
@@ -103,8 +160,8 @@
             </div>
 
             <div class="contenedor-item">
-                <p class="item">PRECIO</p>
-                <p class="precio">$60.000,00</p>
+                <p class="item">SUBTOTAL</p>
+                <p class="precio">$75.000,00</p>
             </div>
 
             <div class="contenedor-item">
@@ -115,7 +172,7 @@
 
             <div class="contenedor-item">
                 <p class="item">TOTAL</p>
-                <p class="precio">$60.000,00</p>
+                <p class="precio">$75.000,00</p>
             </div>
         </div>
 
