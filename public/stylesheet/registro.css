@@ -3,62 +3,62 @@
 }
 .formulario-registro h4{
     margin-top:20px;
-    font-size: 35px;
+    font-size: 18px;
     color:white;
 }
 .nombre{ 
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
     
 
 }
 .nombre input{
-font-size: 15px;
+font-size: 12px;
 width: 80%;
 border-radius: 5px;
 padding: 8px;
 }
 .apellido{ 
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
 }
 .apellido input{
-font-size: 15px;
+font-size: 12px;
 width: 80%;
 border-radius: 5px;
 padding: 8px;
 }
 .email{ 
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
 }
 .email input{
-font-size: 15px;
+font-size: 12px;
 width: 80%;
 border-radius: 5px; 
 padding: 8px;       
 }
 .contraseña{ 
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
 }    
 .contraseña input{
-    font-size: 15px;
+    font-size: 12px;
     width:80%;
     border-radius:5px;
     padding: 8px;
 } 
 .confirmar-contraseña{
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     padding:10px
 }   
 .confirmar-contraseña input{
-font-size: 15px;
+font-size: 12px;
 width: 80%;
 border-radius: 5px;
 padding: 8px;
@@ -69,7 +69,7 @@ padding: 8px;
         height: 10px;
     }
 .terminos2 label{
-        font-size: 13px;
+        font-size: 10px;
         padding: 10px;
 }
 .boton2{
@@ -78,7 +78,7 @@ padding: 8px;
 .boton2 input {
     width: 30%;
     margin: 5px;
-    font-size: 15px;
+    font-size: 12px;
     padding: 8px;
     background-color: var(--colorCeleste);
 }
@@ -89,29 +89,29 @@ padding: 8px;
 
 @media(min-width: 768px){
 .formulario-registro h4{
-    font-size: 40px;
+    font-size: 18px;
 }
 .nombre input{
-    font-size: 15px;
+    font-size: 12px;
     width: 70%;
 }
 .apellido input{
-    font-size: 15px;
+    font-size: 12px;
     width: 70%;
     padding: 8px;
 }    
 .email input{
-    font-size: 15px;
+    font-size: 12px;
     width: 70%;
     padding:8px;
 }
 .contraseña input{
-    font-size: 15px;
+    font-size: 12px;
     width: 70%;
     padding:8px;
 }
 .confirmar-contraseña input{
-    font-size: 15px;
+    font-size: 12px;
     width: 70%;
     padding:8px;
 }
@@ -119,46 +119,46 @@ padding: 8px;
     width: 30%;
 } 
 .terminos2 label{
-    font-size: 15px;
+    font-size: 12px;
 } 
 .terminos2 input{
     width: 13px;
     height: 13px;
 }  
 .cuenta{
-    font-size: 20px;
+    font-size: 12px;
 }
 }
 @media(min-width: 1024px){ 
 .nombre input{
-    font-size: 25px;
+    font-size: 12px;
     width: 60%;
 } 
 .apellido input{
-    font-size: 25px;
+    font-size: 12px;
     width: 60%;
 }
 .email input{
-    font-size: 25px;
+    font-size: 12px;
     width: 60%;
 }
 .contraseña input{
-    font-size: 25px;
+    font-size: 12px;
     width: 60%;
 }
 .confirmar-contraseña input{
-    font-size: 25px;
+    font-size: 12px;
     width: 60%;
 }
 .terminos2 label{
-    font-size: 20px;
+    font-size: 12px;
 }
 .boton2 input{
     width: 20%;
     font-size: 30px;
 }
 .cuenta{
-    font-size: 22px;
+    font-size: 12px;
 }
 }
 

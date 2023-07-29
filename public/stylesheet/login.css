@@ -42,7 +42,7 @@
 
 @media(min-width: 768px){
     .login h4{
-        font-size: 70px;
+        font-size: 40px;
 
     }
     .control input{
@@ -75,7 +75,7 @@
 }
 @media (min-width: 1024px){
     .login h4{
-        font-size: 80px;
+        font-size: 50px;
     }
     .control input{
         width: 60%;
