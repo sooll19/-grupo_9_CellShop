@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cell Shop</title>
-    <link rel="stylesheet" href="/stylesheet/styles.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -23,7 +23,7 @@
 
     <!-- LOGO -->
     <div class="container">
-        <a href="/"><img src="/imgs/Logo.jpeg" alt="img-logo"></a>
+        <a href="/"><img src="/images/Logo.jpeg" alt="img-logo"></a>
 
         <!-- BURGUER MENU -->
         <div class="contenedor-burger-menu">
@@ -48,7 +48,7 @@
             <div class="opciones">
                 <ul class="opciones1">
                     <li>
-                        <a href="/suscript">Suscribite <i class="far fa-envelope"></i></a>
+                        <a href="/users/register">Suscribite <i class="far fa-envelope"></i></a>
                     </li>
                     <li>
                         <a href="/support">Soporte <i class="fas fa-headset"></i></a>
@@ -57,11 +57,11 @@
 
                 <ul class="opciones2">
                     <li>
-                        <a href="/login" class="ocult">Mi cuenta </a>
+                        <a href="/users/login" class="ocult">Mi cuenta </a>
                         <a href=""><i class="fas fa-user user"></i></a>
                     </li>
                     <li>
-                        <a href="/cart" class="ocult">Mi carrito </a>
+                        <a href="products/cart" class="ocult">Mi carrito </a>
                         <a href=""><i class="fas fa-shopping-cart carrito"></i></a>
                     </li>
                 </ul>
@@ -98,19 +98,19 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/imgs/banner.jpg" class="d-block w-100" alt="banner">
+                        <img src="/images/banner.jpg" class="d-block w-100" alt="banner">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Todo lo ultimo</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/imgs/banner2.jpg" class="d-block w-100" alt="banner">
+                        <img src="/images/banner2.jpg" class="d-block w-100" alt="banner">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Más economico</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/imgs/banner1.jpg" class="d-block w-100" alt="banner3">
+                        <img src="/images/banner1.jpg" class="d-block w-100" alt="banner3">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Todas las gamas</h5>
                         </div>
@@ -133,32 +133,35 @@
             <div class="glider-contain">
                 <div class="glider">
                     <div>
-                        <img src="/imgs/lg/LG-Velvet-removebg-preview.png" alt="">
+                        <img src="/images/lg/LG-Velvet-removebg-preview.png" alt="">
                     </div>
                     <div>
-                        <img src="/imgs/moto/MOTO_G42-removebg-preview.png" alt="">
+                        <img src="/images/moto/MOTO_G42-removebg-preview.png" alt="">
                     </div>
                     <div>
-                        <img src="/imgs/xiomi/xiaomi-mi-9-removebg-preview.png" alt="">
+                        <img src="/images/xiomi/xiaomi-mi-9-removebg-preview.png" alt="">
                     </div>
                     <div>
-                        <img src="/imgs/samsung/Samsung-Galaxy-A52-removebg-preview.png" alt="">
+                        <img src="/images/samsung/Samsung-Galaxy-A52-removebg-preview.png" alt="">
                     </div>
                     <div>
-                        <img src="/imgs/xiomi/xiaomi-redmi-note-6-removebg-preview.png" alt="">
+                        <img src="/images/xiomi/xiaomi-redmi-note-6-removebg-preview.png" alt="">
                     </div>
 
                     <div>
-                        <img src="/imgs/lg/LG-V40-ThinQ-0-removebg-preview.png" alt="">
+                        <img src="/images/lg/LG-V40-ThinQ-0-removebg-preview.png" alt="">
                     </div>
                     <div>
-                        <img src="/imgs/moto/Moto_Edge_30-removebg-preview.png" alt="">
+                        <img src="/images/moto/Moto_Edge_30-removebg-preview.png" alt="">
                     </div>
                     <div>
-                        <img src="/imgs/samsung/Samsung-Galaxy-A14-removebg-preview.png" alt="">
+                        <img src="/images/samsung/Samsung-Galaxy-A14-removebg-preview.png" alt="">
                     </div>
                     <div>
-                        <img src="/imgs/tcl/TCL-405-removebg-preview.png" alt="">
+                        <img src="/images/tcl/TCL-405-removebg-preview.png" alt="">
+                    </div>
+                    <div>
+                        <a href="/products/detalle"><img src="/images/lg/lg_q60-removebg-preview.png" alt=""></a>
                     </div>
                 </div>
 
@@ -173,7 +176,7 @@
         </div>
 
     </main>
-    <script src="/javascript/glider.js"></script>
+    <script src="/javascripts/glider.js"></script>
     <script>
         window.addEventListener("load", function () {
             new Glider(document.querySelector(".glider"), {
@@ -217,22 +220,22 @@
         <h1>Accesorios</h1>
         <div class="accesorios__img">
             <div class="img">
-                <img src="/imgs/accesorios/61u-BsJ2-eL._AC_SL1000_-removebg-preview.png" alt="">
+                <img src="/images/accesorios/61u-BsJ2-eL._AC_SL1000_-removebg-preview.png" alt="">
             </div>
             <div class="img">
-                <img src="/imgs/accesorios/auriculares_jbl-removebg-preview.png" alt="">
+                <img src="/images/accesorios/auriculares_jbl-removebg-preview.png" alt="">
             </div>
             <div class="img">
-                <img src="/imgs/accesorios/cargador-original-motorola-turbo-removebg-preview.png" alt="">
+                <img src="/images/accesorios/cargador-original-motorola-turbo-removebg-preview.png" alt="">
             </div>
             <div class="img">
-                <img src="/imgs/accesorios/joystick_celular-removebg-preview.png" alt="">
+                <img src="/images/accesorios/joystick_celular-removebg-preview.png" alt="">
             </div>
             <div class="img">
-            <img src="/imgs/accesorios/para-celular-soporte-removebg-preview.png" alt="">
+            <img src="/images/accesorios/para-celular-soporte-removebg-preview.png" alt="">
         </div>
         <div class="img">
-            <img src="/imgs/accesorios/anillo2.png" alt="">
+            <img src="/images/accesorios/anillo2.png" alt="">
         </div>
     </div>
     </div>
