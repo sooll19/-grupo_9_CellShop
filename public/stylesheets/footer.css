@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 .footer-redes-sociales a{
@@ -29,10 +29,10 @@
 
 @media(min-width: 768px) {
     .footer .contenedor1 h4{
-        font-size: 35px;
+        font-size: 20px;
     }
     .footer .contenedor1 p{
-    font-size: 25px;
+    font-size: 18px;
     }
 .footer-redes-sociales{
     font-size: 35px;
@@ -42,13 +42,13 @@
 
 @media(min-width: 1024px) {
     .footer .contenedor1 h4{
-        font-size: 40px;
+        font-size: 30px;
     }
     .footer .contenedor1 p{
-        font-size: 28px;
+        font-size: 25px;
     }
     .footer-redes-sociales{
-        font-size: 40px;
+        font-size: 30px;
     }
 
 }
