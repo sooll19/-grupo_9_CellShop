@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('partial/head',{
-    title:'INDEX'
-}) %>
+<%- include('partial/head',{ title:'INDEX' }) %>
 
-<body class="productsForms">
+    <body class="productsForms">
 
-    <div class="contenedor-form-products">
+        <!-- MAIN -->
+        <main class="container">
+            <div class="row mt-5">
+                <div class="col-12 col-md-12  mx-auto">
+                    <div class="card">
 
-        <h2>Editar producto</h2>
+                        <!-- HEADER TABLA -->
+                        <div class="card-header">
+                            <h4 class="card-title">Editar Producto</h4>
+                        </div>
+                        <div class="card-body">
 
-        <form method="POST" action="">
+                            <!-- FORMULARIO -->
+                            <form action="" method="POST" class="row" >
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="id" class="form-label">ID</label>
+                                    <input type="number" class="form-control" id="id" name="id">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Marca</label>
+                                    <select class="form-select" aria-label="Default select example" name="marca">
+                                        <option selected hidden>Seleccione...</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Modelo</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="Modelo del producto" name="modelo">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Color</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="Color del producto" name="color">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="anio" class="form-label">Fecha de lanzamiento</label>
+                                    <input type="number" class="form-control" id="anio" name="anio">
+                                </div>
+                                <div class="col-12  mb-3">
+                                    <label for="descripcion" class="form-label">Descripción</label>
+                                    <textarea class="form-control" style="resize: none;" name="descripcion"
+                                        id="descripcion"></textarea>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="descuento" class="form-label">Descuento</label>
+                                    <input type="number" class="form-control" id="descuento" name="descuento">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="precio" class="form-label">Precio</label>
+                                    <input type="number" class="form-control" id="precio" name="precio">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Stock</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" name="stock">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="cantidad" class="form-label">Cantidad</label>
+                                    <input type="number" class="form-control" id="cantidad" name="cantidad">
+                                </div>
+                                <div class="col-12  mb-3">
+                                    <label for="especificaciones" class="form-label">Especificaciones técnicas</label>
+                                    <textarea class="form-control" style="resize: none;" name="especificaciones"
+                                        id="especificaciones"></textarea>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Categoría</label>
+                                    <select class="form-select" aria-label="Default select example" name="categoria">
+                                        <option selected hidden>Seleccione...</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Sub-Categoría</label>
+                                    <select class="form-select" aria-label="Default select example" name="subcategoria">
+                                        <option selected hidden>Seleccione...</option>
+                                    </select>
+                                </div>
 
-            <div class=" container-input-products">
-                <label for="">ID:</label>
-                <input type="text">
+                                <div class="col-12 d-flex justify-content-end gap-2 mb-3">
+                                    <label for="image" class="btn btn-secondary">Agregar imagen</label>
+                                    <input hidden class="form-control" type="file" id="image">
+                                    <button class="btn btn-guardar" type="submit">Guardar cambios</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container-input-products">
-                <label for="">Marca:</label>
-                <input type="text">
-            </div>
-            <div class="container-input-products">
-                <label for="">Modelo:</label>
-                <input type="text">
-            </div>
-            <div class="container-input-products">
-                <label for="">Color:</label>
-                <input type="text">
-            </div>
-            <div class="container-input-products">
-                <label for="">Año:</label>
-                <input type="text">
-            </div>
-            <div class="container-input-products">
-                <label for="">Descripción:</label>
-                <input type="text">
-            </div>
-            <div class="container-input-products">
-                <label for="">Descuento:</label>
-                <input type="text">
-            </div>
-            <div class="container-input-products">
-                <label for="">Precio:</label>
-                <input type="text">
-            </div>
-            <div class="container-input-products">
-                <label for="">Stock:</label>
-                <select name="select">
-                    <option value="value1">True</option>
-                    <option value="value2">False</option>
-                </select>
-            </div>
-            <div class="container-input-products">
-                <label for="">Cantidad:</label>
-                <input type="text">
-            </div>
-            <div class="container-input-products">
-                <label for="">Imagen1:</label>
-                <input type="image">
-            </div>
-            <div class="container-input-products">
-                <label for="">Imagen2:</label>
-                <input type="image">
-            </div>
-            <div class="container-input-products">
-                <label for="">Especificaciones técnicas:</label>
-                <input type="textarea">
-            </div>
-            <div class="container-input-products">
-                <label for="">Img-Sticker:</label>
-                <input type="image">
-            </div>
-            <div class="container-input-products">
-                <label for="">Categorìa:</label>
-                <select name="select">
-                    <option value="value1">Celulares</option>
-                    <option value="value2">Accesorios</option>
-                </select>
-            </div>
-            <div class="container-input-products">
-                <label for="">Subcategoría:</label>
-                <select name="select">
-                    <option value="value1">Null</option>
-                    <option value="value2">Auriculares</option>
-                    <option value="value2">Cargadores</option>
-                    <option value="value2">Soportes</option>
-                    <option value="value2">Ringo</option>
-                </select>
-            </div>
-        </form>
-    </div>
-</body>
+        </main>
+    </body>
+
+</html>
