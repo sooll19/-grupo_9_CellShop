@@ -25,3 +25,6 @@
 
 /*import login*/
 @import './login.css';
+
+/*import products forms*/
+@import './productsForms.css';
