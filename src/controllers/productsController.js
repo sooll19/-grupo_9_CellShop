@@ -5,6 +5,12 @@ module.exports = {
   },
   cart: (req, res) => {
     return res.render('cart');
-  }
-  
+  },
+  edit: (req, res) => {
+    return res.render('productEdit')
+  },
+  create: (req, res) => {
+    return res.render('productCreate')
+  },
+
 }
