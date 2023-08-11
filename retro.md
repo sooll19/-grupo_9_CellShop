@@ -1,4 +1,4 @@
-**spring1**
+**sprint1**
 hacer más:
 *Reuniones organizadas,
 *Manejo de trello,
@@ -22,7 +22,7 @@ Seguir haciendo:
 *Comunicación,
 *Respeto 
 
-**spring2**
+**sprint2**
 hacer más:
 *Reuniones organizadas,
 *Manejo de trello,
