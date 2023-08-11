@@ -1,0 +1,9 @@
+.card-header{
+    background-color: var(--colorGris);
+    color: var(--colorAzulOscuro);
+}
+
+.btn-guardar{
+    background-color: var(--colorAzulOscuro);
+    color: white;
+}
