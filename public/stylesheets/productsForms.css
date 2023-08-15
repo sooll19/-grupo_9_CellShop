@@ -1,3 +1,7 @@
+.container{
+    margin: 0 auto;
+}
+
 .card-header{
     background-color: var(--colorGris);
     color: var(--colorAzulOscuro);
