@@ -8,12 +8,12 @@
     <main class="main">
         <article class="main__article">
             <div class="Contenedor1">
-            <h3>LG Q60</h3>
+<h3><%= product.modelo %> </h3>
             <div class="imagen">
-                <img src="/images/lg/lg_q60-removebg-preview.png" alt="producto1" width="300">
+                <img src="/images/celulares/<%= product.imagen %>" alt="producto1" width="300">
             </div>
             <ul type="none">
-            <li><h2>$59.998</h2></li>
+            <li><h2>$<%= product.precio %></h2></li>
             <li><h4><a href="">20% de Descuento pagando en efectivo</a></h4></li>
             <li><p><i class="fa-solid fa-memory"></i> Memoria ROM: 64GB </p></li>
             <li><p><i class="fa-solid fa-memory"></i> Memoria RAM: 3GB </p></li>

@@ -1,9 +1,11 @@
 const express = require('express');
-const { detalle , cart, edit, create } = require ('../controllers/productsController')
+const { cart, edit, create, celulares, accesoriosParaCelu, detalle } = require ('../controllers/productsController')
 const router = express.Router();
 
-/* /users */
-router.get('/detalle', detalle);
+/* /product */
+router.get('/celulares', celulares);
+router.get('/accesoriosParaCelu', accesoriosParaCelu);
+router.get('/detalle/:id', detalle)
 router.get('/cart' , cart);
 router.get('/edit' , edit);
 router.get('/create' , create)

@@ -1,0 +1,384 @@
+[
+    {
+        "id": 1,
+        "marca": "",
+        "modelo": "Auriculares In-ear Inalámbricos",
+        "color": {
+            "text": "negro",
+            "hexa": "#000000"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 20,
+        "precio": 10.000,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "61u-BsJ2-eL._AC_SL1000_-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {}
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "accesorios",
+        "subcategoria": null
+    },
+    {
+        "id": 2,
+        "marca": "",
+        "modelo": "Harman JBL Tune 110 JBLT110-Black-1",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 6.000,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "auriculares_jbl-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {}
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "accesorios",
+        "subcategoria": null
+    },
+    {
+        "id": 3,
+        "marca": "motorola",
+        "modelo": "Cargador Motorola Turbo Power",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 15.000,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "cargador-original-motorola-turbo-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {}
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "accesorios",
+        "subcategoria": null
+    },
+    {
+        "id": 4,
+        "marca": "",
+        "modelo": "Joystick para Jugar en celular",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 130000,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "joystick_celular-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {}
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "accesorios",
+        "subcategoria": null
+    },
+    {
+        "id": 5,
+        "marca": "",
+        "modelo": "Soporte para apoyar el celular",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 25,
+        "precio": 1.819,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "para-celular-soporte-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {}
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "accesorios",
+        "subcategoria": null
+    },
+    {
+        "id": 6,
+        "marca": "",
+        "modelo": "anillo para celular",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 25,
+        "precio": 1.119,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "anillo2.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {}
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "accesorios",
+        "subcategoria": null
+    },
+    {
+        "id": 5,
+        "marca": "LG",
+        "modelo": "LG Q60",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 20,
+        "precio": 89.899,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "lg_q60-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                "Memoria interna": "4GB RAM, 64GB ROM ",
+                "Cámara frontal": "13 Mpx",
+                "Cámara trasera": "48 Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria": "oferta"
+    },
+{
+        "id": 6,
+        "marca": "LG",
+        "modelo": "LG K52",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 89.899,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "lg-k52-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                
+                "Memoria interna": "4GB RAM, 64GB ROM",
+                "Cámara frontal": "13 Mpx",
+                "Cámara trasera": "48Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria": null
+    },
+    {
+        "id": 7,
+        "marca": "LG",
+        "modelo": "LG K61",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 89.899,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "lg-k61-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                "Memoria interna": "4GB RAM, 64GB ROM",
+                "Cámara frontal": "16 Mpx",
+                "Cámara trasera": "48 Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria":"oferta"
+    },
+    {
+        "id": 8,
+        "marca": "LG",
+        "modelo": "LG V40",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 278.800,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "LG-V40-ThinQ-0-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                "Memoria interna": "6GB RAM, 64GB ROM",
+                "Cámara frontal": "8 Mpx",
+                "Cámara trasera": "16 Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria": null
+    },
+    {
+        "id": 9,
+        "marca": "LG",
+        "modelo": "LG Velvet",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 185.000,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "LG-Velvet-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                "Memoria interna": "6GB RAM, 128GB ROM",
+                "Cámara frontal": "16 Mpx",
+                "Cámara trasera": "48 Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria": "oferta"
+    },
+    {
+        "id": 10,
+        "marca": "MOTOROLA",
+        "modelo": "Motorola e13",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 76.489,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "moto_e13-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                "Memoria interna": "2GB RAM,64GB ROM",
+                "Cámara frontal": "5 Mpx",
+                "Cámara trasera": "13 Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria": "oferta"
+    },
+    {
+        "id": 11,
+        "marca": "MOTOROLA",
+        "modelo": "Motorola Edge 30",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 5,
+        "precio": 360.000,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "Moto_Edge_30-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                "Memoria interna": "12GB RAM, 256GB ROM",
+                "Cámara frontal": "60 Mpx",
+                "Cámara trasera": "200 Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria": null
+    },
+    {
+        "id": 12,
+        "marca": "MOTOROLA",
+        "modelo": "Motorola G42",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 20,
+        "precio": 89.999,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "MOTO_G42-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                "Memoria interna": "4GB RAM, 128GB ROM",
+                "Cámara frontal": "16 Mpx",
+                "Cámara trasera": "50 Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria": "oferta"
+    },
+    {
+        "id": 13,
+        "marca": "MOTOROLA",
+        "modelo": "Motorola E22",
+        "color": {
+            "text": "gris",
+            "hexa": "#f3f3f3"
+        },
+        "anio" : 2021,
+        "descripcion": "lorem*10",
+        "descuento": 20,
+        "precio": 53.999,
+        "stock": true,
+        "cantidad": 100,
+        "imagen": "Motorola-Moto-E22-removebg-preview.png",
+        "imagenSecundaria": "imagen2.png",
+        "especificacionesTecnicas": [
+            {
+                "Memoria interna": "3GB RAM, 32GB ROM",
+                "Cámara frontal": "5 Mpx",
+                "Cámara trasera": "16 Mpx"
+            }
+        ],
+        "sticker": "img-sticker.png",
+        "categoria": "celular",
+        "subcategoria": "oferta"
+    }
+]
