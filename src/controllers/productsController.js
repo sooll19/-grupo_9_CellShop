@@ -2,7 +2,18 @@ const { readJSON, writeJSON } = require('../data');
 const Product = require('../data/Product');
 
 module.exports = {
-
+  celulares: (req, res) => {
+    const products = readJSON('products.json');
+    return res.render('celulares',{
+     celulares : products.filter(product => product.categoria === "celular")
+    });
+  },
+  accesoriosParaCelu: (req, res) => {
+    const products = readJSON('products.json');
+    return res.render('accesoriosParaCelu',{
+      accesoriosParaCelu : products.filter(product => product.categoria === "accesorios")
+    });
+  },
   detalle: (req, res) => {
     const products = readJSON('products.json')
 
