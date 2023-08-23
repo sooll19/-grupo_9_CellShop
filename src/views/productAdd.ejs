@@ -7,7 +7,7 @@
         <!-- MAIN -->
         <main class="container">
             <div class="row mt-5">
-                <div class="col-12 col-md-12  mx-auto">
+                <div class="col-12 col-md-12 col-lg-10 mx-auto">
                     <div class="card">
 
                         <!-- HEADER TABLA -->
@@ -25,7 +25,10 @@
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Marca</label>
                                     <select class="form-select" aria-label="Default select example" name="marca">
-                                        <option selected hidden>Seleccione...</option>
+                                        <option selected hidden value="">Seleccione...</option>
+                                        <% marcas.forEach(marca => { %>
+                                            <option value="<%= marca.name %>"><%= marca.name %></option>
+                                        <% }) %>
                                     </select>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
@@ -39,7 +42,7 @@
                                         placeholder="Color del producto" name="color">
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="anio" class="form-label">Fecha de lanzamiento</label>
+                                    <label for="anio" class="form-label">Año de lanzamiento</label>
                                     <input type="number" class="form-control" id="anio" name="anio">
                                 </div>
                                 <div class="col-12  mb-3">
@@ -56,12 +59,28 @@
                                     <input type="number" class="form-control" id="precio" name="precio">
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="formGroupExampleInput" class="form-label">Stock</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput" name="stock">
+                                    <label for="formGroupExampleInput2" class="form-label">Stock</label>
+                                    <select class="form-select" aria-label="Default select example" name="stock">
+                                        <option selected hidden value="">Seleccione...</option>
+                                        <option  value="true">True</option>
+                                        <option  value="false">False</option>
+                                    </select>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="cantidad" class="form-label">Cantidad</label>
-                                    <input type="number" class="form-control" id="cantidad" name="cantidad">
+                                    <label for="formGroupExampleInput2" class="form-label">Cantidad</label>
+                                    <select class="form-select" aria-label="Default select example" name="cantidad">
+                                        <option selected hidden value="">Seleccione...</option>
+                                        <option  value="1">1</option>
+                                        <option  value="2">2</option>
+                                        <option  value="3">3</option>
+                                        <option  value="4">4</option>
+                                        <option  value="5">5</option>
+                                        <option  value="6">6</option>
+                                        <option  value="7">7</option>
+                                        <option  value="8">8</option>
+                                        <option  value="9">9</option>
+                                        <option  value="10">10</option>
+                                    </select>
                                 </div>
                                 <div class="col-12  mb-3">
                                     <label for="especificaciones" class="form-label">Especificaciones técnicas</label>
@@ -71,13 +90,20 @@
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Categoría</label>
                                     <select class="form-select" aria-label="Default select example" name="categoria">
-                                        <option selected hidden>Seleccione...</option>
+                                        <option selected hidden value="">Seleccione...</option>
+                                        <option  value="accesorios">Accesorios</option>
+                                        <option  value="celulares">Celulares</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Sub-Categoría</label>
                                     <select class="form-select" aria-label="Default select example" name="subcategoria">
-                                        <option selected hidden>Seleccione...</option>
+                                        <option selected hidden value="">Seleccione...</option>
+                                        <option  value="auriculares">Auriculares</option>
+                                        <option  value="cargadores">Cargadores</option>
+                                        <option  value="celulares">Celulares</option>
+                                        <option  value="cosito">Cosito del dedo</option>
+                                        <option  value="soporte">Soporte</option>
                                     </select>
                                 </div>
 
