@@ -123,7 +123,7 @@
       "ingreso":null
    },
    {
-      "id": 5,
+      "id": 7,
       "marca": "LG",
       "modelo": "LG Q60",
       "color": "gris",
@@ -147,7 +147,7 @@
       "ingreso":null
    },
    {
-      "id": 6,
+      "id": 8,
       "marca": "LG",
       "modelo": "LG K52",
       "color": "gris",
@@ -171,7 +171,7 @@
       "ingreso":null
    },
    {
-      "id": 7,
+      "id": 9,
       "marca": "LG",
       "modelo": "LG K61",
       "color": "gris",
@@ -195,7 +195,7 @@
       "ingreso":null
    },
    {
-      "id": 8,
+      "id": 10,
       "marca": "LG",
       "modelo": "LG V40",
       "color": "gris",
@@ -219,7 +219,7 @@
       "ingreso":null
    },
    {
-      "id": 9,
+      "id": 11,
       "marca": "LG",
       "modelo": "LG Velvet",
       "color": "gris",
@@ -243,7 +243,7 @@
       "ingreso":null
    },
    {
-      "id": 10,
+      "id": 12,
       "marca": "MOTOROLA",
       "modelo": "Motorola e13",
       "color": "gris",
@@ -267,7 +267,7 @@
       "ingreso":null
    },
    {
-      "id": 11,
+      "id": 13,
       "marca": "MOTOROLA",
       "modelo": "Motorola Edge 30",
       "color": "gris",
@@ -291,7 +291,7 @@
       "ingreso":null
    },
    {
-      "id": 12,
+      "id": 14,
       "marca": "MOTOROLA",
       "modelo": "Motorola G42",
       "color": "gris",
@@ -315,7 +315,7 @@
       "ingreso":null
    },
    {
-      "id": 13,
+      "id": 15,
       "marca": "MOTOROLA",
       "modelo": "Motorola E22",
       "color": "gris",
