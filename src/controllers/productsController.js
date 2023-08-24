@@ -6,7 +6,7 @@ module.exports = {
   add :require('./products/add'),
   create :require('./products/create'),
   edit :require('./products/edit'),
-  update :require('./product/update'),
+  update :require('./products/update'),
   remove :require('./products/remove'),
 
 }
