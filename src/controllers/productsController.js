@@ -1,6 +1,8 @@
-const {readJSON} = require('../data')
-module.exports = {
 
+const { readJSON, writeJSON } = require('../data');
+const Product = require('../data/Product');
+
+module.exports = {
   celulares: (req, res) => {
     const products = readJSON('products.json');
     return res.render('celulares',{
@@ -13,24 +15,63 @@ module.exports = {
       accesoriosParaCelu : products.filter(product => product.categoria === "accesorios")
     });
   },
-  detalle: (req,res) => {
-    const products = readJSON("products.json");
+  detalle: (req, res) => {
+    const products = readJSON('products.json')
 
-    const id = req.params.id;
-    const product = products.find((product) => product.id === id);
+    const id = req.params.id;    
+    const product = products.find(product => product.id === +id);
 
-    return res.render("detalle", {
-      product,
-  })
-},
+    return res.render('detalle', {
+      product
+    });
+
+  },
+
   cart: (req, res) => {
     return res.render('cart');
   },
+
   edit: (req, res) => {
-    return res.render('productEdit')
+    const products = readJSON('products.json')
+    const marcas = readJSON('marcas.json')
+
+    const id = req.params.id;    
+    const product = products.find(product => product.id === +id);
+
+    return res.render('productEdit',{
+      ...product,
+      marcas: marcas.sort((a, b) =>
+        a.name > b.name ? 1 : a.name < b.name ? -1 : 0
+      ),
+    })
   },
+
+  add: (req, res) => {
+
+    const marcas = readJSON('marcas.json')
+
+    return res.render('productAdd', {
+      marcas: marcas.sort((a, b) =>
+        a.name > b.name ? 1 : a.name < b.name ? -1 : 0
+      ),
+    })
+
+  },
+
   create: (req, res) => {
-    return res.render('productCreate')
+
+    const products = readJSON('products.json')
+
+    let nuevoProducto = new Product(req.body) // Se trae la función constructora con el destructuring del body
+    products.push(nuevoProducto);
+
+    writeJSON(products, 'products.json')
+
+    return res.redirect('/admin') // Sirve para el envio de informacion por POST
   },
+
+  update: (req,res) => {
+    return res.send(req.body)
+  }
 
 }
