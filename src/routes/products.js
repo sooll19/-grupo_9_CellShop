@@ -1,5 +1,5 @@
 const express = require('express');
-const { detalle , cart, edit, add, create, update} = require ('../controllers/productsController')
+const { detalle , cart, edit, add, create,remove, update} = require ('../controllers/productsController')
 const router = express.Router();
 
 /* /products */
@@ -10,7 +10,7 @@ router.put('/update/:id',update); //actualiza luego de editar el producto
 router.get('/add' , add);
 router.post('/add',create); //crea los cambios luego de agregar el producto
 /* router.post('/add', upload.single('image'), create) */
-/* router.delete('/delete/:id'); */
+router.delete('/remove/:id',remove);
 
 
 module.exports = router;
