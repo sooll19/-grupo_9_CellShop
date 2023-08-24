@@ -1,0 +1,477 @@
+[
+   {
+      "id": 1,
+      "marca": "LG",
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 10,
+      "precio": 20000,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 2,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 3,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 4,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 5,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 6,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 7,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 8,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 9,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 10,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 11,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 12,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 13,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 14,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 15,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 16,
+      "marca": null,
+      "modelo": "Q60",
+      "color": "New Aurora Black",
+      "anio": 2019,
+      "descripcion": null,
+      "descuento": 0,
+      "precio": 0,
+      "stock": false,
+      "cantidad": 0,
+      "imagenPrimaria": null,
+      "imagenSecundaria": null,
+      "especificacionesTecnicas": [
+         {
+            "almacenamiento": "64GB",
+            "memoriaRam": "3GB",
+            "batería": "3500 mAh",
+            "pantalla": 6.26,
+            "camaraPrincipal": "16mp",
+            "camaraFrontal": "2mp"
+         }
+      ],
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": null,
+      "ingreso": null
+   },
+   {
+      "id": 17,
+      "marca": "Apple",
+      "modelo": "asdad",
+      "color": "asdasd",
+      "anio": 0,
+      "descripcion": "",
+      "descuento": 0,
+      "precio": 0,
+      "stock": "",
+      "cantidad": 0,
+      "categoria": "",
+      "ingreso": "2023-08-23T03:26:40.997Z"
+   },
+   {
+      "id": 18,
+      "marca": "Apple",
+      "modelo": "asdad",
+      "color": "asdasd",
+      "anio": 0,
+      "descripcion": "",
+      "descuento": 0,
+      "precio": 0,
+      "stock": "",
+      "cantidad": 0,
+      "categoria": "",
+      "ingreso": "2023-08-23T03:26:53.437Z"
+   }
+]

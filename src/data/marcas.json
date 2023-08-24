@@ -1,0 +1,38 @@
+[
+    {
+        "id" : 1,
+        "name" : "LG",
+        "origin" : "Corea del Sur",
+        "image" : null
+    },
+    {
+        "id" : 2,
+        "name" : "Motorola",
+        "origin" : "Estados Unidos",
+        "image" : null
+    },
+    {
+        "id" : 3,
+        "name" : "Samsung",
+        "origin" : "Corea del Sur",
+        "image" : null
+    },
+    {
+        "id" : 4,
+        "name" : "TCL",
+        "origin" : "China",
+        "image" : null
+    },
+    {
+        "id" : 5,
+        "name" : "Xiaomi",
+        "origin" : "China",
+        "image" : null
+    },
+    {
+        "id" : 6,
+        "name" : "Apple",
+        "origin" : "Estados Unidos",
+        "image" : null
+    }
+]
