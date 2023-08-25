@@ -1,18 +1,19 @@
-const { readJSON, writeJSON } = require("../../data");
+/* const { readJSON, writeJSON } = require("../../data");
 const Product = require("../../data/Product");
 
 module.exports = (req, res) => {
-    const products = readJSON("products.json");
+
+    const products = readJSON('products.json')
 
     const data = {
         ...req.body,
-        image: req.file ? req.file.filename : null
+        imagen: req.file ? req.file.filename : null 
     }
 
-    let newProduct = new Product(data);
-    products.push(newProduct);
+    let nuevoProducto = new Product(data) // Se trae la función constructora con el destructuring del body
+    products.push(nuevoProducto);
 
-    writeJSON(products, 'products.json');
+    writeJSON(products, 'products.json')
 
-    return res.redirect('/admin');
-}
+    return res.redirect('/admin') // Sirve para el envio de informacion por POST
+} */
