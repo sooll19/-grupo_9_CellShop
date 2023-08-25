@@ -76,6 +76,15 @@ module.exports = {
 
   update: (req,res) => {
     return res.send(req.body)
-  }
+  },
+  remove:  (req, res) => {
+    const products = readJSON('products.json');
+    const id = req.params.id;
 
+    const productsModify = products.filter(product => product.id !== +id);
+
+    writeJSON(productsModify, 'products.json')
+
+    return res.redirect('/admin')
+} 
 }
