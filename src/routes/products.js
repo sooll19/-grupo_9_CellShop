@@ -12,7 +12,6 @@ router.put('/update/:id',update); //actualiza luego de editar el producto
 router.get('/add' , add);
 router.post('/add',create); //crea los cambios luego de agregar el producto
 /* router.post('/add', upload.single('image'), create) */
-router.delete('/remove/:id',remove);
-
+router.delete('/remove/:id', remove);
 
 module.exports = router;
