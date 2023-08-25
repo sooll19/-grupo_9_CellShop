@@ -1,4 +1,3 @@
-
 const { readJSON, writeJSON } = require('../data');
 const Product = require('../data/Product');
 
