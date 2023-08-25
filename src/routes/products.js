@@ -12,7 +12,7 @@ router.get('/edit/:id' , edit);
 router.put('/update/:id', upload.single('imagen'), update)
 router.get('/add' , add);
 router.post('/add', upload.single('imagen'), create); //create crea los cambios luego de agregar el producto
-router.delete('/delete/:id',remove); 
+router.delete('/remove/:id',remove); 
 
 
 module.exports = router;

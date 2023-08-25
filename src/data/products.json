@@ -335,19 +335,5 @@
       "categoria": "celular",
       "subcategoria": "oferta",
       "ingreso": null
-   },
-   {
-      "id": 16,
-      "marca": "Apple",
-      "modelo": "bbmmc,c",
-      "color": "",
-      "anio": 0,
-      "descripcion": "",
-      "descuento": 0,
-      "precio": 0,
-      "stock": "",
-      "cantidad": 0,
-      "categoria": "",
-      "ingreso": "2023-08-25T00:41:59.649Z"
    }
 ]
