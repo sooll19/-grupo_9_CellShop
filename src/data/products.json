@@ -15,9 +15,9 @@
       "especificacionesTecnicas": [
          {}
       ],
-      "categoria": "accesorios",
-      "subcategoria": null,
-      "ingreso":null
+      "categoria": "celulares",
+      "subCategoria": "oferta",
+      "ingreso": null
    },
    {
       "id": 2,
@@ -35,9 +35,10 @@
       "especificacionesTecnicas": [
          {}
       ],
-      "categoria": "accesorios",
-      "subcategoria": null,
-      "ingreso":null
+      "sticker": null,
+      "categoria": "celulares",
+      "subCategoria": "oferta",
+      "ingreso": null
    },
    {
       "id": 3,
