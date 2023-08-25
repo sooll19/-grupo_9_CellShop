@@ -9,10 +9,10 @@ router.get('/accesoriosParaCelu', accesoriosParaCelu);
 router.get('/detalle/:id', detalle);
 router.get('/cart' , cart);
 router.get('/edit/:id' , edit);
-router.put('/update/:id',update); //actualiza luego de editar el producto
+router.put('/update/:id', upload.single('imagen'), update)
 router.get('/add' , add);
 router.post('/add', upload.single('imagen'), create); //create crea los cambios luego de agregar el producto
 /* router.delete('/delete/:id'); */
-router.put('/update/:id', upload.single('imagen'), update)
+
 
 module.exports = router;

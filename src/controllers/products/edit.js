@@ -1,4 +1,4 @@
-const { readJSON } = require("../../data");
+/*const { readJSON } = require("../../data");
 
 module.exports =  (req, res) => {
 
@@ -14,4 +14,4 @@ module.exports =  (req, res) => {
         a.name > b.name ? 1 : a.name < b.name ? -1 : 0
       ),
     });
-  } 
+  } */
