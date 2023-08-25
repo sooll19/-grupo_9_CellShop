@@ -1,4 +1,4 @@
-const { readJSON, writeJSON } = require("../../data")
+/*const { readJSON, writeJSON } = require("../../data")
 
 module.exports = (req, res) => {
     const products = readJSON('products.json');
@@ -9,4 +9,4 @@ module.exports = (req, res) => {
     writeJSON(productsModify, 'products.json')
 
     return res.redirect('/admin')
-} 
+} */

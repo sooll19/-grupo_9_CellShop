@@ -77,7 +77,7 @@ module.exports = {
     const products = readJSON('products.json');
     const id = req.params.id;
 
-    const productsModify = products.filter(product => product.id !== id);
+    const productsModify = products.filter(product => product.id !== +id);
 
     writeJSON(productsModify, 'products.json')
 

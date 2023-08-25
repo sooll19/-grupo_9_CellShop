@@ -2,21 +2,6 @@ const { readJSON } = require("../data");
 const fs = require("fs");
 
 module.exports = {
-<<<<<<< HEAD
-    index : (req, res) => {
-      return  res.render('index');
-      },
-      admin: (req, res) => {
-
-        const products = readJSON('products.json');
-    
-        return res.render('admin', {
-          products,
-        })
-    
-      }  
-}
-=======
   index: (req, res) => {
     const products = readJSON("products.json");
     return res.render("index", {
@@ -38,5 +23,13 @@ module.exports = {
        keywords 
     });
   },
+  admin: (req, res) => {
+
+    const products = readJSON('products.json');
+
+    return res.render('admin', {
+      products,
+    })
+
+  }
 };
->>>>>>> develop
