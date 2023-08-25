@@ -1,5 +1,7 @@
 const { readJSON, writeJSON } = require('../data');
+const { unlinkSync, existsSync } = require("fs");
 const Product = require('../data/Product');
+
 
 module.exports = {
   celulares: (req, res) => {

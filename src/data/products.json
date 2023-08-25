@@ -42,23 +42,20 @@
    },
    {
       "id": 3,
-      "marca": "motorola",
+      "marca": "Apple",
       "modelo": "Cargador Motorola Turbo Power",
-      "color": "gris",
+      "color": "negro",
       "anio": 2021,
       "descripcion": "lorem*10",
       "descuento": 5,
       "precio": 15,
-      "stock": true,
-      "cantidad": 100,
+      "stock": "",
+      "cantidad": "",
       "imagen": "cargador-original-motorola-turbo-removebg-preview.png",
       "imagenSecundaria": "imagen2.png",
-      "especificacionesTecnicas": [
-         {}
-      ],
-      "categoria": "accesorios",
-      "subcategoria": null,
-      "ingreso": null
+      "categoria": "",
+      "subcategoria": "",
+      "ingreso": "2023-08-25T21:18:50.781Z"
    },
    {
       "id": 4,
