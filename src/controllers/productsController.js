@@ -61,13 +61,18 @@ module.exports = {
 
     const products = readJSON('products.json')
 
-    let nuevoProducto = new Product(req.body) // Se trae la función constructora con el destructuring del body
+    const data = {
+        ...req.body,
+        imagen: req.file ? req.file.filename : null 
+    }
+
+    let nuevoProducto = new Product(data) // Se trae la función constructora con el destructuring del body
     products.push(nuevoProducto);
 
     writeJSON(products, 'products.json')
 
-    return res.redirect('/admin') // Sirve para el envio de informacion por POST
-  },
+    return res.redirect('/admin') 
+},
 
   update: (req,res) => {
     return res.send(req.body)

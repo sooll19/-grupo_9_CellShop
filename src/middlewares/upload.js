@@ -1,3 +1,5 @@
+//configuración de multer
+
 const multer = require('multer');
 const path = require('path');
 
@@ -14,4 +16,4 @@ const upload = multer({
     storage
 });
 
-module.exports = upload
+module.exports = upload;
