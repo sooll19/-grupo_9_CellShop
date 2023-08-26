@@ -4,17 +4,17 @@
 
   <body class="celular">
     <%- include('partial/header') %>
-    <div class="btn-group">
-    
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      <div class="btn-group">
+
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
           data-bs-auto-close="inside" aria-expanded="false">
           Todos los productos
-      </button>
-      <ul class="dropdown-menu">
+        </button>
+        <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
           <li><a class="dropdown-item" href="/products/accesoriosParaCelu">Accesorios</a></li>
-      </ul>
-  </div>
+        </ul>
+      </div>
       <div class="celulares">
         <%celulares.forEach(product=> { %>
           <div class="imagen_celulares">
@@ -26,7 +26,7 @@
             </h5>
 
             <a href="/products/detalle/<%= product.id %>" class="btn btn-outline-primary">ver más</a>
-           </div>
+          </div>
 
           <% }) %>
 

@@ -9,7 +9,7 @@
                 <div class="col-12 col-md-12 col-lg-10 mx-auto">
                     <div class="card">
                         <div class="card-header">
-                            
+
                         </div>
                         <div class="card-body">
                             <nav>
@@ -20,7 +20,9 @@
                                     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-profile" type="button" role="tab"
                                         aria-controls="nav-profile" aria-selected="false">
-                                        <a href="/products/add"><%= ('productAdd') %></a>
+                                        <a href="/products/add">
+                                            <%= ('productAdd') %>
+                                        </a>
                                     </button>
                                     <!-- <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab"
                                             data-bs-target="#nav-disabled" type="button" role="tab"
@@ -92,7 +94,7 @@
                                                                     class="btn btn-sm btn-warning">
                                                                     <i class="fas fa-edit"></i>
                                                                 </a>
-                                                                
+
                                                                 <!-- Button trigger modal -->
                                                                 <button type="button" class="btn btn-sm btn-danger"
                                                                     data-bs-toggle="modal"
@@ -101,9 +103,8 @@
                                                                 </button>
 
                                                                 <!-- Modal -->
-                                                                <div class="modal fade" id="exampleModal<%= id %>" 
-                                                                tabindex="-1"
-                                                                    aria-labelledby="exampleModalLabel"
+                                                                <div class="modal fade" id="exampleModal<%= id %>"
+                                                                    tabindex="-1" aria-labelledby="exampleModalLabel"
                                                                     aria-hidden="true">
                                                                     <div class="modal-dialog">
                                                                         <div class="modal-content">
@@ -116,14 +117,22 @@
                                                                                     aria-label="Close"></button>
                                                                             </div>
                                                                             <div class="modal-body">
-                                                                                <p>¿Estás seguro que querés eliminar el producto <b><%= marca %> <%= modelo %></b>?</p>
+                                                                                <p>¿Estás seguro que querés eliminar el
+                                                                                    producto <b>
+                                                                                        <%= marca %>
+                                                                                            <%= modelo %>
+                                                                                    </b>?</p>
                                                                             </div>
                                                                             <div class="modal-footer">
-                                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                                                                    <form action="/products/remove/<%= id %>?_method=DELETE" method="POST">
-                                                                                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                                                                                    </form>
-                                                                                
+                                                                                <button type="button"
+                                                                                    class="btn btn-secondary"
+                                                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                                                <form
+                                                                                    action="/products/remove/<%= id %>?_method=DELETE"
+                                                                                    method="POST">
+                                                                                    <button type="submit"
+                                                                                        class="btn btn-danger">Eliminar</button>
+                                                                                </form>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -142,9 +151,11 @@
                                 <!-- <div class="tab-pane fade" id="nav-disabled" role="tabpanel"
                                         aria-labelledby="nav-disabled-tab" tabindex="0">...</div> -->
                             </div>
+                            <button class="btn btn-dark"><a href="/">Volver al HOME</a></button>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </main>

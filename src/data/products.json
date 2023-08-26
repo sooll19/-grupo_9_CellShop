@@ -1,23 +1,23 @@
 [
    {
       "id": 1,
-      "marca": "",
+      "marca": "Apple",
       "modelo": "Auriculares In-ear Inalámbricos",
       "color": "negro",
       "anio": 2021,
       "descripcion": "lorem*10",
       "descuento": 20,
       "precio": 10,
-      "stock": true,
-      "cantidad": 100,
+      "stock": "",
+      "cantidad": "",
       "imagen": "61u-BsJ2-eL.AC_SL1000-removebg-preview.png",
       "imagenSecundaria": "imagen2.png",
       "especificacionesTecnicas": [
          {}
       ],
-      "categoria": "celulares",
+      "categoria": "",
       "subCategoria": "oferta",
-      "ingreso": null
+      "ingreso": "2023-08-26T16:54:40.911Z"
    },
    {
       "id": 2,
@@ -35,7 +35,6 @@
       "especificacionesTecnicas": [
          {}
       ],
-      "sticker": null,
       "categoria": "celulares",
       "subCategoria": "oferta",
       "ingreso": null
@@ -293,27 +292,20 @@
    },
    {
       "id": 14,
-      "marca": "MOTOROLA",
+      "marca": "Apple",
       "modelo": "Motorola G42",
       "color": "gris",
       "anio": 2021,
       "descripcion": "lorem*10",
       "descuento": 20,
       "precio": 89.999,
-      "stock": true,
-      "cantidad": 100,
+      "stock": "",
+      "cantidad": "",
       "imagen": "MOTO_G42-removebg-preview.png",
       "imagenSecundaria": "imagen2.png",
-      "especificacionesTecnicas": [
-         {
-            "Memoria interna": "4GB RAM, 128GB ROM",
-            "Cámara frontal": "16 Mpx",
-            "Cámara trasera": "50 Mpx"
-         }
-      ],
-      "categoria": "celular",
-      "subcategoria": "oferta",
-      "ingreso": null
+      "categoria": "",
+      "subcategoria": "",
+      "ingreso": "2023-08-26T16:49:32.425Z"
    },
    {
       "id": 15,
@@ -338,5 +330,20 @@
       "categoria": "celular",
       "subcategoria": "oferta",
       "ingreso": null
+   },
+   {
+      "id": 16,
+      "marca": "",
+      "modelo": "",
+      "color": "",
+      "anio": 0,
+      "descripcion": "",
+      "descuento": 0,
+      "precio": 0,
+      "stock": "",
+      "cantidad": 0,
+      "imagen": null,
+      "categoria": "",
+      "ingreso": "2023-08-26T17:43:01.594Z"
    }
 ]
