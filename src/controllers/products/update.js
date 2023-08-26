@@ -1,32 +1,39 @@
-/* const { unlinkSync, existsSync } = require("fs");
+const { unlinkSync, existsSync } = require("fs");
 const { readJSON, writeJSON } = require("../../data");
 
 module.exports = (req, res) => {
-    const products = readJSON("products.json");
+
+    const products = readJSON('products.json');
     const id = req.params.id;
-    const { name, brand, description, price, discount } = req.body;
+    const {marca, modelo, color, anio, descripcion, descuento, precio, stock, cantidad, especificacionesTecnicas, categoria, subcategoria} = req.body;
 
-    const productsModify = products.map((product) => {
-        if (product.id === id) {
+    const productoModificado = products.map(product => {
 
-            req.file &&
-                existsSync(`./public/images/${product.image}`) &&
-                unlinkSync(`./public/images/${product.image}`);
+        if (product.id == +id) {
 
-            product.name = name.trim();
-            product.brand = brand;
-            product.description = description.trim();
-            product.price = +price;
-            product.discount = +discount;
-            product.createdAt = new Date();
-            product.image = req.file ? req.file.filename : product.image;
+            req.file && (existsSync(`/public/images/${product.imagen}`) && unlinkSync(`/public/images/${product.imagen}`)) //cambia la imagen que habia por la nueva y borra la anterior de los archivos
+
+            product.marca = marca
+            product.modelo = modelo.trim()
+            product.color = color.trim()
+            product.anio = +anio;
+            product.descripcion = descripcion.trim(),
+            product.descuento = +descuento;
+            product.precio = +precio;
+            product.stock = stock;
+            product.cantidad = cantidad;
+            product.imagen = req.file ? req.file.filename : product.imagen // guarda la imagen que viene nueva o deja la que habia
+            product.especificacionesTecnicas = especificacionesTecnicas;
+            product.categoria = categoria;
+            product.subcategoria = subcategoria;
+            product.ingreso = new Date ()
 
         }
 
-        return product;
-    });
+        return product
+    })
 
-    writeJSON(productsModify, "products.json");
+    writeJSON(productoModificado, 'products.json')
 
-    return res.redirect("/admin");
-}; */
+    return res.redirect('/admin')
+}

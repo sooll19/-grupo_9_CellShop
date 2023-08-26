@@ -1,11 +1,11 @@
 const express = require('express');
-const { detalle , cart, edit, create,celulares, accesoriosParaCelu,update, add, remove } = require ('../controllers/productsController')
+const { detalle , cart, edit, create,celulares, accesorios,update, add, remove } = require ('../controllers/productsController')
 const upload = require('../middlewares/upload');
 const router = express.Router();
 
 /* /products */
 router.get('/celulares', celulares);
-router.get('/accesoriosParaCelu', accesoriosParaCelu);
+router.get('/accesorios', accesorios);
 router.get('/detalle/:id', detalle);
 router.get('/cart' , cart);
 router.get('/edit/:id' , edit);
