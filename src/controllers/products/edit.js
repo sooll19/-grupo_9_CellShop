@@ -1,9 +1,9 @@
-/* const { readJSON } = require("../../data");
+/*const { readJSON } = require("../../data");
 
 module.exports =  (req, res) => {
 
     const products = readJSON("products.json");
-    const brands = readJSON("brands.json");
+    const brands = readJSON("marcas.json");
 
     const id = req.params.id;
     const product = products.find((product) => product.id === id);

@@ -23,4 +23,13 @@ module.exports = {
        keywords 
     });
   },
+  admin: (req, res) => {
+
+    const products = readJSON('products.json');
+
+    return res.render('admin', {
+      products,
+    })
+
+  }
 };
