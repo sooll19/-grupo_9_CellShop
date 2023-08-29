@@ -1,8 +1,10 @@
-header {}
+/* header {} */
 
 /* MENSAJE */
 
-.mensaje {
+/* .mensaje {} */
+
+.mensaje p {
     background-color: #fff;
     color: var(--colorCeleste);
     font-size: 7px;
@@ -17,11 +19,11 @@ header {}
     margin: 2%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .container a img {
-    width: 60%;
+    width: 110px;
     position: relative;
     left: 20%;
 }
@@ -63,8 +65,7 @@ header {}
 
 .opciones {
     display: inline-flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .opciones1 {
@@ -73,15 +74,21 @@ header {}
 
 /* .opciones1 li {}
 
-.opciones1 li a {}
+.opciones1 li a {} */
 
-.opciones1 li a i {}
-
-.opciones2 {} */
-
-.opciones2 li {
-    display: inline-block;
+.opciones1 li a i {
+    margin-left: 5px;
 }
+
+.opciones2 {
+    display: flex;
+}
+
+.opciones2 a {
+    margin-right: 3px;
+}
+
+/* .opciones2 li {} */
 
 .opciones2 li a.ocult {
     display: none;
@@ -120,6 +127,7 @@ header {}
     padding: 5px;
     padding-right: 30px;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .buscador .contenedor-buscador button {
@@ -144,30 +152,33 @@ header {}
 /* TABLET */
 
 @media (min-width:768px) {
-    header {
+    /* header {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     /* MENSAJE */
 
-    .mensaje {
-        font-size: 12px;
+    .mensaje p {
+        font-size: 15px;
     }
 
     /* LOGO */
 
-    /*  .container {} */
+    .container {
+        align-items: baseline;
+        margin: 1px;
+    }
 
     .container a img {
-        width: 80%;
+        width: 120px;
         position: relative;
         left: 0;
     }
 
     /* BURGUER MENU */
 
-    /* .container .contenedor-burger-menu {}
+   /*  .container .contenedor-burger-menu {}
 
     .container .contenedor-burger-menu button {}
 
@@ -175,7 +186,8 @@ header {}
 
     /* MENU */
 
-    /* .contenedor-menu {}
+/*     .contenedor-menu {
+}
 
     .contenedor-menu nav {}
 
@@ -187,36 +199,36 @@ header {}
 
     /* OPCIONES */
 
-    /*   .opciones {} */
+   /*  .opciones {
+} */
 
     .opciones1 {
         display: inline-flex;
         font-size: 1rem;
     }
 
-    /* .opciones1 li {} */
+    /* .opciones1 li {
+} */
 
     .opciones1 li a {
         color: #fff;
-        margin-right: 15px;
+        margin-right: 10px;
     }
 
-    /*  .opciones1 li a i {} */
+  /*   .opciones1 li a i {} */
 
     .opciones2 {
         font-size: 1rem;
     }
-
-    /* .opciones2 li {} */
 
     .opciones2 li a.ocult {
         display: inline-flex;
         color: #fff;
     }
 
-    /* .opciones2 li a i {} */
+    /* .opciones2 li a i {}
 
-    /*  .opciones2 li a i:first-child {} */
+    .opciones2 li a i:first-child {} */
 
     .opciones2 li a i:last-child {
         margin-left: 0;
@@ -226,6 +238,7 @@ header {}
 
     .buscador {
         padding-top: 1%;
+        font-size: 20px;
     }
 
     /* .buscador .contenedor-buscador {}
@@ -246,24 +259,24 @@ header {}
 
     /* MENSAJE */
 
-    .mensaje {
+    .mensaje p {
         font-size: 15px;
     }
 
     /* LOGO */
 
-    /* .container {}
+   /*  .container {}
 
     .container img {} */
 
     .container a img {
         width: 100%;
-      
+
     }
 
     /* BURGUER MENU */
 
-    /* .container .contenedor-burger-menu {}
+   /*  .container .contenedor-burger-menu {}
 
     .container .contenedor-burger-menu button {} */
 
@@ -273,7 +286,7 @@ header {}
 
     /* MENU */
 
-    /* .contenedor-menu {}
+   /*  .contenedor-menu {}
 
     .contenedor-menu nav {}
 
@@ -285,7 +298,7 @@ header {}
 
     /* OPCIONES */
 
-    /*   .opciones {} */
+  /*   .opciones {} */
 
     .opciones1 {
         font-size: 1.5rem;
@@ -295,7 +308,7 @@ header {}
         margin-left: 10px;
     }
 
-    /*  .opciones1 li a {}
+  /*   .opciones1 li a {}
 
     .opciones1 li a i {} */
 
@@ -307,7 +320,7 @@ header {}
         margin-left: 10px;
     }
 
-    /*  .opciones2 li a.ocult {}
+  /*   .opciones2 li a.ocult {}
 
     .opciones2 li a i {}
 
@@ -321,7 +334,7 @@ header {}
         padding-top: 1%;
     }
 
-    /*  .buscador .contenedor-buscador {}
+   /*  .buscador .contenedor-buscador {}
 
     .buscador .contenedor-buscador .contenedor-input {} */
 
@@ -329,7 +342,7 @@ header {}
         font-size: 1rem;
     }
 
-    /*   .buscador .contenedor-buscador button {}
+  /*   .buscador .contenedor-buscador button {}
 
     .buscador .contenedor-buscador button i {} */
 }

@@ -34,5 +34,17 @@
         "name" : "Apple",
         "origin" : "Estados Unidos",
         "image" : null
+    },
+    {
+        "id" : 7,
+        "name" : "Genérico",
+        "origin" : null,
+        "image" : null
+    },
+    {
+        "id" : 8,
+        "name" : "JBL",
+        "origin" : "Estados Unidos",
+        "image" : null
     }
 ]

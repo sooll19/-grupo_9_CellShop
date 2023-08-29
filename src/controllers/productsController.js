@@ -1,77 +1,21 @@
-
-const { readJSON, writeJSON } = require('../data');
-const Product = require('../data/Product');
-
 module.exports = {
-  celulares: (req, res) => {
-    const products = readJSON('products.json');
-    return res.render('celulares',{
-     celulares : products.filter(product => product.categoria === "celular")
-    });
-  },
-  accesoriosParaCelu: (req, res) => {
-    const products = readJSON('products.json');
-    return res.render('accesoriosParaCelu',{
-      accesoriosParaCelu : products.filter(product => product.categoria === "accesorios")
-    });
-  },
-  detalle: (req, res) => {
-    const products = readJSON('products.json')
 
-    const id = req.params.id;    
-    const product = products.find(product => product.id === +id);
+  accesorios: require('./products/accesorios'),
 
-    return res.render('detalle', {
-      product
-    });
+  celulares: require('./products/celulares'),
 
-  },
+  detalle : require('./products/detalle'),
 
-  cart: (req, res) => {
-    return res.render('cart');
-  },
+  cart : require('./products/cart'),
 
-  edit: (req, res) => {
-    const products = readJSON('products.json')
-    const marcas = readJSON('marcas.json')
+  edit : require('./products/edit'),
 
-    const id = req.params.id;    
-    const product = products.find(product => product.id === +id);
+  update : require('./products/update'),
 
-    return res.render('productEdit',{
-      ...product,
-      marcas: marcas.sort((a, b) =>
-        a.name > b.name ? 1 : a.name < b.name ? -1 : 0
-      ),
-    })
-  },
+  add : require('./products/add'),
 
-  add: (req, res) => {
+  create : require('./products/create'),
 
-    const marcas = readJSON('marcas.json')
-
-    return res.render('productAdd', {
-      marcas: marcas.sort((a, b) =>
-        a.name > b.name ? 1 : a.name < b.name ? -1 : 0
-      ),
-    })
-
-  },
-
-  create: (req, res) => {
-
-    const products = readJSON('products.json')
-
-    let nuevoProducto = new Product(req.body) // Se trae la función constructora con el destructuring del body
-    products.push(nuevoProducto);
-
-    writeJSON(products, 'products.json')
-
-    return res.redirect('/admin') // Sirve para el envio de informacion por POST
-  },
-
-  update: (req,res) => {
-    return res.send(req.body)
-  }
+  remove : require('./products/remove')
 
 }
