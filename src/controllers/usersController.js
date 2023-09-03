@@ -4,4 +4,6 @@ module.exports = {
 
    register: require('./users/register'),
 
+   profile: require('./users/profile'),
+
 }
