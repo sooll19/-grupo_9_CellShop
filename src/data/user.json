@@ -1,38 +1,34 @@
-[  
-    { 
+[
+   {
       "id": 1,
-      "first name":"Roxana",
-      "last name": "fernandez",
-      "email":"roxfer@gmail.com",
-      "password":"123456",
-      "confirm password":"123456",
-      "image":"foto perfil"
-    },
-    { 
+      "name": "Roxana",
+      "address": "fernandez",
+      "email": "roxfer@gmail.com",
+      "password": "123456",
+      "image": "foto perfil"
+   },
+   {
       "id": 2,
-      "first name":"Jose",
-      "last name": "Maiorano",
-      "email":"josemaiorano@gmail.com",
-      "password":"123457",
-      "confirm password":"123457",
-      "image":"foto perfil"
-    },
-    { 
+      "name": "Jose",
+      "address": "Maiorano",
+      "email": "josemaiorano@gmail.com",
+      "password": "123457",
+      "image": "foto perfil"
+   },
+   {
       "id": 3,
-      "first name":"Alejandra",
-      "last name": "Santamarina",
-      "email":"alesanta@gmail.com",
-      "password":"123458",
-      "confirm password":"123458",
-      "image":"foto perfil"
-    },
-    { 
+      "name": "Alejandra",
+      "address": "Santamarina",
+      "email": "alesanta@gmail.com",
+      "password": "123458",
+      "image": "foto perfil"
+   },
+   {
       "id": 4,
-      "first name":"Sol",
-      "last name": "Vargas",
-      "email":"solvargas@gmail.com",
-      "password":"123454",
-      "confirm password":"123454",
-      "image":"foto perfil"
-    }
+      "name": "Sol",
+      "address": "Vargas",
+      "email": "solvargas@gmail.com",
+      "password": "123454",
+      "image": "foto perfil"
+   }
 ]
