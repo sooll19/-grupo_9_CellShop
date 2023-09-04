@@ -1,6 +1,7 @@
-const { check, body } = require('express-validator');
+const { check, body, validationResult } = require('express-validator');
 const { readJSON } = require('../data');
-
+const fs = require('fs');
+const path = require('path');
 
 
 module.exports = [
@@ -41,13 +42,17 @@ check('password')
     max : 12
  }).withMessage('Debe tener entre 6 y 12 caracteres'),
 
-body('image')
-.custom((value, {req}) => {
-    if(req.file){
-        return true
-    }
-    return false
-}).withMessage('No has subido ninguna imagen')
-
-
+ body('image')
+    .custom((value, {req}) => {
+        let errors = validationResult(req)
+        if(req.file){
+            if(!errors.isEmpty()){
+                const pathFile = path.join(__dirname,`../../public/images/users/${req.file.filename}`)
+                const existFile = fs.existsSync(pathFile)
+                if(existFile) fs.unlinkSync(pathFile)
+            }
+           return true
+        }
+        return false
+    }).withMessage('No has subido ninguna imagen')
 ];

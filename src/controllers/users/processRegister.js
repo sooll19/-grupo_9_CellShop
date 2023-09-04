@@ -9,7 +9,7 @@ module.exports = (req, res) => {
 
         const user = readJSON('user.json');
 
-        let newUser = new User(req.body)
+        let newUser = new User({...req.body,image: req.file.filename})
 
         user.push(newUser);
 

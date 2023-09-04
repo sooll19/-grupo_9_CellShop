@@ -30,5 +30,22 @@
       "email": "solvargas@gmail.com",
       "password": "123454",
       "image": "foto perfil"
+   },
+   {
+      "id": "02533e2e-5270-441b-b6b3-563f0860235e",
+      "name": "ema",
+      "surname": "arroyo",
+      "city": "Buenos Aires",
+      "email": "ema@gmail.com",
+      "password": "$2a$10$l6VgT.wRLZPJ239JHhPXEuC8f8UhOMpFJpxrTw5wBIYwflZlL/q/S"
+   },
+   {
+      "id": "c6e0205c-dd57-4ddc-9efd-f987e1a91465",
+      "name": "emanuel",
+      "surname": "arroyo",
+      "city": "Buenos Aires 2",
+      "email": "SOL@GMAIL.COM",
+      "image": "1693864479424_avatar_.png",
+      "password": "$2a$10$pAw2FT2phK1OlisBEPTia.I6HgL/z8FVMmPOAMBQ9ZdcsVcU8McaW"
    }
 ]
