@@ -34,16 +34,16 @@
                   </div>
 
                   <div class="col-6">
-                    <label for="address" class="form-label">Apellido</label>
+                    <label for="surname" class="form-label">Apellido</label>
                     <input
                       type="text"
-                      class="form-control <%= locals.errors && (errors.address && 'is-invalid') %>"
-                      id="address"
-                      name="address"
-                      value="<%= locals.old && (old.address && old.address) %>"
+                      class="form-control <%= locals.errors && (errors.surname && 'is-invalid') %>"
+                      id="surname"
+                      name="surname"
+                      value="<%= locals.old && (old.surname && old.surname) %>"
                     />
                     <small class="ms-2 text-danger">
-                      <%= locals.errors &&  (errors.address && errors.address.msg) %>
+                      <%= locals.errors &&  (errors.surname && errors.surname.msg) %>
                     </small>
                   </div>
                   <div class="col-md-6">
@@ -54,6 +54,7 @@
                       id="city"
                       placeholder="1234 Main St"
                       name="city"
+                      value="<%= locals.old && (old.city && old.city) %>"
                     />
                     <small class="ms-2 text-danger">
                       <%= locals.errors &&  (errors.city && errors.city.msg) %>

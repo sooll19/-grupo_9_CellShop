@@ -5,7 +5,7 @@ const { readJSON, writeJSON } = require('../../data')
 module.exports = (req, res) => {
 
     let errors = validationResult(req);
-    if (errors.isEmpty()) {
+    if(errors.isEmpty()) {
 
         const user = readJSON('user.json');
 
@@ -13,14 +13,14 @@ module.exports = (req, res) => {
 
         user.push(newUser);
 
-        writeJSON(users, 'user.json');
+        writeJSON(user, 'user.json');
 
         return res.redirect('/')
 
     } else {
         return res.render('register', {
-            old: req.body,
-            errors: errors.mapped()
+            old : req.body,
+            errors : errors.mapped()
         })
     }
 

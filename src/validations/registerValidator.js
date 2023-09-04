@@ -1,4 +1,4 @@
-const {check, body} = require('express-validator');
+const { check, body } = require('express-validator');
 const { readJSON } = require('../data');
 
 
@@ -12,14 +12,16 @@ check('name')
 .withMessage('Solo se permite caracteres alfabéticos'),
 
 
-check('address')
+check('surname')
 .isLength({
     min : 2
 }).withMessage('el apellido debe tener como minimo dos letras').bail(),
 
 check('city')
-.notEmpty().withMessage('Debes ingresar el email').bail()
-.isEmail().withMessage('El email no es valido'),
+.isLength({
+    min : 2
+}).withMessage('La ciudad debe tener como minimo dos letras').bail()
+.notEmpty().withMessage('Debes ingresar la ciudad').bail(),
 
 check('email')
 .notEmpty().withMessage('Debes ingresar el email').bail()
@@ -37,7 +39,7 @@ check('password')
  .isLength({
     min : 6,
     max : 12
- }).withMessage('Debe tener entre 6 y 12 caracteres'),,
+ }).withMessage('Debe tener entre 6 y 12 caracteres'),
 
 body('image')
 .custom((value, {req}) => {
@@ -48,4 +50,4 @@ body('image')
 }).withMessage('No has subido ninguna imagen')
 
 
-]
+];
