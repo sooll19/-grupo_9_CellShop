@@ -4,6 +4,7 @@ const {
   register,
   processRegister,
   login,
+  profile
 } = require("../controllers/usersController");
 
 
@@ -13,6 +14,8 @@ const {
 /* /users */
 router.get("/register", register)
  router.get("/login", login)
+router.get('/profile', profile)
+
  router.post("/register" ,processRegister)
 
 

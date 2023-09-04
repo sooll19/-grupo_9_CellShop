@@ -4,5 +4,8 @@ module.exports = {
 
    register: require('./users/register'),
 
- processRegister : require('./users/processRegister')
+ processRegister : require('./users/processRegister'),
+ 
+   profile: require('./users/profile'),
+
 }
