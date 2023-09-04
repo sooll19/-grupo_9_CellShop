@@ -1,11 +1,11 @@
-const {validationResult} = require('express-validator');
+const { validationResult } = require('express-validator');
 const User = require('../../data/User');
-const {readJSON , writeJSON} = require('../../data')
+const { readJSON, writeJSON } = require('../../data')
 
-module.exports = (req,res) => {
+module.exports = (req, res) => {
 
     let errors = validationResult(req);
-    if (errors.isEmpty()){
+    if (errors.isEmpty()) {
 
         const user = readJSON('user.json');
 
@@ -16,12 +16,12 @@ module.exports = (req,res) => {
         writeJSON(users, 'user.json');
 
         return res.redirect('/')
-       
-    } else{
-        return res.render('register',{
-            old : req.body,
-            errors : errors.mapped()
+
+    } else {
+        return res.render('register', {
+            old: req.body,
+            errors: errors.mapped()
         })
     }
-   
+
 }

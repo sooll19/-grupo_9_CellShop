@@ -1,13 +1,13 @@
 module.exports = {
 
-   login: require('./users/login'),
+  login: require('./users/login'),
 
-   processLogin: require('./users/processLogin'),
+  processLogin: require('./users/processLogin'),
 
-   register: require('./users/register'),
+  register: require('./users/register'),
 
- processRegister : require('./users/processRegister'),
- 
-   profile: require('./users/profile'),
+  processRegister: require('./users/processRegister'),
+
+  profile: require('./users/profile'),
 
 }
