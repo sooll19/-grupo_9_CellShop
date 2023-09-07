@@ -13,12 +13,18 @@
                             <form class="row" method="POST">
                                 <div class="col-12 mb-3">
                                     <label class="form-label" for="email">Email</label>
-                                    <input class="form-control" type="email" id="email" name="email" />
-                                    <small class="text-danger ms-2"></small>
+                                    <input class="form-control <%= locals.errors && (errors.email && 'is-invalid') %>"
+                                        type="email" id="email" name="email" />
+                                    <small class="text-danger ms-2">
+                                        <%= locals.errors && (errors.email && errors.email.msg) %>
+                                    </small>
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label class="form-label" for="password">Contraseña</label>
                                     <input class="form-control" type="password" id="password" name="password" />
+                                    <small class="text-danger ms-2">
+                                        <%= locals.errors && (errors.password && errors.password.msg) %>
+                                    </small>
                                     <a class="text-dark small" href="">Olvidé mi contraseña</a>
                                 </div>
                                 <div class="form-check">
