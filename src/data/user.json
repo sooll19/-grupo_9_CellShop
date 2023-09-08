@@ -47,5 +47,14 @@
       "email": "SOL@GMAIL.COM",
       "image": "1693864479424_avatar_.png",
       "password": "$2a$10$pAw2FT2phK1OlisBEPTia.I6HgL/z8FVMmPOAMBQ9ZdcsVcU8McaW"
+   },
+   {
+      "id": "326b57dd-4742-400c-bae5-f35f97be0054",
+      "name": "sol",
+      "surname": "vargas",
+      "city": "buenos aires",
+      "email": "sol@gmail.com",
+      "image": "1694138930036_avatar_.jpg",
+      "password": "$2a$10$eFFNozTAQfVff9.BSHXAie8QCn4egVYzZZAy0e28rkRcxgRnGjJV2"
    }
 ]
