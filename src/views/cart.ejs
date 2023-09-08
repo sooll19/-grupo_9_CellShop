@@ -1,131 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('partial/head',{
-    title: 'Mi Carrito'
-}) %>
+<%- include('partial/head',{ title: 'Mi Carrito' }) %>
 
-<body>
-    <%- include('partial/header') %>
+    <body>
+        <%- include('partial/header') %>
 
-    <main class="cart">
+            <main class="cart">
 
-        <!-- MENSAJE -->
-        <div class="contenedor-msj">
-            <p>TODOS LOS PRODUCTOS ESTARAN LISTOS PARA ENVIOS 24 HS. DESPUÉS DE EFECTUADA LA COMPRA.</p>
-        </div>
-
-        <!-- PRODUCTO -->
-        <div class="contenedor-producto">
-            <img src="/images/moto/Moto_Edge_30-removebg-preview.png" alt="Moto Edge 30">
-
-            <!-- Precio -->
-            <div class="container-precio">
-                <h2>Moto Edge 30</h2>
-                <div class="contenedor-precio">
-                    <p>Precio:</p>
-                    <p>$60.000,00</p>
+                <!-- MENSAJE -->
+                <div class="contenedor-msj">
+                    <p>TODOS LOS PRODUCTOS ESTARAN LISTOS PARA ENVIOS 24 HS. DESPUÉS DE EFECTUADA LA COMPRA.</p>
                 </div>
 
-                <!-- Cantidad-->
-                <form action="/" method="get">
-                    <label for="cant">Cantidad:</label>
-                    <select name="cant">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </form>
+                <!-- PRODUCTO -->
+                <div class="contenedor-producto">
+                    <img src="/images/celulares/Moto_Edge_30-removebg-preview.png" alt="Moto Edge 30">
 
-                <!-- Trash-->
-                <div class="contenedor-icon">
-                    <i class="fas fa-trash"></i>
-                    <p>Eliminar Producto</p>
+                    <!-- Precio -->
+                    <div class="container-precio">
+                        <h2>Moto Edge 30</h2>
+                        <div class="contenedor-precio">
+                            <p>Precio:</p>
+                            <p>$60.000,00</p>
+                        </div>
+
+                        <!-- Cantidad-->
+                        <form action="/" method="get">
+                            <label for="cant">Cantidad:</label>
+                            <select name="cant">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </form>
+
+                        <!-- Trash-->
+                        <div class="contenedor-icon">
+                            <i class="fas fa-trash"></i>
+                            <p>Eliminar Producto</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="contenedor-producto">
-            <img src="/images/accesorios/auriculares_jbl-removebg-preview.png" alt="Auriculares JBL">
+                <div class="contenedor-producto">
+                    <img src="/images/accesorios/auriculares_jbl-removebg-preview.png" alt="Auriculares JBL">
 
-            <div class="container-precio">
-                <h2>Auriculares JBL</h2>
-                <!-- Precio -->
-                <div class="contenedor-precio">
-                    <p>Precio:</p>
-                    <p>$15.000,00</p>
+                    <div class="container-precio">
+                        <h2>Auriculares JBL</h2>
+                        <!-- Precio -->
+                        <div class="contenedor-precio">
+                            <p>Precio:</p>
+                            <p>$15.000,00</p>
+                        </div>
+
+                        <!-- Cantidad-->
+                        <form action="/" method="get">
+                            <label for="cant">Cantidad:</label>
+                            <select name="cant">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </form>
+
+                        <!-- Trash-->
+                        <div class="contenedor-icon">
+                            <i class="fas fa-trash"></i>
+                            <p>Eliminar Producto</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Cantidad-->
-                <form action="/" method="get">
-                    <label for="cant">Cantidad:</label>
-                    <select name="cant">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </form>
+                <!-- RESUMEN DE COMPRA -->
+                <div class="contenedor-resumen-compra">
+                    <h3>RESUMEN DE COMPRA</h3>
 
-                <!-- Trash-->
-                <div class="contenedor-icon">
-                    <i class="fas fa-trash"></i>
-                    <p>Eliminar Producto</p>
+                    <div class="cupon">
+                        <label for="cupon"></label>
+                        <input type="text" id="cupon" placeholder="Ingresar código descuento">
+                        <button type="submit">Aplicar</button>
+                    </div>
+
+                    <div class="contenedor-item">
+                        <p class="item">SUBTOTAL</p>
+                        <p class="precio">$75.000,00</p>
+                    </div>
+
+                    <div class="contenedor-item">
+                        <p class="item">DESCUENTOS</p>
+                        <p class="precio">$0,00</p>
+                    </div>
+                    <hr>
+
+                    <div class="contenedor-item">
+                        <p class="item">TOTAL</p>
+                        <p class="precio">$75.000,00</p>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- RESUMEN DE COMPRA -->
-        <div class="contenedor-resumen-compra">
-            <h3>RESUMEN DE COMPRA</h3>
+                <!-- BOTONES -->
+                <div class="botones">
+                    <button href="/">Seguir Comprando</button>
+                    <button type="submit">Finalizar Compra</button>
+                    <button type="reset">Vaciar Carrito</button>
+                </div>
 
-            <div class="cupon">
-                <label for="cupon"></label>
-                <input type="text" id="cupon" placeholder="Ingresar código descuento">
-                <button type="submit">Aplicar</button>
-            </div>
+                <!-- PROMOS -->
+                <div class="promos">
+                    <i class="fas fa-credit-card"></i>
+                    <div class="credit-card">
+                        <p>Ver medios de pago y cuotas</p>
+                        <a href="#">VER PROMOCIONES BANCARIAS</a>
+                    </div>
+                </div>
 
-            <div class="contenedor-item">
-                <p class="item">SUBTOTAL</p>
-                <p class="precio">$75.000,00</p>
-            </div>
+            </main>
 
-            <div class="contenedor-item">
-                <p class="item">DESCUENTOS</p>
-                <p class="precio">$0,00</p>
-            </div>
-            <hr>
-
-            <div class="contenedor-item">
-                <p class="item">TOTAL</p>
-                <p class="precio">$75.000,00</p>
-            </div>
-        </div>
-
-        <!-- BOTONES -->
-        <div class="botones">
-            <button href="/">Seguir Comprando</button>
-            <button type="submit">Finalizar Compra</button>
-            <button type="reset">Vaciar Carrito</button>
-        </div>
-
-        <!-- PROMOS -->
-        <div class="promos">
-            <i class="fas fa-credit-card"></i>
-            <div class="credit-card">
-                <p>Ver medios de pago y cuotas</p>
-                <a href="#">VER PROMOCIONES BANCARIAS</a>
-            </div>
-        </div>
-
-    </main>
-
-  <%- include('partial/footer') %>
+            <%- include('partial/footer') %>
 
 
-</body>
+    </body>
 
 </html>

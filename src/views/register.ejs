@@ -1,42 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <%- include('partial/head',{ title: 'REGISTER' }) %>
 
-<%- include('partial/head',{
-  title: 'REGISTER'
-}) %>
+  <body class="registro">
+ 
+    <div class="formulario">
+      <main class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-md-10 col-lg-6 mx-auto">
+            <div class="card shadow">
+              <div class="card-body card text-bg-info">
+                <h3>Registro</h3>
+                <hr />
 
-<body>
- <%- include('partial/header') %>
-  <section class="formulario-registro">
-    <h4>Registro</h4>
-    <div class="nombre">
-      <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre" required>
-    </div>
-    <div class="apellido">
-      <input type="text" name="Apellido" id="Apellido" placeholder="Ingresa tu apellido" required>
-    </div>
-    <div class="email">
-      <input type="email" name="Email" id="Email" placeholder="Ingresa tu email" required>
-    </div>
-    <div class="contraseña">
-      <input type="password" name="Contraseña" id="Contraseña" placeholder="Ingresa tu contraseña" required>
-    </div>
-    <div class="confirmar-contraseña">
-      <input type="password" name="Contraseña" id="Confirmar contraseña" placeholder="Confirmar tu contraseña" required>
-    </div>
+                <form
+                  class="row g-3 bg-secondary text-black"
+                  method="POST"
+                  enctype="multipart/form-data"
+                >
+                  <div class="col-6">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control <%= locals.errors && (errors.name && 'is-invalid') %>"
+                      id="name"
+                      name="name"
+                      value="<%= locals.old && (old.name && old.name) %>"
+                    />
+                    <small class="ms-2 text-danger">
+                      <%= locals.errors &&  (errors.name && errors.name.msg) %>
+                    </small>
+                  </div>
 
-    <div class="terminos2">
-      <label for="terminos">TERMINOS Y CONDICIONES</label>
-      <input type="checkbox"name="acepto">
+                  <div class="col-6">
+                    <label for="surname" class="form-label">Apellido</label>
+                    <input
+                      type="text"
+                      class="form-control <%= locals.errors && (errors.surname && 'is-invalid') %>"
+                      id="surname"
+                      name="surname"
+                      value="<%= locals.old && (old.surname && old.surname) %>"
+                    />
+                    <small class="ms-2 text-danger">
+                      <%= locals.errors &&  (errors.surname && errors.surname.msg) %>
+                    </small>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="city" class="form-label">Ciudad</label>
+                    <input
+                      type="text"
+                      class="form-control <%= locals.errors && (errors.city && 'is-invalid') %>"
+                      id="city"
+                      placeholder="1234 Main St"
+                      name="city"
+                      value="<%= locals.old && (old.city && old.city) %>"
+                    />
+                    <small class="ms-2 text-danger">
+                      <%= locals.errors &&  (errors.city && errors.city.msg) %>
+                    </small>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control <%= locals.errors && (errors.email && 'is-invalid') %>"
+                      id="email"
+                      name="email"
+                    />
+                    <small class="ms-2 text-danger">
+                      <%= locals.errors &&  (errors.email && errors.email.msg) %>
+                    </small>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control <%= locals.errors && (errors.password && 'is-invalid') %>"
+                      id="password"
+                      name="password"
+                    />
+                    <small class="ms-2 text-danger">
+                      <%= locals.errors &&  (errors.password && errors.password.msg) %>
+                    </small>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="remember"
+                      name="remember"
+                    />
+                    <label class="form-check-label" for="remember"
+                      >Recordame</label
+                    >
+                  </div>
+                  <div class="mb-3">
+                    <label for="image" class="form-label">Agregar imagen</label>
+                    <input
+                      class="form-control <%= locals.errors && (errors.image && 'is-invalid') %>"
+                      type="file"
+                      id="image"
+                      name="image"
+                    />
+                    <small class="ms-2 text-danger">
+                      <%= locals.errors &&  (errors.image && errors.image.msg) %>
+                    </small>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block text-center">
+                      <button type="submit" class="btn btn-primary mb-3">Registrarme</button>
+                      <button class="btn btn-md btn-danger mb-3"><a href="/"
+                        style="color: white">Cancelar</a></button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-    <div class="boton2">
-      <input type="submit" value="Registrarme">
-    </div>
-    <div class="cuenta">
-      <p><a href="/users/login">Ya tengo cuenta</a></p>
-    </div>
-  </section>
- <%- include('partial/footer') %>
-</body>
-
+  </body>
 </html>

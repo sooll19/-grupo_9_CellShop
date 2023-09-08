@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partial/head',{ title:'PROFILE' }) %>
+
+    <body class="register" style="background-color: var(--colorCeleste);">
+
+        <main class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 style="color: var(--colorCeleste);">MI PERFIL</h3>
+                            <hr>
+                            <form class="row" action="/users/update-profile?_method=PUT" method="POST">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label class="form-label" for="nombre">Nombre</label>
+                                    <input class="form-control" type="text" id="nombre" name="nombre">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label class="form-label" for="apellido">Apellido</label>
+                                    <input class="form-control" type="text" id="apellido" name="apellido">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label class="form-label" for="birthday">Cumpleaños</label>
+                                    <input class="form-control" type="date" id="birthday" name="birthday">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label class="form-check-label" for="about">
+                                        Acerca de mí
+                                    </label>
+                                    <textarea style="resize: none;" name="about" id="about" rows="5"
+                                        class="form-control"></textarea>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end gap-2 mb-3">
+                                    <button class="btn btn-secondary"><a href="/" style="color: white;">Volver al HOME</a></button>
+                                    <label for="image" class="btn btn-dark">Cambiar imagen de perfil</label>
+                                    <input hidden class="form-control" type="file" id="image" name="imagen">
+                                    <button class="btn btn-success" type="submit">Guardar cambios</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>

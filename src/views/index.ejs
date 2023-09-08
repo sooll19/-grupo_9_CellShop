@@ -5,55 +5,57 @@
     <body class="home">
         <%- include('partial/header') %>
             <main class="home__main">
-              
+
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="/images/banner/banner5.webp" class="d-block w-100" alt="...">
-                      </div>
-                      
-                      <div class="carousel-item">
-                        <img src="/images/banner/banner4.webp" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/images/banner/banner_celu.webp" class="d-block w-100" alt="...">
-                      </div>
+                        <div class="carousel-item active">
+                            <img src="/images/banner/banner5.webp" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="/images/banner/banner4.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/banner/banner_celu.webp" class="d-block w-100" alt="...">
+                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
-                 
-               
+                </div>
+
+
                 <div class="celulares-ofertas">
-                <div class="banner_mas_vendido">
-                    <img src="/images/lo mas vendido.png" alt="">
-                </div>
-                <div>
-                    <div class="btn-group">
-    
-                        <button class="btn btn-secondary dropdown-toggle mb-5" type="button" data-bs-toggle="dropdown"
-                            data-bs-auto-close="inside" aria-expanded="false">
-                            Todos los productos
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
-                            <li><a class="dropdown-item" href="/products/accesoriosParaCelu">Accesorios</a></li>
-                        </ul>
+                    <div class="banner_mas_vendido">
+                        <img src="/images/lo mas vendido.png" alt="">
                     </div>
-    
-                </div>
+                    <div>
+                        <div class="btn-group">
+
+                            <button class="btn btn-secondary dropdown-toggle mb-5" type="button"
+                                data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                                Todos los productos
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
+                                <li><a class="dropdown-item" href="/products/accesoriosParaCelu">Accesorios</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
                     <div class="glider-contain">
                         <div class="glider">
                             <%oferta.forEach(product=> { %>
                                 <article class="home__carousel__article">
                                     <img src="/images/celulares/<%=product.imagen%>" alt="Imagen">
-                                   
+
                                 </article>
                                 <% }) %>
 
@@ -110,10 +112,10 @@
                     });
                 });
             </script>
-           
+
             <div class="accesorios">
                 <div class="banner_mas_vendido">
-             <img src="/images/mas-vendido.jpg" alt="">
+                    <img src="/images/mas-vendido.jpg" alt="">
                 </div>
                 <%accesorios.forEach(product=> { %>
                     <div class="accesoriosimg">

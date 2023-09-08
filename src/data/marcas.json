@@ -40,5 +40,11 @@
         "name" : "Genérico",
         "origin" : null,
         "image" : null
+    },
+    {
+        "id" : 8,
+        "name" : "JBL",
+        "origin" : "Estados Unidos",
+        "image" : null
     }
 ]

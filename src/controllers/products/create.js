@@ -1,4 +1,4 @@
-/* const { readJSON, writeJSON } = require("../../data");
+const { readJSON, writeJSON } = require("../../data");
 const Product = require("../../data/Product");
 
 module.exports = (req, res) => {
@@ -15,5 +15,5 @@ module.exports = (req, res) => {
 
     writeJSON(products, 'products.json')
 
-    return res.redirect('/admin') // Sirve para el envio de informacion por POST
-} */
+    return res.redirect('/admin') 
+}
