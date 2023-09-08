@@ -1,67 +1,65 @@
+<header>
 
-    <header>
+    <!-- MENSAJE -->
+    <div class="mensaje">
+        <p>Envìos gratis a CABA y Gran Buenos Aires</p>
+    </div>
 
-        <!-- MENSAJE -->
-        <div class="mensaje">
-            <p>Envìos gratis a CABA y Gran Buenos Aires</p>
+    <!-- LOGO -->
+    <div class="container">
+        <a href="/"><img src="/images/Logo.jpeg" alt="img-logo"></a>
+
+        <!-- BURGUER MENU -->
+        <div class="contenedor-burger-menu">
+            <button class="burguer-menu" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
 
-        <!-- LOGO -->
-        <div class="container">
-            <a href="/"><img src="/images/Logo.jpeg" alt="img-logo"></a>
+        <!-- MENU Y OPCIONES -->
+        <div class="contenedor-menu">
+            <nav>
+                <ul class="menu-desplegable">
+                    <li><a href="/samsung">Samsung</a></li>
+                    <li><a href="/motorola">Motorola</a></li>
+                    <li><a href="/lg">LG</a></li>
+                    <li><a href="/xiomi">Xiomi</a></li>
+                    <li><a href="/tcl">TCL</a></li>
+                    <li><a href="/accesorios">Accesorios</a></li>
+                </ul>
+            </nav>
 
-            <!-- BURGUER MENU -->
-            <div class="contenedor-burger-menu">
-                <button class="burguer-menu" type="button">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+            <div class="opciones">
+                <ul class="opciones1">
 
-            <!-- MENU Y OPCIONES -->
-            <div class="contenedor-menu">
-                <nav>
-                    <ul class="menu-desplegable">
-                        <li><a href="/samsung">Samsung</a></li>
-                        <li><a href="/motorola">Motorola</a></li>
-                        <li><a href="/lg">LG</a></li>
-                        <li><a href="/xiomi">Xiomi</a></li>
-                        <li><a href="/tcl">TCL</a></li>
-                        <li><a href="/accesorios">Accesorios</a></li>
-                    </ul>
-                </nav>
+                    <li><a href="/admin">Admin <i class="fas fa-headset"></i></a></li>
+                </ul>
 
-                <div class="opciones">
-                    <ul class="opciones1">
-                        <li>
-                            <a href="/users/register">Registrate <i class="far fa-envelope"></i></a>
-                        </li>
-                        <li>
-                            <a href="/admin">Admin <i class="fas fa-headset"></i></a>
-                        </li>
-                    </ul>
-    
-                    <ul class="opciones2">
-                        <li>
-                            <a href="/users/login" class="ocult">Mi cuenta </a>
-                            <a href=""><i class="fas fa-user user"></i></a>
-                        </li>
-                        <li>
-                            <a href="/products/cart" class="ocult">Mi carrito </a>
-                            <a href=""><i class="fas fa-shopping-cart carrito"></i></a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="opciones2">
+                    <% if (!locals.userLogin) { %>
+                        <li><a href="/users/register" class="ocult">Registrate <a href=""><i
+                                        class="far fa-envelope"></i></a></a></li>
+                        <li><a href="/users/login" class="ocult">Mi cuenta </a><a href=""><i
+                                    class="fas fa-user user"></i></a></li>
+                        <li><a href="/products/cart" class="ocult">Mi carrito </a><a href=""><i
+                                    class="fas fa-shopping-cart carrito"></i></a></li>
+                        <% } else { %>
+                            <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
+                            <li><a href="/users/logout">Salir</a></li>
+                            <% } %>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <!-- BUSCADOR -->
-        <div class="buscador">
-            <form action="/search" method="GET" class="contenedor-buscador">
-                <div class="contenedor-input">
-                    <input type="text" name="keywords" placeholder="Buscar...">
-                    <button class="btn-busqueda"><i class="fas fa-search busqueda"></i></button>
-                </div>
-            </form>
-        </div>
+    <!-- BUSCADOR -->
+    <div class="buscador">
+        <form action="/search" method="GET" class="contenedor-buscador">
+            <div class="contenedor-input">
+                <input type="text" name="keywords" placeholder="Buscar...">
+                <button class="btn-busqueda"><i class="fas fa-search busqueda"></i></button>
+            </div>
+        </form>
+    </div>
 
-    </header>
+</header>

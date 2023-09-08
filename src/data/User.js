@@ -8,8 +8,8 @@ this.surname = surname.trim();
 this.city = city.trim();
 this.email = email.trim();
 this.image = image;
-this.password = hashSync(password,10)
-
+this.password = hashSync(password,10);
+this.rol = "user";
 }
 
 module.exports = User

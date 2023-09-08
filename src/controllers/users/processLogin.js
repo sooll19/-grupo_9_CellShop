@@ -1,12 +1,26 @@
-const {validationResult} = require('express-validator')
+const { validationResult } = require('express-validator')
+const { readJSON } = require('../../data')
 
-module.exports = (req,res) => {
+module.exports = (req, res) => {
 
     const errors = validationResult(req)
 
     if (errors.isEmpty()) {
-        return res.send('Usuario logueado')
+        const users = readJSON('user.json')
+        const user = users.find(user => user.email === req.body.email)
+        const { id, name, rol } = user;
+
+        req.session.userLogin = {
+            id,
+            name,
+            rol
+        }
+
+        return res.redirect('/')
+
     } else {
-        return res.send(errors.mapped())
+        return res.render('login', {
+            errors: errors.mapped()
+        })
     }
 }
