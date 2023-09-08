@@ -16,6 +16,10 @@ module.exports = (req, res) => {
             rol
         }
 
+        remember !==undefined && res.cookie("CellShop@Group",req.session.userLogin,{
+            maxAge : 2000 * 60
+        })
+
         return res.redirect('/')
 
     } else {
