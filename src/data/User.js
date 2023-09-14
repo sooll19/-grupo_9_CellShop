@@ -11,6 +11,7 @@ this.image = image;
 this.password = hashSync(password,10);
 this.rol = "user";
 this.birtday = null;
+this.about = null;
 }
 
 module.exports = User

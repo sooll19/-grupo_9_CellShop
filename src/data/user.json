@@ -7,7 +7,8 @@
       "password": "123456",
       "image": "foto perfil",
       "rol": "user",
-      "birtday": null
+      "about":null,
+      "birthday": null
    },
    {
       "id": 2,
@@ -17,7 +18,8 @@
       "password": "123457",
       "image": "foto perfil",
       "rol": "user",
-      "birtday": null
+      "about":null,
+      "birthday": null
    },
    {
       "id": 3,
@@ -27,8 +29,8 @@
       "password": "123458",
       "image": "foto perfil",
       "rol": "user",
-      "birtday":null
-
+      "about":null,
+      "birthday": null
    },
    {
       "id": 4,
@@ -38,7 +40,8 @@
       "password": "123454",
       "image": "foto perfil",
       "rol": "admin",
-      "birtday":null
+      "about":null,
+      "birthday": null
    },
    {
       "id": "02533e2e-5270-441b-b6b3-563f0860235e",
@@ -48,7 +51,8 @@
       "email": "ema@gmail.com",
       "password": "$2a$10$l6VgT.wRLZPJ239JHhPXEuC8f8UhOMpFJpxrTw5wBIYwflZlL/q/S",
       "rol": "user",
-      "birtday":null
+      "about":null,
+      "birthday": null
    },
    {
       "id": "c6e0205c-dd57-4ddc-9efd-f987e1a91465",
@@ -59,6 +63,19 @@
       "image": "1693864479424_avatar_.png",
       "password": "$2a$10$pAw2FT2phK1OlisBEPTia.I6HgL/z8FVMmPOAMBQ9ZdcsVcU8McaW",
       "rol": "user",
-      "birtday":null
+      "about":null,
+      "birthday": null
+   },
+   {
+      "id": "0709f38f-5fc0-4ca2-bc29-6e2c15996dc4",
+      "name": "rocio",
+      "surname": "baez",
+      "city": "monte",
+      "email": "rociobaez@gmail.com",
+      "image": "1694204563623_avatar_.jpg",
+      "password": "$2a$10$6rw/OCPKCkMK1Y6eqaEB5OlMTSYxoSv2OnHjw07GeOWy03138fNrm",
+      "rol": "user",
+      "about":"Hola soy Rocio y este es mi usuario",
+      "birthday": null
    }
 ]
