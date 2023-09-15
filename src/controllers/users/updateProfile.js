@@ -1,26 +1,26 @@
-const { readJSON } = require("../../data")
+//const {readJSON, writeJSON} = require('../../data');
 
-module.exports = (req,res) => {
+  module.exports = (req,res) => {
+    return res.send(req.body)
+}
   
   // return res.redirect('/');
-
-   const {nombre, apellido, birthday, about} = req.body
-        req.session.userData = {
-          nombre,
-          apellido,
-          birthday,
-          about,
-        }
+/* if(!req.session.user){
+  return res.redirect('/users/login');
+ }else{
+  const users =readJSON('users.json');
+ }
+   const userid = req.session.userid;
+   const userFind = users.find(user => user.id === userid);
   /*Valores obtenidos desde el req.body
   nombre
   apellido
   birthday
   about  
-
-
- */
+*/
+//const  {nombre, apellido, birthday, about} = req.body;
 
   // codigo para actualizar los datos del usuario en sesión
-  const user = users.find(user => user.id === req.session.userLogin.id)
+  //const user = users.find(user => user.id === req.session.userLogin.id)
  
-}
+//}
