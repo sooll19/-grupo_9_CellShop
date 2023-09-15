@@ -6,7 +6,9 @@
       "email": "roxfer@gmail.com",
       "password": "123456",
       "image": "foto perfil",
-      "rol": "user"
+      "rol": "user",
+      "about":null,
+      "birthday": null
    },
    {
       "id": 2,
@@ -15,7 +17,9 @@
       "email": "josemaiorano@gmail.com",
       "password": "123457",
       "image": "foto perfil",
-      "rol": "user"
+      "rol": "user",
+      "about":null,
+      "birthday": null
    },
    {
       "id": 3,
@@ -24,7 +28,9 @@
       "email": "alesanta@gmail.com",
       "password": "123458",
       "image": "foto perfil",
-      "rol": "user"
+      "rol": "user",
+      "about":null,
+      "birthday": null
    },
    {
       "id": 4,
@@ -33,7 +39,9 @@
       "email": "solvargas@gmail.com",
       "password": "123454",
       "image": "foto perfil",
-      "rol": "admin"
+      "rol": "admin",
+      "about":null,
+      "birthday": null
    },
    {
       "id": "02533e2e-5270-441b-b6b3-563f0860235e",
@@ -42,7 +50,9 @@
       "city": "Buenos Aires",
       "email": "ema@gmail.com",
       "password": "$2a$10$l6VgT.wRLZPJ239JHhPXEuC8f8UhOMpFJpxrTw5wBIYwflZlL/q/S",
-      "rol": "user"
+      "rol": "user",
+      "about":null,
+      "birthday": null
    },
    {
       "id": "c6e0205c-dd57-4ddc-9efd-f987e1a91465",
@@ -51,25 +61,21 @@
       "city": "Buenos Aires 2",
       "email": "SOL@GMAIL.COM",
       "image": "1693864479424_avatar_.png",
-      "password": "$2a$10$pAw2FT2phK1OlisBEPTia.I6HgL/z8FVMmPOAMBQ9ZdcsVcU8McaW"
+      "password": "$2a$10$pAw2FT2phK1OlisBEPTia.I6HgL/z8FVMmPOAMBQ9ZdcsVcU8McaW",
+      "rol": "user",
+      "about":null,
+      "birthday": null
    },
    {
-      "id": "326b57dd-4742-400c-bae5-f35f97be0054",
-      "name": "sol",
-      "surname": "vargas",
-      "city": "buenos aires",
-      "email": "sol@gmail.com",
-      "image": "1694138930036_avatar_.jpg",
-      "password": "$2a$10$eFFNozTAQfVff9.BSHXAie8QCn4egVYzZZAy0e28rkRcxgRnGjJV2"
-   },
-   {
-      "id": "8af9db84-036b-4770-ad46-0b990b07296a",
-      "name": "gisela",
-      "surname": "vargas",
-      "city": "por ahí 1234",
-      "email": "sol12@gmail.com",
-      "image": "1694204044004_avatar_.jpg",
-      "password": "$2a$10$tcjq/vi9R6xGmG5UUYgO8OFmku5Embk6ojhv33iTgzRy2tRIaWrRC",
-      "rol": "user"
+      "id": "0709f38f-5fc0-4ca2-bc29-6e2c15996dc4",
+      "name": "rocio",
+      "surname": "baez",
+      "city": "monte",
+      "email": "rociobaez@gmail.com",
+      "image": "1694204563623_avatar_.jpg",
+      "password": "$2a$10$6rw/OCPKCkMK1Y6eqaEB5OlMTSYxoSv2OnHjw07GeOWy03138fNrm",
+      "rol": "user",
+      "about":"Hola soy Rocio y este es mi usuario",
+      "birthday": null
    }
 ]

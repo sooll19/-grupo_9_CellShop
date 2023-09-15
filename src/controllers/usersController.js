@@ -8,4 +8,5 @@ module.exports = {
   processLogin: require('./users/processLogin'),
   profile: require('./users/profile'),
 
+  updateProfile : require ('./users/updateProfile'),
 }
