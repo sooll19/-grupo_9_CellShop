@@ -1,70 +1,75 @@
-**sprint1**
-hacer más:
-*Reuniones organizadas,
-*Manejo de trello,
-*Llegar a tiempo,
+## **SPRINT 1**
 
-Empezar a hacer:
-*
-*
+Hacer más:  
+- Reuniones organizadas,  
+- Manejo de trello,
+- Llegar a tiempo,
 
-Dejar de hacer:
-*
-*
+Empezar a hacer:  
 
-Hacer menos:
-*
-*
+Dejar de hacer:  
 
-Seguir haciendo:
-*Proactividad,
-*Trabajo indivual,
-*Comunicación,
-*Respeto 
+Hacer menos:  
 
-**sprint2**
-hacer más:
-*Reuniones organizadas,
-*Manejo de trello,
-*Llegar a tiempo,
+Seguir haciendo:  
+- Proactividad,
+- Trabajo indivual,
+- Comunicación,
+- Respeto
+  
+## **SPRINT 2**
 
-Empezar a hacer:
-*
-*
+Hacer más:  
+- Reuniones organizadas,
+- Manejo de trello,
+- Llegar a tiempo
+  
+Empezar a hacer:  
 
-Dejar de hacer:
-*
-*
+Dejar de hacer:  
 
-Hacer menos:
-*
-*
+Hacer menos:  
 
-Seguir haciendo:
-*Proactividad,
-*Trabajo indivual,
-*Comunicación,
-*Respeto
-**sprint3**
-hacer más:
-*Reuniones organizadas,
-*Manejo de trello,
-*Llegar a tiempo,
+Seguir haciendo:  
+- Proactividad,
+- Trabajo indivual,
+- Comunicación,
+- Respeto
 
-Empezar a hacer:
-*
-*
+## **SPRINT 3**
 
-Dejar de hacer:
-*
-*
+Hacer más:  
+- Reuniones organizadas,
+- Manejo de trello,
+- Llegar a tiempo
+  
+Empezar a hacer:  
 
-Hacer menos:
-*
-*
+Dejar de hacer:  
 
-Seguir haciendo:
-*Proactividad,
-*Trabajo indivual,
-*Comunicación,
-*Respeto
+Hacer menos:  
+
+Seguir haciendo:  
+
+- Proactividad,
+- Trabajo indivual,
+- Comunicación,
+- Respeto
+
+## **SPRINT 4**  
+
+Hacer más:  
+- Reuniones organizadas,
+- Manejo de trello,
+- Comunicación
+  
+Empezar a hacer:  
+
+Dejar de hacer:  
+
+Hacer menos:  
+
+Seguir haciendo:  
+
+- Trabajo indivual,
+- Respeto
