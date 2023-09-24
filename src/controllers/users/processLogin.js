@@ -8,7 +8,7 @@ module.exports = (req, res) => {
     if (errors.isEmpty()) {
         const users = readJSON('user.json');
         const {email, remember} = req.body
-        const user = users.find(user => user.email === req.body.email);
+        const user = users.find(user => user.email === email);
         const { id, name, rol } = user;
 
         req.session.userLogin = {
@@ -17,7 +17,7 @@ module.exports = (req, res) => {
             rol
         }
 
-        remember !==undefined && res.cookie( "CellSh@p*Group",req.session.userLogin,{
+        remember !== undefined && res.cookie("cellShop",req.session.userLogin,{
             maxAge : 2000 * 60
         })
 

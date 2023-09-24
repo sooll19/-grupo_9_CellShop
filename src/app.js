@@ -27,7 +27,9 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.use(methodOverride('_method'));
 app.use(session({
-  secret: "CellSh@p*Group"
+  secret: "CellSh@p*Group",
+  resave:true,
+  saveUninitialized:true
 }))
 
 app.use(cookieCheck);
