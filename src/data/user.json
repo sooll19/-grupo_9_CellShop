@@ -7,7 +7,7 @@
       "password": "123456",
       "image": "foto perfil",
       "rol": "user",
-      "about":null,
+      "about": null,
       "birthday": null
    },
    {
@@ -18,7 +18,7 @@
       "password": "123457",
       "image": "foto perfil",
       "rol": "user",
-      "about":null,
+      "about": null,
       "birthday": null
    },
    {
@@ -29,7 +29,7 @@
       "password": "123458",
       "image": "foto perfil",
       "rol": "user",
-      "about":null,
+      "about": null,
       "birthday": null
    },
    {
@@ -40,7 +40,7 @@
       "password": "123454",
       "image": "foto perfil",
       "rol": "admin",
-      "about":null,
+      "about": null,
       "birthday": null
    },
    {
@@ -51,7 +51,7 @@
       "email": "ema@gmail.com",
       "password": "$2a$10$l6VgT.wRLZPJ239JHhPXEuC8f8UhOMpFJpxrTw5wBIYwflZlL/q/S",
       "rol": "user",
-      "about":null,
+      "about": null,
       "birthday": null
    },
    {
@@ -63,19 +63,17 @@
       "image": "1693864479424_avatar_.png",
       "password": "$2a$10$pAw2FT2phK1OlisBEPTia.I6HgL/z8FVMmPOAMBQ9ZdcsVcU8McaW",
       "rol": "user",
-      "about":null,
+      "about": null,
       "birthday": null
    },
    {
       "id": "0709f38f-5fc0-4ca2-bc29-6e2c15996dc4",
-      "name": "rocio",
-      "surname": "baez",
       "city": "monte",
       "email": "rociobaez@gmail.com",
       "image": "1694204563623_avatar_.jpg",
       "password": "$2a$10$6rw/OCPKCkMK1Y6eqaEB5OlMTSYxoSv2OnHjw07GeOWy03138fNrm",
       "rol": "user",
-      "about":"Hola soy Rocio y este es mi usuario",
-      "birthday": null
+      "about": "Hola soy Rocio y este es mi usuario y soy de boca\r\n",
+      "birthday": ""
    }
 ]

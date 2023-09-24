@@ -10,7 +10,7 @@ module.exports = (req,res) => {
                 name: name.trim(),
                 surname: surname.trim(),
                 birthday,
-                about : about.trim()
+                about : about.trim(),
             }
         }
         return user
