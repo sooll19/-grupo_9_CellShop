@@ -1,14 +1,14 @@
 const { readJSON, writeJSON } = require("../../data")
 
 module.exports = (req,res) => {
-    const users = readJSON('users.json');
-    const {nombre, apellido, birthday, about} = req.body
+    const users = readJSON('user.json');
+    const {name, surname, birthday, about} = req.body
     const usersUpdated = users.map(user => {
         if(user.id === req.session.userLogin.id){
             return {
                 ...user,
-                nombre: nombre.trim(),
-                apellido: apellido.trim(),
+                name: name.trim(),
+                surname: surname.trim(),
                 birthday,
                 about : about.trim()
             }
@@ -16,7 +16,7 @@ module.exports = (req,res) => {
         return user
     })
 
-    writeJSON(usersUpdated, 'users.json');
+    writeJSON(usersUpdated, 'user.json');
     return res.redirect('/')
 } 
 
