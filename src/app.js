@@ -33,7 +33,7 @@ app.use(session({
 }))
 
 app.use(cookieCheck);
-app.use(localsCheck)
+app.use(localsCheck);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
