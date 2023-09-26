@@ -7,7 +7,7 @@
 
     <!-- LOGO -->
     <div class="container">
-        <a href="/"><img src="/images/Logo.jpeg" alt="img-logo"></a>
+        <a href="/"><img src="/images/Logo2.png" alt="img-logo"></a>
 
         <!-- BURGUER MENU -->
         <div class="contenedor-burger-menu">
@@ -30,10 +30,9 @@
             </nav>
 
             <div class="opciones">
-                <ul class="opciones1">
-
-                    <li><a href="/admin">Admin <i class="fas fa-headset"></i></a></li>
-                </ul>
+                <!-- <ul class="opciones1">
+                    
+                </ul> -->
 
                 <ul class="opciones2">
                     <% if (!locals.userLogin) { %>
@@ -41,15 +40,18 @@
                                         class="far fa-envelope"></i></a></a></li>
                         <li><a href="/users/login" class="ocult">Mi cuenta </a><a href=""><i
                                     class="fas fa-user user"></i></a></li>
-                        <li><a href="/products/cart" class="ocult">Mi carrito </a><a href=""><i
-                                    class="fas fa-shopping-cart carrito"></i></a></li>
                         <% } else { %>
+                            <% if (userLogin.rol === 'admin') { %>
+                                <li><a href="/admin">Admin <i class="fas fa-headset"></i></a></li>
+                            <% } %>
                             <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
                             <li><a href="/users/logout">Salir</a></li>
                             <% } %>
+                            <li><a href="/products/cart" class="ocult">Mi carrito </a><a href=""><i
+                                class="fas fa-shopping-cart carrito"></i></a></li>
                 </ul>
             </div>
-        </div> 
+        </div>
     </div>
 
     <!-- BUSCADOR -->

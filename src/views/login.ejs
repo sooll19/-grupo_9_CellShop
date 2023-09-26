@@ -3,47 +3,52 @@
 <%- include('partial/head',{ title: 'LOGIN' }) %>
 
     <body style="background-color: var(--colorCeleste);">
-        <main class="container mt-5">
-            <div class="row mb-5" style="margin-top: 15vh;">
-                <div class="col-12 col-md-10 col-lg-6 mx-auto">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <h4 class="text-center">Iniciá sesión</h4>
-                            <hr>
-                            <form class="row" method="POST">
-                                <div class="col-12 mb-3">
-                                    <label class="form-label" for="email">Email</label>
-                                    <input class="form-control <%= locals.errors && (errors.email && 'is-invalid') %>"
-                                        type="email" id="email" name="email" />
-                                    <small class="text-danger ms-2">
-                                        <%= locals.errors && (errors.email && errors.email.msg) %>
-                                    </small>
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <label class="form-label" for="password">Contraseña</label>
-                                    <input class="form-control" type="password" id="password" name="password" />
-                                    <small class="text-danger ms-2">
-                                        <%= locals.errors && (errors.password && errors.password.msg) %>
-                                    </small>
-                                    <a class="text-dark small" href="">Olvidé mi contraseña</a>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="remember"
-                                        name="remember" />
-                                    <label class="form-check-label small" for="remember"> Recordame </label>
-                                </div>
-                                <div class="d-grid gap-2 d-md-block text-center">
-                                    <button class="btn btn-sm btn-dark mb-3" type="submit">Ingresar</button>
-                                    <button class="btn btn-sm btn-danger mb-3"><a href="/"
-                                            style="color: white">Cancelar</a></button>
-                                </div>
-                            </form>
+        <%- include('partial/header') %>
+            <main class="container mt-5">
+                <div class="row mb-5" style="margin-top: 15vh;">
+                    <div class="col-12 col-md-10 col-lg-6 mx-auto">
+                        <div class="card shadow-lg">
+                            <div class="card-body">
+                                <h4 class="text-center">Iniciá sesión</h4>
+                                <hr>
+                                <form class="row" method="POST">
+                                    <div class="col-12 mb-3">
+                                        <label class="form-label" for="email">Email</label>
+                                        <input
+                                            class="form-control <%= locals.errors && (errors.email && 'is-invalid') %>"
+                                            type="email" id="email" name="email" />
+                                        <small class="text-danger ms-2">
+                                            <%= locals.errors && (errors.email && errors.email.msg) %>
+                                        </small>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="form-label" for="password">Contraseña</label>
+                                        <input class="form-control" type="password" id="password" name="password" />
+                                        <small class="text-danger ms-2">
+                                            <%= locals.errors && (errors.password && errors.password.msg) %>
+                                        </small>
+                                        <a class="text-dark small" href="">Olvidé mi contraseña</a>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="remember"
+                                            name="remember" />
+                                        <label class="form-check-label small" for="remember"> Recordame </label>
+                                        <a href="./register">No tengo cuenta aún</a>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-block text-center">
+                                        <button class="btn btn-sm btn-dark mb-3" type="submit">Ingresar</button>
+                                        <button class="btn btn-sm btn-danger mb-3"><a href="/"
+                                                style="color: white">Cancelar</a></button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-            </script>
+            </main>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+                crossorigin="anonymous">
+                </script>
+            <%- include('partial/footer') %>
     </body>
