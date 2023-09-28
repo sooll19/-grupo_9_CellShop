@@ -6,7 +6,9 @@
       "email": "roxfer@gmail.com",
       "password": "123456",
       "image": "foto perfil",
-      "rol": "user"
+      "rol": "user",
+      "about": null,
+      "birthday": null
    },
    {
       "id": 2,
@@ -15,7 +17,9 @@
       "email": "josemaiorano@gmail.com",
       "password": "123457",
       "image": "foto perfil",
-      "rol": "user"
+      "rol": "user",
+      "about": null,
+      "birthday": null
    },
    {
       "id": 3,
@@ -24,7 +28,9 @@
       "email": "alesanta@gmail.com",
       "password": "123458",
       "image": "foto perfil",
-      "rol": "user"
+      "rol": "user",
+      "about": null,
+      "birthday": null
    },
    {
       "id": 4,
@@ -33,7 +39,9 @@
       "email": "solvargas@gmail.com",
       "password": "123454",
       "image": "foto perfil",
-      "rol": "admin"
+      "rol": "admin",
+      "about": null,
+      "birthday": null
    },
    {
       "id": "02533e2e-5270-441b-b6b3-563f0860235e",
@@ -42,7 +50,9 @@
       "city": "Buenos Aires",
       "email": "ema@gmail.com",
       "password": "$2a$10$l6VgT.wRLZPJ239JHhPXEuC8f8UhOMpFJpxrTw5wBIYwflZlL/q/S",
-      "rol": "user"
+      "rol": "user",
+      "about": null,
+      "birthday": null
    },
    {
       "id": "c6e0205c-dd57-4ddc-9efd-f987e1a91465",
@@ -51,15 +61,34 @@
       "city": "Buenos Aires 2",
       "email": "SOL@GMAIL.COM",
       "image": "1693864479424_avatar_.png",
-      "password": "$2a$10$pAw2FT2phK1OlisBEPTia.I6HgL/z8FVMmPOAMBQ9ZdcsVcU8McaW"
+      "password": "$2a$10$pAw2FT2phK1OlisBEPTia.I6HgL/z8FVMmPOAMBQ9ZdcsVcU8McaW",
+      "rol": "user",
+      "about": null,
+      "birthday": null
    },
    {
-      "id": "326b57dd-4742-400c-bae5-f35f97be0054",
+      "id": "0709f38f-5fc0-4ca2-bc29-6e2c15996dc4",
+      "city": "monte",
+      "email": "rociobaez@gmail.com",
+      "image": "1694204563623_avatar_.jpg",
+      "password": "$2a$10$6rw/OCPKCkMK1Y6eqaEB5OlMTSYxoSv2OnHjw07GeOWy03138fNrm",
+      "rol": "user",
+      "about": "Hola soy Rocio y este es mi usuario y me gustan los desafios,y las papa fritas",
+      "birthday": "",
+      "name": "",
+      "surname": ""
+   },
+   {
+      "id": "a8779ea7-d1ed-4791-9fc3-2d0dc1e1446f",
       "name": "sol",
       "surname": "vargas",
-      "city": "buenos aires",
+      "city": "por ahi 1234",
       "email": "sol@gmail.com",
-      "image": "1694138930036_avatar_.jpg",
-      "password": "$2a$10$eFFNozTAQfVff9.BSHXAie8QCn4egVYzZZAy0e28rkRcxgRnGjJV2"
+      "image": "1695936050358_avatar_.jpg",
+      "password": "$2a$10$m80BllK0DVtrmmKLLlRiz.JH9pmqmYmWXRGVXrdlSi7KCVrFotbwq",
+      "rol": "user",
+      "birtday": null,
+      "about": "hola",
+      "birthday": ""
    }
 ]

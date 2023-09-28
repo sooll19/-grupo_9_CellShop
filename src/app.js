@@ -11,6 +11,7 @@ const localsCheck = require('./middlewares/localsCheck')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
+const cookieCheck = require('./middlewares/cookieCheck');
 
 const app = express();
 
@@ -26,10 +27,13 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.use(methodOverride('_method'));
 app.use(session({
-  secret: "CellSh@p*Group"
+  secret: "CellSh@p*Group",
+  resave:true,
+  saveUninitialized:true
 }))
 
-app.use(localsCheck)
+app.use(cookieCheck);
+app.use(localsCheck);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
