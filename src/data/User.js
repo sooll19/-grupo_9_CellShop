@@ -10,7 +10,7 @@ this.email = email.trim();
 this.image = image;
 this.password = hashSync(password,10);
 this.rol = "user";
-this.birtday = null;
+this.birthday = null;
 this.about = null;
 }
 
