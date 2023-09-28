@@ -61,15 +61,5 @@
       "email": "sol@gmail.com",
       "image": "1694138930036_avatar_.jpg",
       "password": "$2a$10$eFFNozTAQfVff9.BSHXAie8QCn4egVYzZZAy0e28rkRcxgRnGjJV2"
-   },
-   {
-      "id": "8af9db84-036b-4770-ad46-0b990b07296a",
-      "name": "gisela",
-      "surname": "vargas",
-      "city": "por ahí 1234",
-      "email": "sol12@gmail.com",
-      "image": "1694204044004_avatar_.jpg",
-      "password": "$2a$10$tcjq/vi9R6xGmG5UUYgO8OFmku5Embk6ojhv33iTgzRy2tRIaWrRC",
-      "rol": "user"
    }
 ]
