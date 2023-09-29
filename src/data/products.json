@@ -216,30 +216,7 @@
       "subcategoria": null,
       "ingreso": null
    },
-   {
-      "id": 11,
-      "marca": "LG",
-      "modelo": "LG Velvet",
-      "color": "gris",
-      "anio": 2021,
-      "descripcion": "lorem*10",
-      "descuento": 5,
-      "precio": 185,
-      "stock": true,
-      "cantidad": 100,
-      "imagen": "LG-Velvet-removebg-preview.png",
-      "imagenSecundaria": "imagen2.png",
-      "especificacionesTecnicas": [
-         {
-            "Memoria interna": "6GB RAM, 128GB ROM",
-            "Cámara frontal": "16 Mpx",
-            "Cámara trasera": "48 Mpx"
-         }
-      ],
-      "categoria": "celular",
-      "subcategoria": "oferta",
-      "ingreso": null
-   },
+   
    {
       "id": 12,
       "marca": "MOTOROLA",
