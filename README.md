@@ -16,12 +16,6 @@ Roxana Fernandez:
 - Edad:35
 - Hobby:Escuchar música
 
-José Maiorano:
-
-- Ciudad : Grand Bourg  
-- Edad: 34 años          
-- Hobby : Jugar al tenis
-
 Gisela Vargas:
 
 - Ciudad: San Miguel
