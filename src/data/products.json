@@ -168,30 +168,7 @@
       "subcategoria": null,
       "ingreso": null
    },
-   {
-      "id": 9,
-      "marca": "LG",
-      "modelo": "LG K61",
-      "color": "gris",
-      "anio": 2021,
-      "descripcion": "lorem*10",
-      "descuento": 5,
-      "precio": 89.899,
-      "stock": true,
-      "cantidad": 100,
-      "imagen": "lg-k61-removebg-preview.png",
-      "imagenSecundaria": "imagen2.png",
-      "especificacionesTecnicas": [
-         {
-            "Memoria interna": "4GB RAM, 64GB ROM",
-            "Cámara frontal": "16 Mpx",
-            "Cámara trasera": "48 Mpx"
-         }
-      ],
-      "categoria": "celular",
-      "subcategoria": "oferta",
-      "ingreso": null
-   },
+  
    {
       "id": 10,
       "marca": "LG",
