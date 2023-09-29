@@ -165,10 +165,9 @@
          }
       ],
       "categoria": "celular",
-      "subcategoria": null,
+      "subcategoria": "oferta",
       "ingreso": null
    },
-  
    {
       "id": 10,
       "marca": "LG",
@@ -190,10 +189,9 @@
          }
       ],
       "categoria": "celular",
-      "subcategoria": null,
+      "subcategoria": "oferta",
       "ingreso": null
    },
-   
    {
       "id": 12,
       "marca": "MOTOROLA",
@@ -239,7 +237,7 @@
          }
       ],
       "categoria": "celular",
-      "subcategoria": null,
+      "subcategoria": "oferta",
       "ingreso": null
    },
    {
@@ -256,7 +254,7 @@
       "imagen": "MOTO_G42-removebg-preview.png",
       "imagenSecundaria": "imagen2.png",
       "categoria": "",
-      "subcategoria": "",
+      "subcategoria": "oferta",
       "ingreso": "2023-08-26T16:49:32.425Z"
    },
    {
@@ -273,7 +271,7 @@
       "imagen": "Motorola-Moto-E22-removebg-preview.png",
       "imagenSecundaria": "imagen2.png",
       "categoria": "",
-      "subcategoria": "",
+      "subcategoria": "oferta",
       "ingreso": "2023-09-29T02:03:41.181Z"
    }
 ]
