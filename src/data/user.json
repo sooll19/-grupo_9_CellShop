@@ -100,7 +100,7 @@
       "image": "1695949034240_avatar_.jpg",
       "password": "$2a$10$uKWOC3bBSA45HufaLmHj8.dJD9mEuxZXmlzZOQVsG2rqrSes8V3Hy",
       "rol": "admin",
-      "birthday": null,
-      "about": null
+      "birthday": "",
+      "about": "hola"
    }
 ]
