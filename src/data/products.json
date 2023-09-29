@@ -307,56 +307,19 @@
    },
    {
       "id": 15,
-      "marca": "MOTOROLA",
+      "marca": "Apple",
       "modelo": "Motorola E22",
       "color": "gris",
       "anio": 2021,
       "descripcion": "lorem*10",
       "descuento": 20,
       "precio": 53.999,
-      "stock": true,
-      "cantidad": 100,
+      "stock": "",
+      "cantidad": "",
       "imagen": "Motorola-Moto-E22-removebg-preview.png",
       "imagenSecundaria": "imagen2.png",
-      "especificacionesTecnicas": [
-         {
-            "Memoria interna": "3GB RAM, 32GB ROM",
-            "Cámara frontal": "5 Mpx",
-            "Cámara trasera": "16 Mpx"
-         }
-      ],
-      "categoria": "celular",
-      "subcategoria": "oferta",
-      "ingreso": null
-   },
-   {
-      "id": 16,
-      "marca": "Genérico",
-      "modelo": "nokia",
-      "color": "azul",
-      "anio": 2000,
-      "descripcion": "bueno y barato",
-      "descuento": 10,
-      "precio": 30000,
-      "stock": "",
-      "cantidad": 9,
-      "imagen": null,
-      "categoria": "celulares",
-      "ingreso": "2023-09-29T00:59:12.587Z"
-   },
-   {
-      "id": 17,
-      "marca": "Genérico",
-      "modelo": "alcatel",
-      "color": "negro",
-      "anio": 2000,
-      "descripcion": "bueno",
-      "descuento": 10,
-      "precio": 20000,
-      "stock": "",
-      "cantidad": 10,
-      "imagen": null,
-      "categoria": "celulares",
-      "ingreso": "2023-09-29T01:07:43.755Z"
+      "categoria": "",
+      "subcategoria": "",
+      "ingreso": "2023-09-29T02:03:41.181Z"
    }
 ]
