@@ -19,7 +19,8 @@
       <div class="accesoriosCelu">
         <% accesoriosParaCelu.forEach(product=> { %>
           <div class="imagen_accesorios">
-            <img src="/images/accesorios/<%=product.imagen %>" class="card-img-top" alt="...">
+            <img src="/images/accesorios/<%=product.imagen || 'default.png'%>" class="card-img-top" alt="...">
+         
           </div>
             <div class="modeloA">
               <h5>Accesorio: <%= product.modelo %>

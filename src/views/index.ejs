@@ -54,7 +54,7 @@
                         <div class="glider">
                             <%oferta.forEach(product=> { %>
                                 <article class="home__carousel__article">
-                                    <img src="/images/celulares/<%=product.imagen%>" alt="Imagen">
+                                    <img src="/images/celulares/<%=product.imagen || 'default.png'%>" alt="Imagen">
 
                                 </article>
                                 <% }) %>

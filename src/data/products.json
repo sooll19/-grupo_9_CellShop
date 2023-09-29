@@ -328,5 +328,35 @@
       "categoria": "celular",
       "subcategoria": "oferta",
       "ingreso": null
+   },
+   {
+      "id": 16,
+      "marca": "Genérico",
+      "modelo": "nokia",
+      "color": "azul",
+      "anio": 2000,
+      "descripcion": "bueno y barato",
+      "descuento": 10,
+      "precio": 30000,
+      "stock": "",
+      "cantidad": 9,
+      "imagen": null,
+      "categoria": "celulares",
+      "ingreso": "2023-09-29T00:59:12.587Z"
+   },
+   {
+      "id": 17,
+      "marca": "Genérico",
+      "modelo": "alcatel",
+      "color": "negro",
+      "anio": 2000,
+      "descripcion": "bueno",
+      "descuento": 10,
+      "precio": 20000,
+      "stock": "",
+      "cantidad": 10,
+      "imagen": null,
+      "categoria": "celulares",
+      "ingreso": "2023-09-29T01:07:43.755Z"
    }
 ]
