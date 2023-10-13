@@ -18,7 +18,7 @@ module.exports = (req, res) => {
         }
 
         remember !== undefined && res.cookie("cellShop",req.session.userLogin,{
-            maxAge : 2000 * 60
+            maxAge : 8000 * 60
         })
 
         return res.redirect('/')

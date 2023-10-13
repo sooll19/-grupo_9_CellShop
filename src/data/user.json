@@ -90,5 +90,29 @@
       "birtday": null,
       "about": "hola",
       "birthday": ""
+   },
+   {
+      "id": "9016398f-6630-45e7-90e1-01162c9a394b",
+      "name": "sol",
+      "surname": "vargas",
+      "city": "1234",
+      "email": "sol19@gmail.com",
+      "image": "1695949034240_avatar_.jpg",
+      "password": "$2a$10$uKWOC3bBSA45HufaLmHj8.dJD9mEuxZXmlzZOQVsG2rqrSes8V3Hy",
+      "rol": "admin",
+      "birthday": "",
+      "about": "hola"
+   },
+   {
+      "id": "2241daac-d8af-4b25-8957-0b2b5ecdb12a",
+      "name": "edu",
+      "surname": "pe",
+      "city": "por ahi",
+      "email": "edu45@gmail.com",
+      "image": "1696023992952_avatar_.jpg",
+      "password": "$2a$10$k0yvWC2ektSSFZpgxajKk.9dv3ZdaNDEnGsH2YwoatjnG4aVKHOte",
+      "rol": "user",
+      "birthday": "",
+      "about": "hola"
    }
 ]

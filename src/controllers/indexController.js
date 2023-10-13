@@ -1,3 +1,7 @@
+/*base de datos*/
+const db = require('../database/models')
+
+
 const { readJSON } = require("../data");
 const fs = require("fs");
 

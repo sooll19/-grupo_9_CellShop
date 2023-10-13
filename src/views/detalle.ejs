@@ -11,7 +11,9 @@
                             <%= product.modelo %>
                         </h3>
                         <div class="imagen">
-                            <img src="/images/detalle/<%=product.imagen %>" alt="producto1" width="300">
+                            <img src="/images/detalle/<%=product.imagen || 'default.png'%>" alt="producto1" width="300">
+                    
+                    
                         </div>
                         <ul type="none">
                             <li>
