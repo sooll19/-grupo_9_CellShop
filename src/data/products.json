@@ -165,30 +165,6 @@
          }
       ],
       "categoria": "celular",
-      "subcategoria": null,
-      "ingreso": null
-   },
-   {
-      "id": 9,
-      "marca": "LG",
-      "modelo": "LG K61",
-      "color": "gris",
-      "anio": 2021,
-      "descripcion": "lorem*10",
-      "descuento": 5,
-      "precio": 89.899,
-      "stock": true,
-      "cantidad": 100,
-      "imagen": "lg-k61-removebg-preview.png",
-      "imagenSecundaria": "imagen2.png",
-      "especificacionesTecnicas": [
-         {
-            "Memoria interna": "4GB RAM, 64GB ROM",
-            "Cámara frontal": "16 Mpx",
-            "Cámara trasera": "48 Mpx"
-         }
-      ],
-      "categoria": "celular",
       "subcategoria": "oferta",
       "ingreso": null
    },
@@ -210,30 +186,6 @@
             "Memoria interna": "6GB RAM, 64GB ROM",
             "Cámara frontal": "8 Mpx",
             "Cámara trasera": "16 Mpx"
-         }
-      ],
-      "categoria": "celular",
-      "subcategoria": null,
-      "ingreso": null
-   },
-   {
-      "id": 11,
-      "marca": "LG",
-      "modelo": "LG Velvet",
-      "color": "gris",
-      "anio": 2021,
-      "descripcion": "lorem*10",
-      "descuento": 5,
-      "precio": 185,
-      "stock": true,
-      "cantidad": 100,
-      "imagen": "LG-Velvet-removebg-preview.png",
-      "imagenSecundaria": "imagen2.png",
-      "especificacionesTecnicas": [
-         {
-            "Memoria interna": "6GB RAM, 128GB ROM",
-            "Cámara frontal": "16 Mpx",
-            "Cámara trasera": "48 Mpx"
          }
       ],
       "categoria": "celular",
@@ -285,7 +237,7 @@
          }
       ],
       "categoria": "celular",
-      "subcategoria": null,
+      "subcategoria": "oferta",
       "ingreso": null
    },
    {
@@ -302,7 +254,7 @@
       "imagen": "MOTO_G42-removebg-preview.png",
       "imagenSecundaria": "imagen2.png",
       "categoria": "",
-      "subcategoria": "",
+      "subcategoria": "oferta",
       "ingreso": "2023-08-26T16:49:32.425Z"
    },
    {
@@ -319,7 +271,7 @@
       "imagen": "Motorola-Moto-E22-removebg-preview.png",
       "imagenSecundaria": "imagen2.png",
       "categoria": "",
-      "subcategoria": "",
+      "subcategoria": "oferta",
       "ingreso": "2023-09-29T02:03:41.181Z"
    }
 ]
