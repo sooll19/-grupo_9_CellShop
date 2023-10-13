@@ -1,0 +1,26 @@
+'use strict';
+
+const marcasJSON =  require('../../data/marcas.json');
+const brands = marcasJSON.map((brand,index) => {
+  return {
+      name : brand.name,
+      originId : index + 1,
+      createdAt : new Date,
+      updatedAt : new Date
+  }
+})
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+   
+      await queryInterface.bulkInsert('Brands', brands, {});
+    
+  },
+
+  async down (queryInterface, Sequelize) {
+    
+     await queryInterface.bulkDelete('Brands', null, {});
+     
+  }
+};
