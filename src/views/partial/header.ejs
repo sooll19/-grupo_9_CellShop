@@ -41,8 +41,8 @@
                         <li><a href="/users/login" class="ocult">Mi cuenta </a><a href=""><i
                                     class="fas fa-user user"></i></a></li>
                         <% } else { %>
-                            <% if (userLogin.rol === 'admin') { %>
-                                <li><a href="/admin">Admin <i class="fas fa-headset"></i></a></li>
+                            <% if (userLogin.rol === 1) { %>
+                                <li><a href="/admin">Admin<i class="fas fa-headset"></i></a></li>
                             <% } %>
                             <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
                             <li><a href="/users/logout">Salir</a></li>
