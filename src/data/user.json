@@ -114,5 +114,17 @@
       "rol": "user",
       "birthday": "",
       "about": "hola"
+   },
+   {
+      "id": "fb045645-b311-4936-88b7-4799a5d1396d",
+      "name": "River",
+      "surname": "Plate",
+      "city": "Núñez",
+      "email": "riverplate@gmail.com",
+      "image": "1697240717093_avatar_.jpg",
+      "password": "$2a$10$qO0aA5S5nKoBQlTiWD4Al..mUksOEklbOTBf0WPdN5zG2hN4V/aPu",
+      "rol": "user",
+      "birthday": null,
+      "about": null
    }
 ]

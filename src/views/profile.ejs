@@ -15,15 +15,40 @@
                                 <div class="col-12 col-md-6 mb-3">
                                     <label class="form-label" for="name">Nombre</label>
                                     <input class="form-control" type="text" id="name" name="name" value="<%= name %>">
+                                    <small class="ms-2 text-danger">
+                                        <%= locals.errors && (errors.name && errors.name.msg) %>
+                                    </small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label class="form-label" for="surname">Apellido</label>
-                                    <input class="form-control" type="text" id="surname" name="surname" value="<%= surname %>">
+                                    <input class="form-control" type="text" id="surname" name="surname"
+                                        value="<%= surname %>">
+                                    <small class="ms-2 text-danger">
+                                        <%= locals.errors && (errors.surname && errors.surname.msg) %>
+                                    </small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label class="form-label" for="birthday">Cumpleaños</label>
-                                    <input class="form-control" type="date" id="birthday" name="birthday">
+                                    <input class="form-control" type="date" id="birthday" name="birthday" value="<%= birthday %>">
                                 </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="address">Domicilio</label>
+                                    <input type="text" class="form-control" name="address">
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="province">Provincia</label>
+                                    <select id="province" class="form-control" name="province">
+                                        <option selected hidden>Elija la provincia...</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="city">Localidad</label>
+                                    <select id="city" class="form-control" name="city">
+                                        <option selected hidden>Elija la localidad...</option>
+                                    </select>
+                                </div>
+
                                 <div class="col-12 col-md-6 mb-3">
                                     <label class="form-check-label" for="about">
                                         Acerca de mí
@@ -32,7 +57,8 @@
                                         class="form-control"><%= about %></textarea>
                                 </div>
                                 <div class="col-12 d-flex justify-content-end gap-2 mb-3">
-                                    <button class="btn btn-secondary"><a href="/" style="color: white;">Volver al HOME</a></button>
+                                    <button class="btn btn-secondary"><a href="/" style="color: white;">Volver al
+                                            HOME</a></button>
                                     <label for="image" class="btn btn-dark">Cambiar imagen de perfil</label>
                                     <input hidden class="form-control" type="file" id="image" name="imagen">
                                     <button class="btn btn-success" type="submit">Guardar cambios</button>

@@ -1,10 +1,9 @@
 'use strict';
 
 const marcasJSON =  require('../../data/marcas.json');
-const brands = marcasJSON.map((brand,index) => {
+const brands = marcasJSON.map((brand) => {
   return {
       name : brand.name,
-      originId : index + 1,
       createdAt : new Date,
       updatedAt : new Date
   }
