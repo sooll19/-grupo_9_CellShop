@@ -72,25 +72,25 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <% products.forEach(({id,marca,modelo,precio,descuento,imagen})=> { %>
+                                                <% products.forEach(({id,brand,model,price,discount})=> { %>
                                                     <tr>
                                                         <th scope="row">
                                                             <%= id %>
                                                         </th>
                                                         <td>
-                                                            <%= marca ? marca : "sin especificar" %>
+                                                            <%= brand.name%>
                                                         </td>
                                                         <td>
-                                                            <%= modelo %>
+                                                            <%= model %>
                                                         </td>
                                                         <td>
-                                                            <%= precio %>
+                                                            <%= price %>
                                                         </td>
                                                         <td>
-                                                            <%= descuento %>
+                                                            <%= discount %>
                                                         </td>
                                                         <td>
-                                                            <%= precio - (descuento*precio/100) %>
+                                                            <%= price - (discount*price/100) %>
                                                         </td>
                                                         <td>
                                                             <div class="d-flex gap-2">
@@ -127,8 +127,8 @@
                                                                             <div class="modal-body">
                                                                                 <p>¿Estás seguro que querés eliminar el
                                                                                     producto <b>
-                                                                                        <%= marca %>
-                                                                                            <%= modelo %>
+                                                                                        <%= brand %>
+                                                                                            <%= model %>
                                                                                     </b>?</p>
                                                                             </div>
                                                                             <div class="modal-footer">

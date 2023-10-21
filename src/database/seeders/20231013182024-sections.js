@@ -1,24 +1,6 @@
 "use strict";
 
-const sections =  [
-  {
-    name : 'oferta',
-    createdAt : new Date,
-    updatedAt : new Date,
-  },
-  {
-    name : 'nuevo',
-    createdAt : new Date,
-    updatedAt : new Date,
-  },
-  {
-    name : 'general',
-    createdAt : new Date,
-    updatedAt : new Date,
-  },
-];
 const sections = require("../../data/sections.json");
-
 const sectionFormatDB = sections.map(({ name }) => {
   return {
     name,
@@ -37,3 +19,7 @@ module.exports = {
     await queryInterface.bulkDelete("Sections", null, {});
   },
 };
+
+
+
+
