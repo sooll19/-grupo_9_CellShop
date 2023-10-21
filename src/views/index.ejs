@@ -7,20 +7,23 @@
             <main class="home__main">
 
                 <!-- CARRUSEL AUTOMATICO-->
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/images/banner/banner5.webp" class="d-block w-100" alt="...">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="/images/banner/banner4.webp" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/banner/banner_celu.webp" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/banner/banner5.webp" class="d-block w-100" alt="imgCarrousel">
+                            </div>
+    
+                            <div class="carousel-item">
+                                <img src="/images/banner/banner4.webp" class="d-block w-100" alt="imgCarrousel">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/banner/banner_celu.webp" class="d-block w-100" alt="imgCarrousel">
+                            </div>
                         </div>
                     </div>
                 </div>
+                
                 <!-- FIN CARRUSEL AUTOMATICO-->
 
                 <!-- BOTON FILTRO-->
@@ -40,7 +43,7 @@
                 <!-- FIN BOTON FILTRO-->
 
                 <!-- PRODUCTOS MAS NUEVOS-->
-                <div class="container">
+                <!-- <div class="container">
                     <div class="row">
                         <div class="celulares-ofertas">
                             <div class="banner_mas_vendido">
@@ -50,9 +53,10 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
                 <div class="container">
                     <div class="row">
+                        <h3 class="mb-4">#NUESTROS NUEVOS PRODUCTOS</h3>
                         <% products.forEach(product=> { %>
                             <div class="col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100" style="max-width: 12rem; margin: auto;">
@@ -76,17 +80,18 @@
                 <!-- FIN PRODUCTOS MAS NUEVOS-->
 
                 <!-- ACCESORIOS MAS VENDIDOS-->
-                <div class="container">
+                <!-- <div class="container">
                     <div class="accesorios">
                         <div class="banner_mas_vendido">
                             <img src="/images/banner/mas-vendido.jpg" alt="banner"
                                 style="width: 1000px; height: 200px;">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="container">
                     <div class="row">
+                        <h3 class="mb-4">#LOS ACCESORIOS MAS VENDIDOS</h3>
                         <%accesorios.forEach(product=> { %>
                             <div class="col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100" style="max-width: 12rem; margin: auto;">
@@ -111,16 +116,17 @@
                 <!-- FIN ACCESORIOS MAS NUEVOS-->
 
                 <!-- OFERTAS-->
-                <div class="container">
+                <!-- <div class="container">
                     <div class="accesorios">
                         <div class="banner_mas_vendido">
                             <img src="/images/banner/ofertas.jpg" alt="banner" style="width: 1000px; height: 200px;">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="container">
                     <div class="row">
+                        <h3 class="mb-4">#OFERTAS ÚNICAS</h3>
                         <%oferta.forEach(product=> { %>
                             <div class="col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100" style="max-width: 12rem; margin: auto;">
