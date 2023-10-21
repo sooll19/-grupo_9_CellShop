@@ -10,7 +10,12 @@ const sections =  [
     name : 'nuevo',
     createdAt : new Date,
     updatedAt : new Date,
-  }
+  },
+  {
+    name : 'general',
+    createdAt : new Date,
+    updatedAt : new Date,
+  },
 ];
 
 

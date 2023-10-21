@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `cellshop_db`.`addresses` (
     REFERENCES `cellshop_db`.`users` (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+COLLATE = utf8mb4_0900_ai_ci-- ;
 
 
 -- -----------------------------------------------------
