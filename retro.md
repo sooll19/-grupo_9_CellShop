@@ -73,3 +73,18 @@ Seguir haciendo:
 
 - Trabajo indivual,
 - Respeto
+
+  ## **SPRINT 5**  
+
+Hacer más:  
+- Comunicación
+  
+Empezar a hacer:  
+
+Dejar de hacer:  
+
+Hacer menos:  
+
+Seguir haciendo:  
+
+- Trabajo indivual
