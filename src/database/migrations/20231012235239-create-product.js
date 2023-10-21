@@ -11,9 +11,12 @@ module.exports = {
       },
       model: {
         type: Sequelize.STRING,
-        allowNull:false
+        allowNull: false
       },
       color: {
+        type: Sequelize.STRING
+      },
+      image: {
         type: Sequelize.STRING
       },
       year: {
@@ -27,7 +30,7 @@ module.exports = {
       },
       discount: {
         type: Sequelize.INTEGER,
-        defaultValue:0
+        defaultValue: 0
       },
       price: {
         type: Sequelize.INTEGER,
@@ -35,27 +38,27 @@ module.exports = {
       },
       categoryId: {
         type: Sequelize.INTEGER,
-        references:{
-          model:{
-            tableName:'Categories'
+        references: {
+          model: {
+            tableName: 'Categories'
           }
         }
       },
       brandId: {
-          type: Sequelize.INTEGER,
-          allowNull : false,
-          references : {
-            model : {
-              tableName : 'Brands'
-            }
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: {
+            tableName: 'Brands'
           }
+        }
       },
       sectionId: {
         type: Sequelize.INTEGER,
-        defaultValue : 1,
-        references : {
-          model : {
-            tableName : 'Sections'
+        defaultValue: 1,
+        references: {
+          model: {
+            tableName: 'Sections'
           }
         }
       },

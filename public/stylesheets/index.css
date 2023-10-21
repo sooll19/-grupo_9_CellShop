@@ -35,6 +35,13 @@
   object-fit: contain;
 }
 
+.home .card-img-top {
+  width: 180px;
+  margin: 0 auto;
+  height: 180px;
+  object-fit: contain;
+}
+
 .accesorios h1 {
   text-decoration: none;
   text-align: center;

@@ -16,18 +16,18 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'brandId'
       });
 
-      Product.belongsTo(models.Section,{
-        as : 'section',
+      Product.belongsTo(models.Section, {
+        as: 'section',
         foreignKey: 'sectionId'
       });
 
-      Product.belongsTo(models.Category,{
-        as : 'category',
+      Product.belongsTo(models.Category, {
+        as: 'category',
         foreignKey: 'categoryId'
       });
 
       Product.hasMany(models.Image, {
-        as: 'image',
+        as: 'images',
         foreignKey: 'productId'
       })
     }
@@ -43,7 +43,7 @@ module.exports = (sequelize, DataTypes) => {
     categoryId: DataTypes.INTEGER,
     brandId: DataTypes.INTEGER,
     sectionId: DataTypes.INTEGER,
-    image : DataTypes.STRING
+    image: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Product',
