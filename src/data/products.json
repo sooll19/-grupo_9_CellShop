@@ -275,5 +275,25 @@
          "Versión Bluetooth: 4.2"
       ],
      "category": "celular"
+   },
+   {
+      "id": 14,
+      "brand": "JBL",
+      "section": "Nuevo",
+      "model": "Go 3",
+      "color": "azul",
+      "year": 2023,
+      "description": "El diseño ultraportátil del JBL Go 3 combina a la perfección con los últimos estilos, y sus coloridos tejidos y detalles expresivos hacen que luzca tan bien como suena.",
+      "discount": 0,
+      "price": 46000,
+      "image": "i1.webp",
+      "technicalSpecifications": [
+         " Potencia de salida (RMS): 4.2 W",
+         "Tipos de parlante: Tweeter",
+         "Tipos de filtros del parlante: Activo",
+         " Configuración de canales: 2.1",
+         "Respuesta mínima en frecuencia - Respuesta máxima en frecuencia: 110 Hz - 20 kHz"
+      ],
+      "category": "accesorios"
    }
 ]
