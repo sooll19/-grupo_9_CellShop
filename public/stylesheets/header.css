@@ -87,9 +87,9 @@ header {
     padding-left: 0
 }
 
-/* .opciones2 a {
-    margin-right: 3px;
-} */
+.opciones2 a {
+    color: #fff
+} 
 
 /* .opciones2 li {} */
 

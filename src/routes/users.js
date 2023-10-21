@@ -5,6 +5,7 @@ const registerValidator = require("../validations/registerValidator");
 const loginValidator = require("../validations/loginValidator");
 const checkUserLogin = require('../middlewares/checkUserLogin');
 const uploadUser = require('../middlewares/uploadUser');
+const profileValidator = require("../validations/profileValidator");
 
 /* /users */
 router.get("/register", register);
@@ -12,7 +13,7 @@ router.post("/register", uploadUser.single('image'), registerValidator, processR
 router.get("/login", login);
 router.post("/login", loginValidator, processLogin);
 router.get("/profile", checkUserLogin, profile);
-router.put("/update-profile",updateProfile);
+router.put("/update-profile", profileValidator,updateProfile);
 router.get("/logout",logout);
 
 module.exports = router;

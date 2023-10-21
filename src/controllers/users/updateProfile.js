@@ -1,23 +1,40 @@
-const { readJSON, writeJSON } = require("../../data")
+const { validationResult } = require('express-validator')
+const db = require('../../database/models')
 
 module.exports = (req,res) => {
-    const users = readJSON('user.json');
-    const {name, surname, birthday, about} = req.body
-    const usersUpdated = users.map(user => {
-        if(user.id === req.session.userLogin.id){
-            return {
-                ...user,
-                name: name.trim(),
-                surname: surname.trim(),
-                birthday,
-                about : about.trim(),
-            }
-        }
-        return user
-    })
+  const errors = validationResult(req)
 
-    writeJSON(usersUpdated, 'user.json');
-    return res.redirect('/')
+  if(errors.isEmpty()){
+    const {name, surname, birthday, about, address, city, province} = req.body
+  
+    db.User.update(
+      {
+        name: name.trim(),
+        surname: surname.trim(),
+        birthday,
+        about : about.trim(),
+      },
+      {
+        where: {
+          id: req.session.userLogin.id
+        }
+      }
+    )
+      .then(response => {
+        console.log(response)
+        return res.redirect('/')
+      })
+      .catch(error => console.log(error))
+  } else {
+    db.User.findByPk(req.session.userLogin.id)
+      .then(suer => {
+          return res.render('profile', {
+              ...user.dataValues,
+              errors : errors.mapped()
+          })
+      })
+      .catch(error => console.log(error))
+  }
 } 
 
   /*Valores obtenidos desde el req.body
