@@ -15,7 +15,7 @@
           </button>
           <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
-              <li><a class="dropdown-item" href="/products/accesoriosParaCelu">Accesorios</a></li>
+              <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
           </ul>
       </div>
   </div>
@@ -26,12 +26,12 @@
             <%accesorios.forEach(product=> { %>
                 <div class="col-lg-4 col-md-4 mb-4">
                     <div class="card h-100" style="max-width: 12rem; margin: auto;">
-                        <img src="/images/accesorios/<%=product.imagen ||'default.png' %>" class="card-img-top" alt="Imagen">
+                        <img src="/images/products/<%=product.image ||'default.png' %>" class="card-img-top" alt="Imagen">
                         <div class="card-body">
                             <p class="card-title">
-                                <%=product.modelo%>
+                                <%=product.model%>
                                     <p>
-                                    <p class="card-text">$<%=product.precio%>
+                                    <p class="card-text">$<%=product.price%>
                                     </p>
                         </div>
                         <div class="card-footer">
