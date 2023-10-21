@@ -1,7 +1,8 @@
 const express = require('express');
-const { detalle , cart, edit, create,celulares, accesorios,update, add, remove, filter } = require ('../controllers/productsController')
+const { detalle , cart, edit, create,celulares, accesorios,update, add, filter } = require ('../controllers/productsController')
 const upload = require('../middlewares/upload');
 const router = express.Router();
+const {remove} = require('../controllers/products/remove')
 
 /* /products */
 router.get('/celulares', celulares);

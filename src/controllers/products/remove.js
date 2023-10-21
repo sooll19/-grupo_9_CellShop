@@ -1,12 +1,20 @@
-const { readJSON, writeJSON } = require("../../data")
+const db = require('../../database/models')
+const path = require("path");
 
-module.exports = (req, res) => {
-    const products = readJSON('products.json');
-    const id = req.params.id;
+const controllerDelete = {
 
-    const productsModify = products.filter(product => product.id !== +id);
+remove: (req, res) => {
+    db.Product.destroy({
+		where : {
+			id : req.params.id
+		}
+	}).then(response => {
+		console.log(response);
+		return res.redirect("/admin");
+	})
+	.catch((error) => console.log(error));
+    
+  },
+};
 
-    writeJSON(productsModify, 'products.json')
-
-    return res.redirect('/admin')
-} 
+module.exports = controllerDelete
