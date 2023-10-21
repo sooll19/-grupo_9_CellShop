@@ -6,6 +6,7 @@
         <%- include('partial/header') %>
             <main class="home__main">
 
+                <!-- CARRUSEL AUTOMATICO-->
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -19,113 +20,128 @@
                             <img src="/images/banner/banner_celu.webp" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
+                <!-- FIN CARRUSEL AUTOMATICO-->
 
+                <!-- BOTON FILTRO-->
+                <div>
+                    <div class="btn-group">
 
-                <div class="celulares-ofertas">
-                    <div class="banner_mas_vendido">
-                        <img src="/images/lo mas vendido.png" alt="">
-                    </div>
-                    <div>
-                        <div class="btn-group">
-
-                            <button class="btn btn-secondary dropdown-toggle mb-5" type="button"
-                                data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-                                Todos los productos
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
-                                <li><a class="dropdown-item" href="/products/accesoriosParaCelu">Accesorios</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="glider-contain">
-                        <div class="glider">
-                            <%oferta.forEach(product=> { %>
-                                <article class="home__carousel__article">
-                                    <img src="/images/celulares/<%=product.imagen || 'default.png'%>" alt="Imagen">
-
-                                </article>
-                                <% }) %>
-
-
-
-                        </div>
-                        <button aria-label="Previous" class="glider-prev">
-                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        <button class="btn btn-info dropdown-toggle mb-5" type="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
+                            Ver solo
                         </button>
-                        <button aria-label="Next" class="glider-next">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                        </button>
-                        <div role="tablist" class="dots"></div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
+                            <li><a class="dropdown-item" href="/products/accesoriosParaCelu">Accesorios</a></li>
+                        </ul>
                     </div>
                 </div>
+                <!-- FIN BOTON FILTRO-->
+
+                <!-- PRODUCTOS MAS NUEVOS-->
+                <div class="container">
+                    <div class="row">
+                        <div class="celulares-ofertas">
+                            <div class="banner_mas_vendido">
+                                <img src="/images/banner/NuevosProductos.jpg" alt="banner" style="width: 1000px; height: 200px;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <%accesorios.forEach(product=> { %>
+                            <div class="col-lg-4 col-md-4 mb-4">
+                                <div class="card h-100" style="max-width: 12rem; margin: auto;">
+                                    <img src="/images/accesorios/<%=product.imagen ||'default.png' %>"
+                                        class="card-img-top" alt="Imagen">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <%=product.modelo%>
+                                                <p>
+                                                <p class="card-text">$<%=product.precio%>
+                                                </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+                <!-- FIN PRODUCTOS MAS NUEVOS-->
+
+                <!-- ACCESORIOS MAS VENDIDOS-->
+                <div class="container">
+                    <div class="accesorios">
+                        <div class="banner_mas_vendido">
+                            <img src="/images/banner/mas-vendido.jpg" alt="banner" style="width: 1000px; height: 200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <%accesorios.forEach(product=> { %>
+                            <div class="col-lg-4 col-md-4 mb-4">
+                                <div class="card h-100" style="max-width: 12rem; margin: auto;">
+                                    <img src="/images/accesorios/<%=product.imagen ||'default.png' %>"
+                                        class="card-img-top" alt="Imagen">
+
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <%=product.modelo%>
+                                                <p>
+                                                <p class="card-text">$<%=product.precio%>
+                                                </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+                <!-- FIN ACCESORIOS MAS NUEVOS-->
+
+                <!-- OFERTAS-->
+                <div class="container">
+                    <div class="accesorios">
+                        <div class="banner_mas_vendido" >
+                            <img src="/images/banner/ofertas.jpg" alt="banner" style="width: 1000px; height: 200px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <%accesorios.forEach(product=> { %>
+                            <div class="col-lg-4 col-md-4 mb-4">
+                                <div class="card h-100" style="max-width: 12rem; margin: auto;">
+                                    <img src="/images/accesorios/<%=product.imagen ||'default.png' %>"
+                                        class="card-img-top" alt="Imagen">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <%=product.modelo%>
+                                                <p>
+                                                <p class="card-text">$<%=product.precio%>
+                                                </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+                <!-- FIN OFERTAS-->
 
             </main>
-            <script src="/javascripts/glider.js"></script>
-            <script>
-                window.addEventListener("load", function () {
-                    new Glider(document.querySelector(".glider"), {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: '.dots',
-                        arrows: {
-                            prev: '.glider-prev',
-                            next: '.glider-next'
-                        },
-                        draggable: true,
-                        responsive: [
-                            {
-                                // screens greater than >= 775px
-                                breakpoint: 768,
-                                settings: {
-                                    // Set to `auto` and provide item width to adjust to viewport
-                                    slidesToShow: 3,
-                                    slidesToScroll: 1,
-                                    duration: 0.25,
-                                    /* itemWidth: 150, */
-
-                                }
-                            }, {
-                                // screens greater than >= 1024px
-                                breakpoint: 1024,
-                                settings: {
-                                    slidesToShow: 4,
-                                    slidesToScroll: 1,
-                                    duration: 0.25,
-
-
-                                }
-                            }
-                        ]
-                    });
-                });
-            </script>
-
-            <div class="accesorios">
-                <div class="banner_mas_vendido">
-                    <img src="/images/mas-vendido.jpg" alt="">
-                </div>
-                <%accesorios.forEach(product=> { %>
-                    <div class="accesoriosimg">
-
-                        <img src="/images/accesorios/<%=product.imagen%>" alt="">
-                    </div>
-                    <% }) %>
-            </div>
-
-            </div>
             <%- include('partial/footer') %>
     </body>
 

@@ -2,12 +2,17 @@
 
 const sections =  [
   {
-    name : 'oferta',
+    name : 'Oferta',
     createdAt : new Date,
     updatedAt : new Date,
   },
   {
-    name : 'nuevo',
+    name : 'Nuevo',
+    createdAt : new Date,
+    updatedAt : new Date,
+  },
+  {
+    name : 'General',
     createdAt : new Date,
     updatedAt : new Date,
   }

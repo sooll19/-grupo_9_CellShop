@@ -22,15 +22,16 @@ module.exports = {
       description: {
         type: Sequelize.TEXT
       },
+      technicalSpecifications: {
+        type: Sequelize.TEXT
+      },
       discount: {
         type: Sequelize.INTEGER,
         defaultValue:0
       },
       price: {
-        type: Sequelize.INTEGER
-      },
-      stock: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
       categoryId: {
         type: Sequelize.INTEGER,

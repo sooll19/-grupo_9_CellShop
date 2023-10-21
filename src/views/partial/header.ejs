@@ -7,10 +7,10 @@
 
     <!-- LOGO -->
     <div class="container">
-        <a href="/"><img src="/images/Logo2.png" alt="img-logo"></a>
+        <a href="/"><img src="/images/cellShop/Logo2.png" alt="img-logo"></a>
 
         <!-- BURGUER MENU -->
-    <!--  <div class="contenedor-burger-menu">
+        <!--  <div class="contenedor-burger-menu">
             <button class="burguer-menu" type="button">
                 <i class="fas fa-bars"></i>
             </button>
@@ -41,14 +41,14 @@
                         <li><a href="/users/login" class="ocult">Mi cuenta </a><a href=""><i
                                     class="fas fa-user user"></i></a></li>
                         <% } else { %>
-                            <% if (userLogin.rol === 1) { %>
-                                <li><a href="/admin">Admin<i class="fas fa-headset"></i></a></li>
-                            <% } %>
-                            <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
-                            <li><a href="/users/logout">Salir</a></li>
-                            <% } %>
-                            <li><a href="/products/cart" class="ocult">Mi carrito </a><a href=""><i
-                                class="fas fa-shopping-cart carrito"></i></a></li>
+                            <% if (userLogin.rol===1) { %>
+                                <li><a href="/admin">Admin</i></a></li>
+                                <% } %>
+                                    <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
+                                    <li><a href="/users/logout">Salir</a></li>
+                                    <% } %>
+                                        <li><a href="/products/cart" class="ocult">Mi carrito </a><a href=""><i
+                                                    class="fas fa-shopping-cart carrito"></i></a></li>
                 </ul>
             </div>
         </div>

@@ -1,50 +1,34 @@
 [
     {
         "id" : 1,
-        "name" : "LG",
-        "origin" : "Corea del Sur",
-        "image" : null
+        "name" : "LG"
     },
     {
         "id" : 2,
-        "name" : "Motorola",
-        "origin" : "Estados Unidos",
-        "image" : null
+        "name" : "Motorola"
     },
     {
         "id" : 3,
-        "name" : "Samsung",
-        "origin" : "Corea del Sur",
-        "image" : null
+        "name" : "Samsung"
     },
     {
         "id" : 4,
-        "name" : "TCL",
-        "origin" : "China",
-        "image" : null
+        "name" : "TCL"
     },
     {
         "id" : 5,
-        "name" : "Xiaomi",
-        "origin" : "China",
-        "image" : null
+        "name" : "Xiaomi"
     },
     {
         "id" : 6,
-        "name" : "Apple",
-        "origin" : "Estados Unidos",
-        "image" : null
+        "name" : "Apple"
     },
     {
         "id" : 7,
-        "name" : "Genérico",
-        "origin" : null,
-        "image" : null
+        "name" : "Genérico"
     },
     {
         "id" : 8,
-        "name" : "JBL",
-        "origin" : "Estados Unidos",
-        "image" : null
+        "name" : "JBL"
     }
 ]

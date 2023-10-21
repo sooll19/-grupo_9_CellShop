@@ -39,11 +39,21 @@ module.exports = {
 
   admin: (req, res) => {
 
-    const products = readJSON('products.json');
-
-    return res.render('admin', {
-      products,
+    const products = db.Product.findAll({
+      include: ['brand', 'section', 'images']
+    });
+    const brands = db.Brand.findAll({
+      order: ['name']
     })
+
+    Promise.all([products, brands])
+    .then(([products,brands]) => {
+      return res.render('admin', {
+        products,
+        brands
+      })
+    })
+    .catch(error => console.log(error))
 
   }
 

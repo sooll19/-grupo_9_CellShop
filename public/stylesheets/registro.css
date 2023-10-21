@@ -1,4 +1,27 @@
-.formulario-registro {
+.registro {
+    background-color: var(--colorCeleste);
+}
+
+.registro .contenedor {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.registro h4 {
+    text-align: center;
+}
+
+.registro label {
+    font-size: 12px;
+}
+
+.registro input {
+    font-size: 10px;
+    margin: 0;
+}
+
+
+/* .formulario-registro {
     text-align: center;
 }
 .formulario-registro h4{
@@ -85,10 +108,19 @@ padding: 8px;
 .cuenta{
     margin-left: 20px;
     text-decoration: none;
-}
+} */
 
-@media(min-width: 768px){
-.formulario-registro h4{
+@media(min-width: 768px) {
+
+    .registro label {
+        font-size: 14px;
+    }
+
+    .registro input {
+        font-size: 12px;
+    }
+
+    /* .formulario-registro h4{
     font-size: 18px;
 }
 .nombre input{
@@ -127,10 +159,18 @@ padding: 8px;
 }  
 .cuenta{
     font-size: 12px;
+} */
 }
-}
-@media(min-width: 1024px){ 
-.formulario-registro h4{
+
+@media(min-width: 1024px) {
+    .registro label {
+        font-size: 15px;
+    }
+
+    .registro input {
+        font-size: 13px;
+    }
+    /* .formulario-registro h4{
         font-size: 35px;
     }
 .nombre input{
@@ -162,11 +202,5 @@ padding: 8px;
 }
 .cuenta{
     font-size: 12px;
+} */
 }
-}
-
-
-
-
-
-       

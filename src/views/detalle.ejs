@@ -4,97 +4,45 @@
 
     <body>
         <%- include('partial/header') %>
-            <main class="main">
-                <article class="main__article">
-                    <div class="Contenedor1">
-                        <h3>
-                            <%= product.modelo %>
-                        </h3>
-                        <div class="imagen">
-                            <img src="/images/detalle/<%=product.imagen || 'default.png'%>" alt="producto1" width="300">
-                    
-                    
+            <main style="color: white;">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <img src="/images/detalle/<%=product.imagen || 'default.png'%>" alt="product image"
+                                class="product-detail-img">
                         </div>
-                        <ul type="none">
+                    </div>
+
+                    <div class="row">
+                        <article style="text-align: right;">
+                            <h1>
+                                <%= product.modelo %>
+                            </h1>
+                            <h2>$<%= product.precio %>
+                            </h2>
+                            <button class="btn btn-sm btn-primary">Agregar al carrito</button>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="container" style="text-align: center;">
+                        <ul>
                             <li>
-                                <h2>$<%= product.precio %>
-                                </h2>
+                                <h5>Descripcion</h5>
                             </li>
+                            <p>
+                                <%= product.descripcion %>
+                            </p>
                             <li>
-                                <h4><a href="">20% de Descuento pagando en efectivo</a></h4>
+                                <h5>Especificaciones técnicas</h5>
                             </li>
-                            <li>
-                                <p><i class="fa-solid fa-memory"></i> Memoria ROM: 64GB </p>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-memory"></i> Memoria RAM: 3GB </p>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-camera"></i> Cámara frontal: 13 Mpx</p>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-camera-rotate"></i> Cámara trasera: 16 Mpx </p>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-plug-circle-bolt"></i> Batería: 3.500 mAh </p>
-                            </li>
-                            <li class="borde-carrito"><a class="car" href="/products/cart">- 0 + <i
-                                        class="fa-solid fa-cart-shopping"></i></a></li>
+                            <p>
+                                <%= product.especificacionesTecnicas %>
+                            </p>
                         </ul>
                     </div>
-                    <div class="especificaciones">
-                        <h4>Ficha técnica del LG Q6:</h4>
-                        <ul class="descripcion">
-
-
-                            <li>PANTALLA:</li>
-                            <li type="none">
-                                <p>6,26 pulgadas HD+ 19:9 FullVision</p>
-                            </li>
-                            <li>PROCESADOR:</li>
-                            <li type="none">
-                                <p>Ocho núcleos a 2GHz</p>
-                            </li>
-                            <li>RAM:</li>
-                            <li type="none">
-                                <p>3GB</p>
-                            </li>
-                            <li>ALMACENAMIENTO:</li>
-                            <li type="none">
-                                <p>64GB, MicroSd hasta 2TB</p>
-                            </li>
-                            <li>BATERÍA:</li>
-                            <li type="none">
-                                <p>3.500 mAh</p>
-                            </li>
-                            <li>CÁMARA TRASERA:</li>
-                            <li type="none">
-                                <p>16 megapíxeles, 2 megapíxeles para profundidad, 5 megapíxeles super gran angular</p>
-                            </li>
-                            <li>CÁMARA FRONTAL:</li>
-                            <li type="none">
-                                <p>13 megapíxeles</p>
-                            </li>
-                            <li>DIMENSIONES:</li>
-                            <li type="none">
-                                <p>161,3 x 77 x 8,7 milímetros</p>
-                            </li>
-                            <li>OTROS:</li>
-                            <li type="none">
-                                <p>Lector de huellas</p>
-                            </li>
-                            <li type="none">
-                                <p>Sonido DTS:X 3D</p>
-                            </li>
-                            <li type="none">
-                                <p>Inteligencia artificial</p>
-                            </li>
-                            <li type="none">
-                                <p>Protección MIL-STD 810G</p>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
+                </div>
             </main>
             <%- include('partial/footer') %>
     </body>
