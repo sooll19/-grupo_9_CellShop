@@ -13,7 +13,7 @@
                             <div class="carousel-item active">
                                 <img src="/images/banner/banner5.webp" class="d-block w-100" alt="imgCarrousel">
                             </div>
-    
+
                             <div class="carousel-item">
                                 <img src="/images/banner/banner4.webp" class="d-block w-100" alt="imgCarrousel">
                             </div>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- FIN CARRUSEL AUTOMATICO-->
 
                 <!-- BOTON FILTRO-->
@@ -65,11 +65,12 @@
                                     <div class="card-body">
                                         <p class="card-title">
                                             <%=product.model%>
-                                                <p>
-                                                <p class="card-text">$<%=product.price%>
-                                                </p>
+
                                     </div>
                                     <div class="card-footer">
+                                        <p>
+                                        <p class="card-text">$<%=product.price%>
+                                        </p>
                                         <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
                                     </div>
                                 </div>
@@ -80,14 +81,13 @@
                 <!-- FIN PRODUCTOS MAS NUEVOS-->
 
                 <!-- ACCESORIOS MAS VENDIDOS-->
-                <!-- <div class="container">
+                <div class="container">
                     <div class="accesorios">
                         <div class="banner_mas_vendido">
-                            <img src="/images/banner/mas-vendido.jpg" alt="banner"
-                                style="width: 1000px; height: 200px;">
+                            <img src="/images/banner/mas-vendido.jpg" alt="banner">
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="container">
                     <div class="row">
@@ -101,11 +101,12 @@
                                     <div class="card-body">
                                         <p class="card-title">
                                             <%=product.model%>
-                                                <p>
-                                                <p class="card-text">$<%=product.price%>
-                                                </p>
+
                                     </div>
                                     <div class="card-footer">
+                                        <p>
+                                        <p class="card-text">$<%=product.price%>
+                                        </p>
                                         <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
                                     </div>
                                 </div>
@@ -126,7 +127,7 @@
 
                 <div class="container">
                     <div class="row">
-                        <h3 class="mb-4">#OFERTAS ÚNICAS</h3>
+                        <h3 class="mb-4">#OFERTAS!! </h3>
                         <%oferta.forEach(product=> { %>
                             <div class="col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100" style="max-width: 12rem; margin: auto;">
@@ -135,18 +136,29 @@
                                     <div class="card-body">
                                         <p class="card-title">
                                             <%=product.model%>
-                                                <p>
-                                                <p class="card-text">$<%=product.price%>
-                                                </p>
+
                                     </div>
                                     <div class="card-footer">
-                                        <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
+                                        </p>
+                                        <% if(product.discount> 0) { %>
+                                            <small class="card-text" style="text-decoration: line-through;">$
+                                                <%=product.price%></small>
+                                            <p class="card-text text-success"><b>
+                                                    <%=product.discount%>%
+                                                </b></p>
+
+                                            <% } %>
+                                                <p class="card-text">$<%=product.price * (1 - product.discount/100)%>
+                                                </p>
+                                                <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver
+                                                    más</a>
                                     </div>
                                 </div>
                             </div>
                             <% }) %>
                     </div>
                 </div>
+
                 <!-- FIN OFERTAS-->
 
             </main>

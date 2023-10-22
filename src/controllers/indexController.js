@@ -1,5 +1,6 @@
 /*base de datos*/
 const db = require("../database/models");
+
 const { readJSON } = require("../data");
 const fs = require("fs");
 
@@ -14,9 +15,14 @@ module.exports = {
         .sort((a, b) => b.createdAt - a.createdAt)
         .filter((_, index) => index <= 4);
 
-      const accesorios = products.filter(({ categoryId }) => categoryId === 2);
-      const oferta = products.filter(({ sectionId }) => sectionId === 1);
+      const oferta = products.filter(({sectionId}) => sectionId === 1);
 
+      const accesorios = products
+        .filter(({ categoryId }) => categoryId === 2) //Filtra accesorios
+        .filter(({ sectionId }) => sectionId !== 1) // Se saltea los que están en oferta
+        .sort(() => 0.5 - Math.random()) // Muestra accesorios al azar
+        .slice(0, 5); //Muestra solo 5
+       
       return res.render("index", {
         accesorios,
         oferta,

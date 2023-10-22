@@ -1,17 +1,19 @@
 const db = require('../../database/models')
 
-module.exports = (req, res) => {
-    const celulares = db.Product.findAll({
-        where: {
-            categoryId: 1
-        }
-    });
+module.exports = async (req, res) => {
+    try {
+        const celulares = await db.Product.findAll({
+            where: {
+                categoryId: 1
+            },
+            include: ['brand']
+        });
 
-    Promise.all([celulares])
-        .then(([celulares]) => {
-            return res.render('celulares', {
-                celulares
-            })
-        })
-        .catch(error => console.log(error))
+        return res.render('celulares', {
+            celulares
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(500).send('Error interno del servidor');
+    }
 }

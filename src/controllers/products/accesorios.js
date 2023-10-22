@@ -4,7 +4,8 @@ module.exports = (req, res) => {
     const accesorios = db.Product.findAll({
         where: {
             categoryId: 2
-        }
+        },
+        include: ['brand']
     });
 
     Promise.all([accesorios])

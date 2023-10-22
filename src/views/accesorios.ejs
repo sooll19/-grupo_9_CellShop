@@ -28,14 +28,24 @@
                     <div class="card h-100" style="max-width: 12rem; margin: auto;">
                         <img src="/images/products/<%=product.image ||'default.png' %>" class="card-img-top" alt="Imagen">
                         <div class="card-body">
+                            <h6 style="color: black">
+                                <%= product.brand.name %>
+                            </h6>
                             <p class="card-title">
                                 <%=product.model%>
-                                    <p>
-                                    <p class="card-text">$<%=product.price%>
-                                    </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
+                            </p>                        
+                                <% if(product.discount> 0) { %>
+                                    <small class="card-text" style="text-decoration: line-through;">$<%=product.price%></small>
+                                    <p class="card-text text-success"><b>
+                                        <%=product.discount%>%
+                                      </b></p>
+                                    <% } %>
+                                </div>
+                                <div class="card-footer">
+                                  <p class="card-text">$<%=product.price * (1 - product.discount/100)%>
+                                  </p>
+                                  </p>
+                                  <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
                         </div>
                     </div>
                 </div>
