@@ -36,17 +36,15 @@
                                             alt="img-product">
                                     </div>
                                     <div class="col-12 col-md-8">
-                                        <p>
-                                            <%= product.brand %>
-                                        </p>
-                                        <h2 style="color: black">$<%= product.price %>
-                                        </h2>
+                                        <h3 style="color: black">$<%= product.price %>
+                                        </h3>
                                         <p>
                                             <%= product.description %>
                                         </p>
                                         <button type="button" name="" id="" class="btn btn-dark">Comprar</button>
                                         <hr>
                                         <div class="row">
+                                            <p>Marca: <%= product.brand %></p>
                                             <ul>
                                                 <% product.technicalSpecifications.forEach(spec=> { %>
                                                     <li>
