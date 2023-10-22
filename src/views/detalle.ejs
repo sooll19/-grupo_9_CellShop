@@ -4,46 +4,54 @@
 
     <body>
         <%- include('partial/header') %>
-            <main style="color: white;">
+        
+        <!-- BOTON FILTRO-->
+        <div>
+            <div class="btn-group">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-8">
-                            <img src="/images/products/<%=product.image || 'default.png'%>" alt="product image"
-                                class="product-detail-img">
+                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
+                    Ver solo
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
+                    <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- FIN BOTON FILTRO-->
+
+        <main class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-md-10  mx-auto">
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <h3 style="color: black"><%= product.model %></h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <img src="/images/products/<%= product.image %>" class="img-fluid" alt="img-product">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <p><%= product.brand %> </p>
+                                <h2 style="color: black">$<%= product.price %></h2>
+                                <p><%= product.description %></p>
+                                <button type="button" name="" id="" class="btn btn-dark">Comprar</button>
+                                <hr>
+                                <div class="row">
+                                    <% product.technicalSpecifications.forEach(spec => { %>
+                                        <p><%= spec %></p>
+                                      <% }) %>
+                                   
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <article style="text-align: right;">
-                            <h1>
-                                <%= product.model %>
-                            </h1>
-                            <h2>$<%= product.price %>
-                            </h2>
-                            <button class="btn btn-sm btn-primary">Agregar al carrito</button>
-                        </article>
+                        
+                      </div>
                     </div>
                 </div>
-
-                <div class="container" style="text-align: center;">
-                        <ul>
-                            <li>
-                                <h5>Descripcion</h5>
-                            </li>
-                            <p>
-                                <%= product.description %>
-                            </p>
-                            <li>
-                                <h5>Especificaciones técnicas</h5>
-                            </li>
-                            <p>
-                                <%= product.technicalSpecifications %>
-                            </p>
-                        </ul>
-                    </div>
-                </div>
-            </main>
+            </div>
+        </main>
             <%- include('partial/footer') %>
     </body>
 
