@@ -4,54 +4,64 @@
 
     <body>
         <%- include('partial/header') %>
-        
-        <!-- BOTON FILTRO-->
-        <div>
-            <div class="btn-group">
 
-                <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
-                    Ver solo
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
-                    <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
-                </ul>
+            <!-- BOTON FILTRO-->
+            <div>
+                <div class="btn-group">
+
+                    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
+                        Ver solo
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
+                        <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!-- FIN BOTON FILTRO-->
+            <!-- FIN BOTON FILTRO-->
 
-        <main class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-12 col-md-10  mx-auto">
-                    <div class="card shadow">
-                      <div class="card-body">
-                        <h3 style="color: black"><%= product.model %></h3>
-                        <hr>
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img src="/images/products/<%= product.image %>" class="img-fluid" alt="img-product">
-                            </div>
-                            <div class="col-12 col-md-8">
-                                <p><%= product.brand %> </p>
-                                <h2 style="color: black">$<%= product.price %></h2>
-                                <p><%= product.description %></p>
-                                <button type="button" name="" id="" class="btn btn-dark">Comprar</button>
+            <main class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12 col-md-10  mx-auto">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h3 style="color: black">
+                                    <%= product.model %>
+                                </h3>
                                 <hr>
                                 <div class="row">
-                                    <% product.technicalSpecifications.forEach(spec => { %>
-                                        <p><%= spec %></p>
-                                      <% }) %>
-                                   
+                                    <div class="col-12 col-md-4">
+                                        <img src="/images/products/<%= product.image %>" class="img-fluid"
+                                            alt="img-product">
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <p>
+                                            <%= product.brand %>
+                                        </p>
+                                        <h2 style="color: black">$<%= product.price %>
+                                        </h2>
+                                        <p>
+                                            <%= product.description %>
+                                        </p>
+                                        <button type="button" name="" id="" class="btn btn-dark">Comprar</button>
+                                        <hr>
+                                        <div class="row">
+                                            <ul>
+                                                <% product.technicalSpecifications.forEach(spec=> { %>
+                                                    <li>
+                                                        <%= spec %>
+                                                    </li>
+                                                    <% }); %>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-                      </div>
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
             <%- include('partial/footer') %>
     </body>
 
