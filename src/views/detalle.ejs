@@ -41,11 +41,12 @@
                                         <p>
                                             <%= product.description %>
                                         </p>
-                                        <button type="button" name="" id="" class="btn btn-dark">Comprar</button>
-                                        <hr>
-                                        <div class="row">
-                                            <p>Marca: <%= product.brand %></p>
+                                        <button type="button" name="" id="" class="btn btn-primary">Comprar</button>
+                                        
+                                        <div>
                                             <ul>
+                                                <p><b>ESPECIFICACIONES TECNICAS</b>
+                                                    <p>
                                                 <% product.technicalSpecifications.forEach(spec=> { %>
                                                     <li>
                                                         <%= spec %>
