@@ -9,7 +9,13 @@
     object-fit: contain;
 }
 
+.card-hover-zoom {
+    transition: transform 0.2s;
+}
 
+.card-hover-zoom:hover {
+    transform: scale(1.05); /* Cambia el valor según tus preferencias para el aumento de tamaño */
+}
 
 
 .modelo h5 {

@@ -3,6 +3,14 @@
   font-family: var(--tipografiaGeneral);
 }
 
+.card-hover-zoom {
+  transition: transform 0.2s;
+}
+
+.card-hover-zoom:hover {
+  transform: scale(1.05); /* Cambia el valor según tus preferencias para el aumento de tamaño */
+}
+
 .carousel-inner .carousel-item img {
   object-fit: cover;
   height: 100px;
