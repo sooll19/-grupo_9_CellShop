@@ -26,6 +26,8 @@
                                             <form action="/products/filter" class="d-flex flex-column flex-md-row gap-2"
                                                 method="GET" style="flex: 1;">
                                                 <select class="form-select" name="brand">
+                                                    <option value="-1" <% locals.brand===-1 && 'selected' %>>Todos los
+                                                        productos</option>
                                                     <% if (locals.brand) { %>
                                                         <% brands.forEach(item=> { %>
                                                             <option <%=+brand===item.id && 'selected' %> value="<%=
@@ -127,6 +129,7 @@
                                                                             <div class="modal-body">
                                                                                 <p>¿Estás seguro que querés eliminar el
                                                                                     producto <b>
+                                                                                        <%= brand %>
                                                                                             <%= model %>
                                                                                     </b>?</p>
                                                                             </div>

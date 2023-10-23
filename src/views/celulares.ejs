@@ -30,10 +30,10 @@
                 <div class="card-body">
                   <h6 style="color: black">
                     <%= product.brand.name %>
-                </h6>
-                  <p class="card-title">
-                    <%=product.model%>
-                  </p>
+                  </h6>
+                  <p class="card-title"><b>
+                      <%=product.model%>
+                    </b></p>
                   <% if(product.discount> 0) { %>
                     <small class="card-text" style="text-decoration: line-through;">$<%=product.price%></small>
                     <p class="card-text text-success"><b>
