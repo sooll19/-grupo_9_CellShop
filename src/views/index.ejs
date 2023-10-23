@@ -58,7 +58,7 @@
                     <div class="row">
                         <h3 class="mb-4">#NUESTROS NUEVOS PRODUCTOS</h3>
                         <% products.forEach(product=> { %>
-                            <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="col-lg-4 col-md-4 mb-4 card-hover-zoom">
                                 <div class="card h-100" style="max-width: 12rem; margin: auto;">
                                     <img src="/images/products/<%=product.image ||'default.png' %>" class="card-img-top"
                                         alt="Imagen">
@@ -93,7 +93,7 @@
                     <div class="row">
                         <h3 class="mb-4">#LOS ACCESORIOS MAS VENDIDOS</h3>
                         <%accesorios.forEach(product=> { %>
-                            <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="col-lg-4 col-md-4 mb-4 card-hover-zoom">
                                 <div class="card h-100" style="max-width: 12rem; margin: auto;">
                                     <img src="/images/products/<%=product.image ||'default.png' %>" class="card-img-top"
                                         alt="Imagen">
@@ -129,7 +129,7 @@
                     <div class="row">
                         <h3 class="mb-4">#OFERTAS!! </h3>
                         <%oferta.forEach(product=> { %>
-                            <div class="col-lg-4 col-md-4 mb-4">
+                            <div class="col-lg-4 col-md-4 mb-4 card-hover-zoom">
                                 <div class="card h-100" style="max-width: 12rem; margin: auto;">
                                     <img src="/images/products/<%=product.image ||'default.png' %>" class="card-img-top"
                                         alt="Imagen">
