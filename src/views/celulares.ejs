@@ -4,36 +4,54 @@
 
   <body class="celular">
     <%- include('partial/header') %>
-    <div class="btn-group">
-    
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-          data-bs-auto-close="inside" aria-expanded="false">
-          Todos los productos
-      </button>
-      <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
-          <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
-      </ul>
-  </div>
-      <div class="celulares">
-        <%celulares.forEach(product=> { %>
-          <div class="imagen_celulares">
-            <img src="/images/celulares/<%= product.imagen ||'default.png' %>" class="card-img-top" alt="...">
-          </div>
-         
-          <div class="modelo">
-            <h5>Celular: <%= product.modelo %>
-            </h5>
 
-            <a href="/products/detalle/<%= product.id %>" class="btn btn-outline-primary">ver más</a>
-           </div>
+      <!-- BOTON FILTRO-->
+      <div>
+        <div class="btn-group">
 
-          <% }) %>
-
+          <button class="btn btn-info dropdown-toggle mb-5" type="button" data-bs-toggle="dropdown"
+            data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
+            Ver solo
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
+            <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
+          </ul>
+        </div>
       </div>
+      <!-- FIN BOTON FILTRO-->
+
+      <div class="container">
+        <div class="row">
+          <%celulares.forEach(product=> { %>
+            <div class="col-lg-4 col-md-4 mb-4 card-hover-zoom">
+              <div class="card h-100" style="max-width: 12rem; margin: auto;">
+                <img src="/images/products/<%=product.image ||'default.png' %>" class="card-img-top" alt="Imagen">
+                <div class="card-body">
+                  <h6 style="color: black">
+                    <%= product.brand.name %>
+                  </h6>
+                  <p class="card-title"><b>
+                      <%=product.model%>
+                    </b></p>
+                  <% if(product.discount> 0) { %>
+                    <small class="card-text" style="text-decoration: line-through;">$<%=product.price%></small>
+                    <p class="card-text text-success"><b>
+                        <%=product.discount%>%
+                      </b></p>
+                    <% } %>
+                </div>
+                <div class="card-footer">
+                  <p class="card-text">$<%=product.price * (1 - product.discount/100)%>
+                  </p>
+                  </p>
+                  <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <% }) %>
+        </div>
       </div>
-
-
 
       <%- include('partial/footer') %>
   </body>

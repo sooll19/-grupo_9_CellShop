@@ -1,8 +1,18 @@
-const { readJSON } = require("../../data");
+const db = require('../../database/models')
 
 module.exports = (req, res) => {
-    const products = readJSON('products.json');
-    return res.render('accesorios', {
-        accesoriosParaCelu: products.filter(product => product.categoria === "accesorios")
+    const accesorios = db.Product.findAll({
+        where: {
+            categoryId: 2
+        },
+        include: ['brand']
     });
+
+    Promise.all([accesorios])
+        .then(([accesorios]) => {
+            return res.render('accesorios', {
+                accesorios
+            })
+        })
+        .catch(error => console.log(error))
 }

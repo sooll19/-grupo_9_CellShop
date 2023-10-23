@@ -8,26 +8,13 @@
             <div class="row mt-5">
                 <div class="col-12 col-md-12 col-lg-10 mx-auto">
                     <div class="card">
-                        <div class="card-header">
-
-                        </div>
+                        <div class="card-header"></div>
                         <div class="card-body">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                        aria-selected="true">Todos los productos</button>
-                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
-                                        data-bs-target="#nav-profile" type="button" role="tab"
-                                        aria-controls="nav-profile" aria-selected="false">
-                                        <a href="/products/add">
-                                            <%= ('productAdd') %>
-                                        </a>
-                                    </button>
-                                    <!-- <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab"
-                                            data-bs-target="#nav-disabled" type="button" role="tab"
-                                            aria-controls="nav-disabled" aria-selected="false"
-                                            disabled>Disabled</button> -->
+                                        aria-selected="true">Productos</button>
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
@@ -35,20 +22,43 @@
                                     aria-labelledby="nav-home-tab" tabindex="0">
                                     <div class="d-flex flex-column flex-md-rowflex justify-content-between my-3">
 
-                                        <form action="/products/search" class="d-flex flex-column flex-md-row gap-2"
-                                            method="GET">
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected hidden>Filtrar por marca</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                            <input type="text" class="form-control" placeholder="Buscar..."
-                                                name="keyword">
-                                            <button type="submit" class="btn btn-info">
-                                                <i class="fas fa-search"></i>
-                                            </button>
-                                        </form>
+                                        <div style="display: flex; gap: 2rem;">
+                                            <form action="/products/filter" class="d-flex flex-column flex-md-row gap-2"
+                                                method="GET" style="flex: 1;">
+                                                <select class="form-select" name="brand">
+                                                    <option value="-1" <% locals.brand===-1 && 'selected' %>>Todos los
+                                                        productos</option>
+                                                    <% if (locals.brand) { %>
+                                                        <% brands.forEach(item=> { %>
+                                                            <option <%=+brand===item.id && 'selected' %> value="<%=
+                                                                    item.id %>"><%= item.name %>
+                                                            </option>
+                                                            <% }) %>
+                                                                <% }else{ %>
+                                                                    <option selected hidden>Filtrar por marca</option>
+                                                                    <% brands.forEach(brand=> { %>
+                                                                        <option value="<%= brand.id %>">
+                                                                            <%= brand.name %>
+                                                                        </option>
+                                                                        <% }) %>
+                                                                            <% } %>
+                                                </select>
+                                                <button type="submit" class="btn btn-sm btn-dark">
+                                                    Filtrar
+                                                </button>
+                                            </form>
+                                            <form action="/products/search" class="d-flex flex-column flex-md-row gap-2"
+                                                method="GET" style="flex: 1;">
+                                                <input type="text" class="form-control" placeholder="Buscar..."
+                                                    name="keyword">
+                                                <button type="submit" class="btn btn-info">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+
+
+
                                     </div>
                                     <div class="table-responsive">
                                         <table class="table table-striped">
@@ -64,25 +74,25 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <% products.forEach(({id,marca,modelo,precio,descuento,imagen})=> { %>
+                                                <% products.forEach(({id,brand,model,price,discount})=> { %>
                                                     <tr>
                                                         <th scope="row">
                                                             <%= id %>
                                                         </th>
                                                         <td>
-                                                            <%= marca ? marca : "sin especificar" %>
+                                                            <%= brand.name%>
                                                         </td>
                                                         <td>
-                                                            <%= modelo %>
+                                                            <%= model %>
                                                         </td>
                                                         <td>
-                                                            <%= precio %>
+                                                            <%= price %>
                                                         </td>
                                                         <td>
-                                                            <%= descuento %>
+                                                            <%= discount %>
                                                         </td>
                                                         <td>
-                                                            <%= precio - (descuento*precio/100) %>
+                                                            <%= price - (discount*price/100) %>
                                                         </td>
                                                         <td>
                                                             <div class="d-flex gap-2">
@@ -119,8 +129,8 @@
                                                                             <div class="modal-body">
                                                                                 <p>¿Estás seguro que querés eliminar el
                                                                                     producto <b>
-                                                                                        <%= marca %>
-                                                                                            <%= modelo %>
+                                                                                        <%= brand %>
+                                                                                            <%= model %>
                                                                                     </b>?</p>
                                                                             </div>
                                                                             <div class="modal-footer">
@@ -151,7 +161,11 @@
                                 <!-- <div class="tab-pane fade" id="nav-disabled" role="tabpanel"
                                         aria-labelledby="nav-disabled-tab" tabindex="0">...</div> -->
                             </div>
-                            <button class="btn btn-dark"><a href="/">Volver al HOME</a></button>
+                            <button class="btn btn-sm btn-dark"><a href="/" style="color: white;">Volver al
+                                    HOME</a></button>
+                            <button class="btn btn-sm btn-secondary"> <a href="/products/add"
+                                    style="color: white;">Agregar producto</a></button>
+
                         </div>
                     </div>
                 </div>

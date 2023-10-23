@@ -2,14 +2,14 @@
 <html lang="en">
 <%- include('partial/head',{ title: 'LOGIN' }) %>
 
-    <body style="background-color: var(--colorCeleste);">
+    <body class="login" style="background-color: var(--colorCeleste);">
         <%- include('partial/header') %>
             <main class="container mt-5">
-                <div class="row mb-5" style="margin-top: 15vh;">
+                <div class="row contenedor mb-5" style="margin-top: 15vh;">
                     <div class="col-12 col-md-10 col-lg-6 mx-auto">
                         <div class="card shadow-lg">
                             <div class="card-body">
-                                <h4 class="text-center">Iniciá sesión</h4>
+                                <h5>Iniciá sesión</h5>
                                 <hr>
                                 <form class="row" method="POST">
                                     <div class="col-12 mb-3">
@@ -27,18 +27,20 @@
                                         <small class="text-danger ms-2">
                                             <%= locals.errors && (errors.password && errors.password.msg) %>
                                         </small>
-                                        <a class="text-dark small" href="">Olvidé mi contraseña</a>
+                                        <a style="font-size: 12px;" class="text-dark small" href="">Olvidé mi contraseña</a>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="remember"
                                             name="remember" />
                                         <label class="form-check-label small" for="remember"> Recordame </label>
-                                        <a href="./register">No tengo cuenta aún</a>
+                                        <a style="font-size: 10px;" href="./register">No tengo cuenta aún</a>
                                     </div>
                                     <div class="d-grid gap-2 d-md-block text-center">
-                                        <button class="btn btn-sm btn-dark mb-3" type="submit">Ingresar</button>
-                                        <button class="btn btn-sm btn-danger mb-3"><a href="/"
-                                                style="color: white">Cancelar</a></button>
+                                        <div class="d-flex justify-content-end">
+                                            <button class="btn btn-sm btn-dark" type="submit">Ingresar</button>
+                                            <button class="btn btn-sm btn-danger"><a href="/"
+                                                    style="color: white">Cancelar</a></button>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -49,6 +51,7 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
                 crossorigin="anonymous">
-                </script>
-            <%- include('partial/footer') %>
+            </script>
+               <%- include('partial/footer') %>
     </body>
+ 

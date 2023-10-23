@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Genérico"
+    },
+    {
+        "id": 2,
+        "name": "Motorola"
+    },
+    {
+        "id": 3,
+        "name": "Samsung"
+    },
+    {
+        "id": 4,
+        "name": "TCL"
+    },
+    {
+        "id": 5,
+        "name": "Xiaomi"
+    },
+    {
+        "id": 6,
+        "name": "Apple"
+    },
+    {
+        "id": 7,
+        "name": "LG"
+    },
+    {
+        "id": 8,
+        "name": "JBL"
+    },
+    {
+        "id": 9,
+        "name": "Kingston"
+    }
+]

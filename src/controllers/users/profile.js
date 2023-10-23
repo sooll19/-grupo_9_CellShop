@@ -1,10 +1,14 @@
-const { readJSON } = require("../../data")
+const db = require('../../database/models')
 
 module.exports = (req, res) => {
-    const users = readJSON('user.json');
-    const user = users.find(user => user.id === req.session.userLogin.id)
+    db.User.findByPk(req.session.userLogin.id)
+        .then(user => {
+            const birthday = new Date(user.birthday).toISOString();
 
-    return res.render('profile', {
-        ...user
-    })
+            return res.render('profile', {
+                ...user.dataValues,
+                birthday: birthday.split('T')[0]
+            })
+        })
+        .catch(error => console.log(error))
 }

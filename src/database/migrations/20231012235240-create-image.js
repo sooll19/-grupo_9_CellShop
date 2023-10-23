@@ -12,17 +12,14 @@ module.exports = {
       file: {
         type: Sequelize.STRING
       },
-      main: {
-        type: Sequelize.BOOLEAN
-      },
       productId: {
         type: Sequelize.INTEGER,
-        references : {
-          model : {
-            tableName : 'Products'
+        references: {
+          model: {
+            tableName: 'Products'
           }
         },
-        onDelete : 'cascade'
+        onDelete: 'cascade'
       },
       createdAt: {
         allowNull: false,

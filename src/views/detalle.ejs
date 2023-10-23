@@ -4,97 +4,74 @@
 
     <body>
         <%- include('partial/header') %>
-            <main class="main">
-                <article class="main__article">
-                    <div class="Contenedor1">
-                        <h3>
-                            <%= product.modelo %>
-                        </h3>
-                        <div class="imagen">
-                            <img src="/images/detalle/<%=product.imagen || 'default.png'%>" alt="producto1" width="300">
-                    
-                    
+
+            <!-- BOTON FILTRO-->
+            <div>
+                <div class="btn-group">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
+                        Ver solo
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
+                        <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- FIN BOTON FILTRO-->
+
+            <main class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-12 col-md-10  mx-auto">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h3 style="color: black">
+                                    <%= product.model %>
+                                </h3>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <img src="/images/products/<%= product.image %>" class="img-fluid"
+                                            alt="img-product">
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h3 style="color: black">
+                                            <%= product.brand.name %>
+                                        </h3>
+                                        <% if(product.discount > 0) { %>
+                                            <small class="card-text"  style="text-decoration: line-through;">$<%=product.price%></small>
+                                            <p class="card-text text-success"><b><%=product.discount%>%</b></p>
+                                            
+                                        <% } %>
+                                        <h2 class="card-text" style="color: black">$<%=product.price * (1 - product.discount/100)%></h2>
+                                      
+                                        </h2>
+                                        <p>
+                                            <%= product.description %>
+                                        </p>
+                                        <button type="button" name="" id="" class="btn btn-dark">Comprar</button>
+                                        <hr>
+                                        <div class="row">
+                                            <ul>
+                                                <% product.technicalSpecifications.forEach(spec=> { %>
+                                                    <li>
+                                                        <%= spec %>
+                                                    </li>
+                                                    <% }); %>
+                                            </ul>
+                                        </div>
+                                        <button class="btn btn-primary btn-sm" id="volverAtras" style="color:white;">Volver atrás</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <ul type="none">
-                            <li>
-                                <h2>$<%= product.precio %>
-                                </h2>
-                            </li>
-                            <li>
-                                <h4><a href="">20% de Descuento pagando en efectivo</a></h4>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-memory"></i> Memoria ROM: 64GB </p>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-memory"></i> Memoria RAM: 3GB </p>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-camera"></i> Cámara frontal: 13 Mpx</p>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-camera-rotate"></i> Cámara trasera: 16 Mpx </p>
-                            </li>
-                            <li>
-                                <p><i class="fa-solid fa-plug-circle-bolt"></i> Batería: 3.500 mAh </p>
-                            </li>
-                            <li class="borde-carrito"><a class="car" href="/products/cart">- 0 + <i
-                                        class="fa-solid fa-cart-shopping"></i></a></li>
-                        </ul>
                     </div>
-                    <div class="especificaciones">
-                        <h4>Ficha técnica del LG Q6:</h4>
-                        <ul class="descripcion">
-
-
-                            <li>PANTALLA:</li>
-                            <li type="none">
-                                <p>6,26 pulgadas HD+ 19:9 FullVision</p>
-                            </li>
-                            <li>PROCESADOR:</li>
-                            <li type="none">
-                                <p>Ocho núcleos a 2GHz</p>
-                            </li>
-                            <li>RAM:</li>
-                            <li type="none">
-                                <p>3GB</p>
-                            </li>
-                            <li>ALMACENAMIENTO:</li>
-                            <li type="none">
-                                <p>64GB, MicroSd hasta 2TB</p>
-                            </li>
-                            <li>BATERÍA:</li>
-                            <li type="none">
-                                <p>3.500 mAh</p>
-                            </li>
-                            <li>CÁMARA TRASERA:</li>
-                            <li type="none">
-                                <p>16 megapíxeles, 2 megapíxeles para profundidad, 5 megapíxeles super gran angular</p>
-                            </li>
-                            <li>CÁMARA FRONTAL:</li>
-                            <li type="none">
-                                <p>13 megapíxeles</p>
-                            </li>
-                            <li>DIMENSIONES:</li>
-                            <li type="none">
-                                <p>161,3 x 77 x 8,7 milímetros</p>
-                            </li>
-                            <li>OTROS:</li>
-                            <li type="none">
-                                <p>Lector de huellas</p>
-                            </li>
-                            <li type="none">
-                                <p>Sonido DTS:X 3D</p>
-                            </li>
-                            <li type="none">
-                                <p>Inteligencia artificial</p>
-                            </li>
-                            <li type="none">
-                                <p>Protección MIL-STD 810G</p>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
+                </div>
+                <script> //Script para volver atrás
+                    document.getElementById("volverAtras").addEventListener("click", function() {
+                        window.history.back(); // Esto volverá a la página anterior en el historial de navegación
+                    });
+                    </script>
             </main>
             <%- include('partial/footer') %>
     </body>
