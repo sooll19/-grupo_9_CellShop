@@ -3,7 +3,7 @@
 const marcasJSON = require('../../data/brands.json');
 const brandsFormatDB = marcasJSON.map(({ name }) => {
   return {
-      name : brand.name,
+      name,
       createdAt : new Date,
       updatedAt : new Date
   }
