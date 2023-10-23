@@ -8,7 +8,6 @@
             <!-- BOTON FILTRO-->
             <div>
                 <div class="btn-group">
-
                     <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
                         Ver solo
@@ -36,17 +35,24 @@
                                             alt="img-product">
                                     </div>
                                     <div class="col-12 col-md-8">
-                                        <h3 style="color: black">$<%= product.price %>
+                                        <h3 style="color: black">
+                                            <%= product.brand.name %>
                                         </h3>
+                                        <% if(product.discount > 0) { %>
+                                            <small class="card-text"  style="text-decoration: line-through;">$<%=product.price%></small>
+                                            <p class="card-text text-success"><b><%=product.discount%>%</b></p>
+                                            
+                                        <% } %>
+                                        <h2 class="card-text" style="color: black">$<%=product.price * (1 - product.discount/100)%></h2>
+                                      
+                                        </h2>
                                         <p>
                                             <%= product.description %>
                                         </p>
-                                        <button type="button" name="" id="" class="btn btn-primary">Comprar</button>
-                                        
-                                        <div>
+                                        <button type="button" name="" id="" class="btn btn-dark">Comprar</button>
+                                        <hr>
+                                        <div class="row">
                                             <ul>
-                                                <p><b>ESPECIFICACIONES TECNICAS</b>
-                                                    <p>
                                                 <% product.technicalSpecifications.forEach(spec=> { %>
                                                     <li>
                                                         <%= spec %>
@@ -54,12 +60,18 @@
                                                     <% }); %>
                                             </ul>
                                         </div>
+                                        <button class="btn btn-primary btn-sm" id="volverAtras" style="color:white;">Volver atrás</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <script> //Script para volver atrás
+                    document.getElementById("volverAtras").addEventListener("click", function() {
+                        window.history.back(); // Esto volverá a la página anterior en el historial de navegación
+                    });
+                    </script>
             </main>
             <%- include('partial/footer') %>
     </body>
