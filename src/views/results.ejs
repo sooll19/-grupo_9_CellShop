@@ -3,48 +3,56 @@
 <!-- Include Head -->
 <%- include('partial/head',{ title:'resultado de tu busqueda' }) %>
 
-	<body class="home">
-		<%- include('partial/header') %>
+<body class="home">
+  <%- include('partial/header') %>
 
-			<!-- todos los productos -->
-			<div class="container products-wrapper">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="text-center text-decoration-underline mb-5">Resultados de la búsqueda: <%= keywords
-								%>
-						</h2>
-					</div>
-					<% if (results.length) { %>
-						<% results.forEach(product=> { %>
-							<div class="col-12 col-sm-6 col-lg-3">
-								<section class="product-box">
-									<a href="/products/detalle/<%= product.id %>">
-										<figure class="product-box_image">
-											<img src="/images/detalle/<%= product.imagen %>" alt="imagen de producto">
-										</figure>
-										<p class="text-success fs-2">
-											<%= product.modelo %>
-										</p>
-										<a href="/products/detalle/<%= product.id %>"
-											class="btn btn-outline-primary">ver más</a>
-										</article>
-									</a>
-								</section>
-							</div>
-							<% }) %>
-								<% }else{ %>
-									<div class="col-12">
-										<h2 class=" text-start mt-5" style="color:aqua;">No hay productos que coincidan
-											con esa búsqueda</h2>
-									</div>
-									<% } %>
-				</div>
-			</div>
-			<!-- /todos los productos -->
+  <!-- todos los productos -->
+  <div class="container products-wrapper">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-decoration-underline mb-5">Resultados de la búsqueda: <%= keywords
+            %>
+        </h2>
+      </div>
+      <% if (results.length) { %>
+        <% results.forEach(product=> { %>
+			<div class="col-lg-6 col-md-12 mb-4 card-hover-zoom mx-auto">
 
-			<!-- footer -->
-			<%- include('partial/footer') %>
-				<!-- /footer -->
-	</body>
+            <div class="card h-100" style="max-width: 12rem; margin: auto;">
+              <img src="/images/products/<%=product.image ||'default.png' %>" class="card-img-top" alt="Imagen">
+              <div class="card-body">
+                <h6 style="color: black">
+                  <%= product.brand.name %>
+                </h6>
+                <p class="card-title"><b>
+                    <%=product.model%>
+                  </b></p>
+                <% if(product.discount> 0) { %>
+                  <small class="card-text" style="text-decoration: line-through;">$<%=product.price%></small>
+                  <p class="card-text text-success"><b>
+                      <%=product.discount%>%
+                    </b></p>
+                  <% } %>
+              </div>
+              <div class="card-footer">
+                <p class="card-text">$<%=product.price * (1 - product.discount/100)%></p>
+                <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+            <% }else{ %>
+              <div class="col-12">
+                <h2 class=" text-start mt-5" style="color:aqua;">No hay productos que coincidan
+                  con esa búsqueda</h2>
+              </div>
+              <% } %>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <%- include('partial/footer') %>
+
+</body>
 
 </html>
