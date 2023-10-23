@@ -1,10 +1,10 @@
 'use strict';
 
-const brands = require('../../data/brands.json');
-const brandsFormatDB = brands.map(({ name }) => {
+const marcasJSON = require('../../data/brands.json');
+const brandsFormatDB = marcasJSON.map(({ name }) => {
   return {
       name : brand.name,
-      createnpmdAt : new Date,
+      createdAt : new Date,
       updatedAt : new Date
   }
 })
