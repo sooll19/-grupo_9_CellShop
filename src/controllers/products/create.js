@@ -1,11 +1,12 @@
-//const { readJSON, writeJSON } = require("../../data");
 const {validationResult} = require('express-validator');
+const {existsSync, unlinkSync}= require('fs');
 const db = require ('../../database/models');
-const e = require('express');
+
 
 module.exports = (req, res) => {
 
     const errors = validationResult(req);
+    //return res.send(errors)
     if (errors.isEmpty()){
         const {name,price,discount,description,brand,section} =req.body
     
@@ -18,7 +19,7 @@ module.exports = (req, res) => {
         sectionId : section,
     }) 
     .then(product => {
-        if(req.files.length){
+        if(req.files.images){
             const images = req.files.images.map((file)=> {
                 return{
                     file : file.filename,
@@ -27,14 +28,17 @@ module.exports = (req, res) => {
             })
             db.Image.bulkCreate(image, {
             validate :true
-        }).then(response => console.log(response))
-    }
+        }).then(response => {
     return res.redirect('/admin');
-   })
+   }) 
+} else{
+    return res.redirect('/admin');
+}
+    })
     .catch(error =>console.log(error))
 
 }else {
-    if(req.files.length){
+    if(req.file){
         req.files.forEach(file => {
          existsSync('./public/images/' + file.filename) && unlinkSync('./public/images' + file.filename) 
         });
@@ -47,14 +51,14 @@ module.exports = (req, res) => {
       const sections = db.Section.findAll({
         order : ['name']
       });
-       const categories = db.Categories.findAll({
-        order : ['name']
+      const categories = db.Category.findAll({
+        order: ['name']
        })
   
-      Promise.all([brands, sections])
-        .then(([brands, sections]) => {
+      Promise.all([brands, sections,categories])
+        .then(([brands, sections,categories]) => {
           return res.render("productAdd", {
-            brands,
+            marcas: brands,
             sections,
             categories,
             errors : errors.mapped(),
