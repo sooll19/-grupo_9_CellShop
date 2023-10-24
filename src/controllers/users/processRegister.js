@@ -24,9 +24,9 @@ module.exports = (req, res) => {
                 db.Address.create({
                     userId: user.id
                 })
-                    .then(() => 
-                    console.log('Saliendo del controlador de registro con éxito'),
-                    res.redirect('/'))
+                    .then(() =>
+                        console.log('Saliendo del controlador de registro con éxito'),
+                        res.redirect('/'))
             })
             .catch(error => console.log(error))
 
@@ -36,5 +36,4 @@ module.exports = (req, res) => {
             errors: errors.mapped()
         })
     }
-
 }
