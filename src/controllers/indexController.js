@@ -15,14 +15,14 @@ module.exports = {
         .sort((a, b) => b.createdAt - a.createdAt)
         .filter((_, index) => index <= 4);
 
-      const oferta = products.filter(({sectionId}) => sectionId === 1);
+      const oferta = products.filter(({ sectionId }) => sectionId === 1);
 
       const accesorios = products
         .filter(({ categoryId }) => categoryId === 2) //Filtra accesorios
         .filter(({ sectionId }) => sectionId !== 1) // Se saltea los que están en oferta
         .sort(() => 0.5 - Math.random()) // Muestra accesorios al azar
         .slice(0, 5); //Muestra solo 5
-       
+
       return res.render("index", {
         accesorios,
         oferta,
@@ -33,11 +33,18 @@ module.exports = {
     }
   },
 
-  search: (req, res) => {
-    const products = readJSON("products.json");
-    const keywords = req.query.keywords;
+  search: async (req, res) => {
+    const keywords = req.query.keywords.toLowerCase();
+    const products = await db.Product.findAll({
+      include: [
+        { model: db.Brand, as: 'brand' },
+        { model: db.Section, as: 'section' },
+        { model: db.Image, as: 'images' }
+      ]
+    });
     const results = products.filter((product) =>
-      product.modelo.toLowerCase().includes(keywords.toLowerCase())
+      (product.model && product.model.toLowerCase().includes(keywords)) ||
+      (product.brand.name && product.brand.name.toLowerCase().includes(keywords))
     );
 
     return res.render("results", {
