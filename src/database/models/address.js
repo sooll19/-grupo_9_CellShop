@@ -11,13 +11,21 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Address.belongsTo(models.User,{
+        foreignKey:'userId',
+        as:'user'
+      })
     }
   }
   Address.init({
     address: DataTypes.STRING,
     city: DataTypes.STRING,
     province: DataTypes.STRING,
-    userId: DataTypes.INTEGER
+    userId: DataTypes.INTEGER,
+    isPrimary: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    },
   }, {
     sequelize,
     modelName: 'Address',
