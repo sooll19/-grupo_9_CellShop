@@ -8,19 +8,24 @@ module.exports = (req, res) => {
     const errors = validationResult(req);
     //return res.send(errors)
     if (errors.isEmpty()){
-        const {name,price,discount,description,brand,section} =req.body
+        const {model,color,year,price,category,discount,description,brand,section,technicalSpecifications,image} =req.body
     
         db.Product.create({
-        name : name.trim(),
+        model ,
+        color,
         price,
+        technicalSpecifications,
+        categoryId: category,
+        year,
         discount : discount || 0,
         description : description.trim(),
         brandId : brand,
         sectionId : section,
+        image:req.file ? req.file.filename : null,
     }) 
     .then(product => {
-        if(req.files.images){
-            const images = req.files.images.map((file)=> {
+        if(req.file.image){
+            const image = req.file.image.map((file)=> {
                 return{
                     file : file.filename,
                     productId : product.Id,
@@ -58,7 +63,7 @@ module.exports = (req, res) => {
       Promise.all([brands, sections,categories])
         .then(([brands, sections,categories]) => {
           return res.render("productAdd", {
-            marcas: brands,
+            brands,
             sections,
             categories,
             errors : errors.mapped(),
