@@ -1,4 +1,4 @@
-/*"use strict";
+"use strict";
 const products = require("../../data/products.json");
 const sections = require("../../data/sections.json");
 const categories = require("../../data/categories.json");
@@ -36,7 +36,7 @@ const productsFormatDB = products.map(
     }
 );
 
-/** @type {import('sequelize-cli').Migration} */
+ /**@type {import('sequelize-cli').Migration} */
 module.exports = {
     async up(queryInterface, Sequelize) {
         await queryInterface.bulkInsert("Products", productsFormatDB, {});

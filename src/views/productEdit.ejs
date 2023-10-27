@@ -21,43 +21,39 @@
                                 enctype="multipart/form-data">
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Marca</label>
-                                    <select class="form-select" aria-label="Default select example" name="marca"
-                                        value="<%= marca %>">
-                                        <% marcas.forEach(item=> { %>
-                                            <option <%=item.name===marca && "selected" %> value="<%= item.name %>"><%=
-                                                        item.name %>
-                                            </option>
-                                            <% }) %>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-md-6 mb-3">
+                                    <select class="form-select" aria-label="Default select example" name="brand">
+                                      <% brands.forEach(brand => { %>
+                                        <option <%= brand.id === brandId && 'selected' %> value="<%= brand.id %>"><%= brand.name %></option>
+                                      <% }) %>
+                                      
+                                      </select>
+                                  </div>
+                                  <div class="col-12 mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Modelo</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                        placeholder="Modelo del producto" name="modelo" value="<%= modelo %>">
-                                </div>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Modelo del producto" name="model" value="<%= model %>">
+                                  </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Color</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput"
                                         placeholder="Color del producto" name="color" value="<%= color %>">
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="anio" class="form-label">Año de lanzamiento</label>
-                                    <input type="number" class="form-control" id="anio" name="anio" value="<%= anio %>">
-                                </div>
-                                <div class="col-12  mb-3">
-                                    <label for="descripcion" class="form-label">Descripción</label>
-                                    <textarea class="form-control" style="resize: none;" name="descripcion"
-                                        id="descripcion"><%= descripcion %></textarea>
+                                    <label for="year" class="form-label">Año de lanzamiento</label>
+                                    <input type="number" class="form-control" id="year" name="year" value="<%= year %>">
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="descuento" class="form-label">Descuento</label>
-                                    <input type="number" class="form-control" id="descuento" name="descuento"
-                                        value="<%= descuento %>">
-                                </div>
-                                <div class="col-12 col-md-6 mb-3">
-                                    <label for="precio" class="form-label">Precio</label>
-                                    <input type="number" class="form-control" id="precio" name="precio"
-                                        value="<%= precio %>">
+                                    <label for="price" class="form-label">Precio</label>
+                                    <input type="number" class="form-control" id="price" name="price" value="<%= price %>">
+                                  </div>
+                                  <div class="col-12 col-md-6 mb-3">
+                                    <label for="discount" class="form-label">Descuento</label>
+                                    <input type="number" class="form-control" id="discount" name="discount" value="<%= discount %>">
+                                  </div>
+                                 
+                                  <div class="col-12  mb-3">
+                                    <label for="description" class="form-label">Descripción</label>
+                                    <textarea class="form-control" style="resize: none;" name="description" id="description"><%= description %></textarea>
+                                  </div>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Stock</label>

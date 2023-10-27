@@ -20,15 +20,17 @@
                             <form action="" method="POST" class="row" enctype="multipart/form-data">
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Marca</label>
-                                    <select class="form-select" aria-label="Default select example" name="brand">
-                                        <option selected hidden value="">Seleccione...</option>
-                                        <% brands.forEach(brand=> { %>
-                                            <option value="<%= brand.id %>" <%=locals.old && (old.brand===brand.id
-                                                && 'selected' )%> >
+                                    <select class="form-select <%= locals.errors && (errors.brand && 'is-invalid') %>" 
+                                        aria-label="Default select example" name="brand" id="brand">
+                                    <option selected hidden value="">Seleccione...</option>
+                                            <% brands.forEach(brand=> { %>
+                                              <option value="<%= brand.id %>" <%= locals.old && (old.brand===brand.id 
+                                              
+                                              && 'selected' )%> >
                                                 <%= brand.name %>
-                                            </option>
-                                            <% }) %>
-                                    </select>
+                                              </option>
+                                              <% }) %>
+                                          </select>
                                     <small class="ms-2 text-danger">
                                         <%= locals.errors && (errors.brand && errors.brand.msg) %>
                                     </small>
@@ -69,11 +71,11 @@
                                     <label for="description" class="form-label">Descripción</label>
                                     <textarea class="form-control" style="resize: none;" name="description"
                                         id="description"></textarea>
-                                    </html><small class="ms-2 text-danger"><%= locals.errors && (errors.description && errors.description.msg)%></small>    
+                                    <small class="ms-2 text-danger"><%= locals.errors && (errors.description && errors.description.msg)%></small>    
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="discount" class="form-label">Descuento</label>
-                                    <input type="number" class="form-control" id="discount" name="discount">
+                                    <input type="number" class="form-control" id="discount" name="discount" value="0">
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="price" class="form-label">Precio</label>
@@ -98,7 +100,7 @@
                                 <div class="col-12 d-flex justify-content-end gap-2 mb-3">
                                     <button class="btn btn-secondary"><a href="/admin" style="color:white;">Volver al ADMIN</a></button>
                                     <label for="image" class="btn btn-secondary">Agregar imagen</label>
-                                    <input hidden class="form-control" type="file" id="image" name="image">
+                                    <input hidden class="form-control" type="file" id="image" name="image" multiple>
                                     <button class="btn btn-guardar" type="submit">Agregar producto</button>
                                 </div>
                             </form>
