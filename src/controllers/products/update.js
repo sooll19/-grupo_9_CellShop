@@ -1,39 +1,62 @@
 const { unlinkSync, existsSync } = require("fs");
-const { readJSON, writeJSON } = require("../../data");
+const db = require("../../database/models");
 
 module.exports = (req, res) => {
+  const id = req.params.id;
+  const { model, brand, section, description, price, discount } = req.body;
 
-    const products = readJSON('products.json');
-    const id = req.params.id;
-    const {marca, modelo, color, anio, descripcion, descuento, precio, stock, cantidad, especificacionesTecnicas, categoria, subcategoria} = req.body;
+  db.Product.findByPk(id, {
+    include: ["images"],
+  })
+    .then((product) => {
+      req.files.image &&
+        existsSync(`./public/images/${product.image}`) &&
+        unlinkSync(`./public/images/${product.image}`);
 
-    const productoModificado = products.map(product => {
-
-        if (product.id == +id) {
-
-            req.file && (existsSync(`/public/images/${product.imagen}`) && unlinkSync(`/public/images/${product.imagen}`)) //cambia la imagen que habia por la nueva y borra la anterior de los archivos
-
-            product.marca = marca
-            product.modelo = modelo.trim()
-            product.color = color.trim()
-            product.anio = +anio;
-            product.descripcion = descripcion.trim(),
-            product.descuento = +descuento;
-            product.precio = +precio;
-            product.stock = stock;
-            product.cantidad = cantidad;
-            product.imagen = req.file ? req.file.filename : product.imagen // guarda la imagen que viene nueva o deja la que habia
-            product.especificacionesTecnicas = especificacionesTecnicas;
-            product.categoria = categoria;
-            product.subcategoria = subcategoria;
-            product.ingreso = new Date ()
-
+      db.Product.update(
+        {
+          model,
+          price,
+          discount,
+          brandId: brand,
+          sectionId: section,
+          description: description.trim(),
+          image: req.files.image ? req.files.image[0].filename : product.image,
+        },
+        {
+          where: {
+            id,
+          },
         }
+      ).then(() => {
+        if (req.files.images) {
+          product.images.forEach((image) => {
+            existsSync(`./public/images/${image.file}`) &&
+              unlinkSync(`./public/images/${image.file}`);
+          });
 
-        return product
+          db.Image.destroy({
+            where: {
+              productId: id,
+            },
+          }).then(() => {
+            const images = req.files.images.map((file) => {
+              return {
+                file: file.filename,
+                main : false,
+                productId: product.id,
+              };
+            });
+            db.Image.bulkCreate(images, {
+              validate: true,
+            }).then((response) => {
+              return res.redirect("/admin");
+            });
+          });
+        } else {
+          return res.redirect("/admin");
+        }
+      });
     })
-
-    writeJSON(productoModificado, 'products.json')
-
-    return res.redirect('/admin')
-}
+    .catch((error) => console.log(error));
+};

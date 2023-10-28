@@ -17,12 +17,6 @@ module.exports = [
             min: 2
         }).withMessage('el apellido debe tener como minimo dos letras').bail(),
 
-    check('city')
-        .isLength({
-            min: 2
-        }).withMessage('La ciudad debe tener como minimo dos letras').bail()
-        .notEmpty().withMessage('Debes ingresar la ciudad').bail(),
-
     check('email')
         .notEmpty().withMessage('Debes ingresar el email').bail()
         .isEmail().withMessage('El email no es valido')

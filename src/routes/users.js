@@ -13,7 +13,7 @@ router.post("/register", uploadUser.single('image'), registerValidator, processR
 router.get("/login", login);
 router.post("/login", loginValidator, processLogin);
 router.get("/profile", checkUserLogin, profile);
-router.put("/update-profile", profileValidator,updateProfile);
+router.put("/update-profile",uploadUser.single('image'), profileValidator,updateProfile);
 router.get("/logout",logout);
 
 module.exports = router;
