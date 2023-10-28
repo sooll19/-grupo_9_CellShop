@@ -15,7 +15,7 @@ module.exports =  (req, res) => {
     Promise.all([product, brands, sections])
       .then(([product, brands, sections]) => {
         return res.render("productEdit", {
-          product,
+          ...product.dataValues,
           brands,
           sections
       });
