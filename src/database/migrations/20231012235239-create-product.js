@@ -14,19 +14,22 @@ module.exports = {
         allowNull: false
       },
       color: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       image: {
         type: Sequelize.STRING
       },
       year: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false
       },
       description: {
         type: Sequelize.TEXT
       },
       technicalSpecifications: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
+        allowNull: false
       },
       discount: {
         type: Sequelize.INTEGER,

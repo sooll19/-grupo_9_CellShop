@@ -1,16 +1,45 @@
-const { readJSON } = require("../../data");
+const db = require("../../database/models");
 
-module.exports = (req, res) => {
-  const products = readJSON('products.json')
-  const marcas = readJSON('marcas.json')
+module.exports = async (req, res) => {
+  try {
+    const product = await db.Product.findByPk(req.params.id, {
+      include: ['images']
+    });
+    const brands = await db.Brand.findAll({
+      order: ['name']
+    })
+    const sections = await db.Section.findAll({
+      order: ['name']
+    });  
+    return res.render("productEdit", {
+      product,
+      brands,
+      sections
+    });
 
-  const id = req.params.id;
-  const product = products.find(product => product.id === +id);
+  } catch (error) {
+    console.log(error)
+  }
 
-  return res.render('productEdit', {
-    ...product,
-    marcas: marcas.sort((a, b) =>
-      a.name > b.name ? 1 : a.name < b.name ? -1 : 0
-    ),
+
+  /* const product = db.Product.findByPk(req.params.id, {
+    include: ['images']
+  });
+  const brands = db.Brand.findAll({
+    order: ['name']
   })
+  const sections = db.Section.findAll({
+    order: ['name']
+  });
+
+  Promise.all([product, brands, sections])
+    .then(([product, brands, sections]) => {
+      return res.render("productEdit", {
+        ...product,
+        brands,
+        sections
+      });
+    })
+    .catch(error => console.log(error)) */
+
 }
