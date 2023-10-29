@@ -20,8 +20,8 @@ module.exports = async (req, res) => {
       user.surname = surname?.trim() || user.surname;
       user.birthday = birthday?.trim() || user.birthday;
       user.about = about?.trim() || user.about;
-      user.image =  image || user.image;
-      
+      user.image = image || user.image;
+
       location.address = address?.trim() || location.address;
       location.city = city?.trim() || location.city;
       location.province = province?.trim() || location.province;
@@ -44,7 +44,7 @@ module.exports = async (req, res) => {
   nombre
   apellido
   birthday
-  about  
+  about
 */
 
 //const  {nombre, apellido, birthday, about} = req.body;
