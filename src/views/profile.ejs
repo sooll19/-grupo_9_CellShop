@@ -40,11 +40,11 @@
 
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="address">Domicilio</label>
-                                    <input type="text" class="form-control" name="address" value="<%= location.address %>">
+                                    <input type="text" class="form-control" name="address" value="<%= <input type="text" class="form-control" name="address" value="<%= location && location.address || '' %>"> %>">
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="province">Provincia</label>
-                                    <select id="province" class="form-control" name="province">
+                                    <select id="province" class="form-control" name="province" value=" <%= %>">
                                         <option selected hidden>Elija la provincia...</option>
                                         <option <%= location.province === 'Buenos Aires' && 'selected' %>  value="Buenos Aires">Buenos Aires</option>
                                         <option <%= location.province === 'Cordoba' && 'selected' %>  value="Cordoba">Cordoba</option>
