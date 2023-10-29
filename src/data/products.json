@@ -523,20 +523,5 @@
          "- Disponible para actualizar: MIUI 14 - > Android 13"
       ],
       "category": "celular"
-   },
-   {
-      "id": 23,
-      "marca": "",
-      "modelo": "",
-      "color": "",
-      "anio": 0,
-      "descripcion": "",
-      "descuento": 0,
-      "precio": 0,
-      "stock": "",
-      "cantidad": 0,
-      "imagen": null,
-      "categoria": "",
-      "ingreso": "2023-10-24T22:22:32.530Z"
    }
 ]
