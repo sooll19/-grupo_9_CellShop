@@ -8,11 +8,15 @@ module.exports = (req, res) => {
 
     if(errors.isEmpty()){
       
-      const {model, price, discount, description, brand, section} = req.body
+      const {model, price, discount, description, brand, section, year,categories,color,technicalSpecifications} = req.body
 
       db.Product.create({
         model,
+        color,
+        technicalSpecifications,
         price,
+        year,
+        categoryId:categories,
         discount : discount || 0,
         description : description.trim(),
         brandId : brand,
