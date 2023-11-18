@@ -523,5 +523,92 @@
          "- Disponible para actualizar: MIUI 14 - > Android 13"
       ],
       "category": "celular"
+   },
+   {
+      "id": 23,
+      "brand": "Motorola",
+      "section": "Nuevo",
+      "model": "Razr 40 Ultra",
+      "color": "Celeste",
+      "year": 2023,
+      "description": "El motorola razr 40 ultra es un teléfono moderno y flexible con un diseño clásico. Cuando se cierra, se dobla por completo a la mitad y los extremos se alinean perfectamente para crear un estilo atractivo y compacto que deja a la vista la pantalla externa más amplia hasta ahora*. Cuando se abre, se puede observar la increíble pantalla pOLED de tamaño completo.",
+      "discount": 0,
+      "price": 599999,
+      "image": "razrUltra.png",
+      "technicalSpecifications": [
+         "- RAM: 12GB",
+         "- Memoria Interna: 512GB",
+         "- Procesador:Snapdragon 8+ Gen 1",
+         "- CPU: Octa core 3.2 GHz",
+         "- Pantalla: pOLED 6.9",
+         "- Tasa de Refresco 165 Hz",
+         "- Batería = 3800 mAh",
+         "- Cámara Principal: 12 MP + Gran Angular y Macro 13 MP (108°) F2.2",
+         "- Cámara Frontal : 32 MP",
+         "- NFC: Si",
+         "- Sistema operativo: Android 13"
+      ],
+      "category": "celular"
+   },
+   {
+      "id": 24,
+      "brand": "Genérico",
+      "section": "General",
+      "model": "Cubre dedos Gamer",
+      "color": "Negro",
+      "year": 2022,
+      "description": "Este producto está diseñado para todos los usuarios, tiene mayor durabilidad, sensibilidad, flexibilidad y calidad en materiales.",
+      "discount": 0,
+      "price": 2150,
+      "image": "m1.webp",
+      "technicalSpecifications": [
+         "- Flexible",
+         "- Durable",
+         "- Se adapta a cualquier tamaño"
+      ],
+      "category": "accesorios"
+   },
+   {
+      "id": 25,
+      "brand": "Genérico",
+      "section": "Nuevo",
+      "model": "Pantalla aumento",
+      "color": "Negro",
+      "year": 2023,
+      "description": "El mejor regalo para los niños y los mayores, sin batería en el interior, seguro y divertido. Proteja los ojos de la distancia de visión cercana y evite la radiación. Deje que sus hijos vean películas y se relajen con nuestro amplificador de pantalla, diviértase con sus amigos los fines de semana. Libere sus manos cuando use nuestro lupa de pantalla de teléfono celular para ver películas y videos.",
+      "discount": 0,
+      "price": 3600,
+      "image": "o1.webp",
+      "technicalSpecifications": [
+         "Origen: China.",
+         " Apto para cualquier celular.",
+         "Aumenta la pantalla de celular a 12 Pulgadas en calidad HD",
+         "Tres Colores: Negro, Blanco y rojo"
+      ],
+      "category": "accesorios"
+   },
+   {
+      "id": 26,
+      "brand": "Genérico",
+      "section": "Oferta",
+      "model": "Anillo 3 en 1",
+      "color": "Negro",
+      "year": 2023,
+      "description": "Anillo multifunción de lujo",
+      "discount": 10,
+      "price": 4000,
+      "image": "n1.webp",
+      "technicalSpecifications": [
+         "Soporte ventilación auto (Con silicona para proteger la rejilla)",
+         "Soporte de escritorio o mesa.",
+         "Anillo para el dedo.",
+         "Rotación 360°.",
+         "Material: Aluminio.",
+         "Se puede cambiar de celular alrededor de 100 veces.",
+         "Compacto: 5.3mm de alto.",
+        "Soporta Ipad y tablets.",
+         "Medidas: 52x32x5.3mm."
+      ],
+      "category": "accesorios"
    }
 ]
