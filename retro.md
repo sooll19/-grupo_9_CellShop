@@ -74,7 +74,7 @@ Seguir haciendo:
 - Trabajo indivual,
 - Respeto
 
-  ## **SPRINT 5**  
+## **SPRINT 5**  
 
 Hacer más:  
 - Comunicación
@@ -89,7 +89,7 @@ Seguir haciendo:
 
 - Trabajo indivual
 
-  ## **SPRINT 6**  
+## **SPRINT 6**  
 
 Hacer más: 
   
