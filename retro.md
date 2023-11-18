@@ -88,3 +88,17 @@ Hacer menos:
 Seguir haciendo:  
 
 - Trabajo indivual
+
+  ## **SPRINT 6**  
+
+Hacer más: 
+  
+Empezar a hacer:  
+
+Dejar de hacer:  
+
+Hacer menos:  
+
+Seguir haciendo:  
+
+- Proactividad
