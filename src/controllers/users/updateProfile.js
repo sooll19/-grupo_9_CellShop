@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
     const errors = validationResult(req);
     const user = await db.User.findByPk(req.session.userLogin.id);
     const location = await db.Address.findOne({
-      where: { isPrimary: true, userId: user.id },
+      where: { userId: user.id },
     });
 
     if (errors.isEmpty()) {
@@ -18,16 +18,16 @@ module.exports = async (req, res) => {
       console.log(image)
       user.name = name?.trim() || user.name;
       user.surname = surname?.trim() || user.surname;
-      user.birthday = birthday?.trim() || user.birthday;
+      user.birthday= birthday || null,
       user.about = about?.trim() || user.about;
       user.image = image || user.image;
 
-      location.address = address?.trim() || location.address;
-      location.city = city?.trim() || location.city;
-      location.province = province?.trim() || location.province;
+   
+  
+     
 
       await user.save();
-      await location.save();
+     
       return res.redirect("/");
     } else {
       return res.render("profile", {

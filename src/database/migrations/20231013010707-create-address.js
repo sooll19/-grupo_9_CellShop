@@ -15,9 +15,6 @@ module.exports = {
       city: {
         type: Sequelize.STRING
       },
-      isPrimary: {
-        type: Sequelize.BOOLEAN
-      },
       province: {
         type: Sequelize.STRING
       },
