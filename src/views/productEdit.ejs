@@ -31,11 +31,14 @@
                                   <div class="col-12 mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Modelo</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Modelo del producto" name="model" value="<%= product.model %>">
+                                    <small class="ms-2 text-danger" id="msgError-model"><%= locals.errors && (errors.model && errors.model.msg) %></small>
                                   </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Color</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput"
                                         placeholder="Color del producto" name="color" value="<%= product.color %>">
+                                        <small class="ms-2 text-danger" id="msgError-color"><%= locals.errors && (errors.color && errors.color.msg) %></small>
+                                    </div>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="year" class="form-label">Año de lanzamiento</label>
@@ -53,6 +56,7 @@
                                   <div class="col-12  mb-3">
                                     <label for="description" class="form-label">Descripción</label>
                                     <textarea class="form-control" style="resize: none;" name="description" id="description"><%= product.description %></textarea>
+                                    <small class="ms-2 text-danger" id="msgError-description"><%= locals.errors && (errors.description && errors.description.msg) %></small>
                                   </div>
                                 </div>
                                
