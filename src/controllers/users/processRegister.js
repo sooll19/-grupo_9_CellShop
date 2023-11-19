@@ -15,12 +15,15 @@ module.exports = async (req, res) => {
                 password: hashSync(password, 10),
                 image
             })
-                
-            await db.Address.create({
-                userId: user.id,
-                isPrimary: true
+            .then(user => {
+                db.Address.create({
+                    userId : user.id
+                })
+                .then(() => res.redirect('/'))
             })
-            res.redirect('/')
+            .catch(error => console.log(error))
+            
+          
         } else {
             return res.render('register', {
                 old: req.body,
