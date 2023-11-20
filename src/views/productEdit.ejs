@@ -18,16 +18,25 @@
 
                             <!-- FORMULARIO -->
                             <form action="/products/update/<%= product.id %>?_method=PUT" method="POST" class="row"
+<<<<<<< HEAD
                                 enctype="multipart/form-data" class="formEdit">
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="brand" class="form-label">Marca</label>
                                     <select class="form-select" aria-label="Default select example" name="brand" id="brand">
+=======
+                                enctype="multipart/form-data">
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Marca</label>
+                                    <select class="form-select" aria-label="Default select example" name="brand">
+>>>>>>> 1c817bdbcf5d9b809f804be8585a0d5c800cdb8d
                                         <% brands.forEach(brand=> { %>
                                             <option <%=brand.id===product.brandId && 'selected' %> value="<%= brand.id
                                                     %>"><%= brand.name %>
                                             </option>
                                             <% }) %>
 
+<<<<<<< HEAD
                                     </select>
                                 </div>
                                 <div class="col-12 mb-3">
@@ -69,6 +78,81 @@
                             <small class="ms-2 text-danger" id="msgError-description">
                                 <%= locals.errors && (errors.description && errors.description.msg) %>
                             </small>
+=======
+                                    </select>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Modelo</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="Modelo del producto" name="model" value="<%= product.model %>">
+                                    <small class="ms-2 text-danger" id="msgError-model">
+                                        <%= locals.errors && (errors.model && errors.model.msg) %>
+                                    </small>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Color</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="Color del producto" name="color" value="<%= product.color %>">
+                                    <small class="ms-2 text-danger" id="msgError-color">
+                                        <%= locals.errors && (errors.color && errors.color.msg) %>
+                                    </small>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="year" class="form-label">Año de lanzamiento</label>
+                                    <input type="number" class="form-control" id="year" name="year"
+                                        value="<%= product.year %>">
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="price" class="form-label">Precio</label>
+                                    <input type="number" class="form-control" id="price" name="price"
+                                        value="<%= product.price %>">
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="discount" class="form-label">Descuento</label>
+                                    <input type="number" class="form-control" id="discount" name="discount"
+                                        value="<%= product.discount %>">
+                                </div>
+
+                                <div class="col-12  mb-3">
+                                    <label for="description" class="form-label">Descripción</label>
+                                    <textarea class="form-control" style="resize: none;" name="description"
+                                        id="description"><%= product.description %></textarea>
+                                    <small class="ms-2 text-danger" id="msgError-description">
+                                        <%= locals.errors && (errors.description && errors.description.msg) %>
+                                    </small>
+                                </div>
+
+                                <div class="col-12  mb-3">
+                                    <label for="technicalSpecifications" class="form-label">Especificaciones
+                                        técnicas</label>
+                                    <textarea class="form-control" style="resize: none;" name="technicalSpecifications"
+                                        id="especificaciones"></textarea>
+                                </div>
+
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Categoría</label>
+                                    <select class="form-select" aria-label="Default select example" name="categoria">
+                                        <option selected hidden value="">Seleccione...</option>
+                                        <option value="accesorios">Accesorios</option>
+                                        <option value="celulares">Celulares</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-end gap-2 mb-3">
+                                    <button class="btn btn-secondary"><a href="/admin" style="color:white;">Volver al
+                                            ADMIN</a></button>
+                                    <label for="image" class="btn btn-secondary">Cambiar imagen</label>
+                                    <input hidden class="form-control" type="file" id="image" name="imagen">
+                                    <button class="btn btn-guardar" type="submit">Guardar cambios</button>
+                                </div>
+
+                            </form>
+>>>>>>> 1c817bdbcf5d9b809f804be8585a0d5c800cdb8d
                         </div>
                     </div>
 
@@ -97,10 +181,14 @@
 
                 </div>
             </div>
+<<<<<<< HEAD
             </div>
             </div>
         </main>
         <script src="/javascripts/editProduct.js"></script>
+=======
+        </main>
+>>>>>>> 1c817bdbcf5d9b809f804be8585a0d5c800cdb8d
     </body>
 
 </html>

@@ -3,32 +3,44 @@ footer {
     height: auto;
     background-color: var(--colorOro);
     color: white;
-    font-size: 10px;   
+    font-size: 14px;
+    /* Reduje el tamaño del texto */
+    padding: 10px;
+    /* Reduje el espacio interno */
+    box-sizing: border-box;
 }
 
 .contenedor {
-   text-align: center;
     display: flex;
+    justify-content: space-between;
 }
 
-.redes {
+.seccion {
     width: 49%;
+    text-align: center;
 }
 
-.ubicacion {
-    width: 49%;
+.seccion p {
+    margin-bottom: 10px;
 }
 
 .contenedor-span {
     text-align: center;
 }
 
+.fa {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.fa:hover {
+    color: #ccc;
+}
+
 @media(min-width: 768px) {
-
-    footer {
-        font-size: 16px;
+    .contenedor {
+        flex-wrap: wrap;
     }
-
-
-
 }
