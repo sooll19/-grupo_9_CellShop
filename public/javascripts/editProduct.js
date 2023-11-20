@@ -2,6 +2,7 @@ const $ = id => document.getElementById(id);
 
 window.onload = async function(e){
 
+
     $('model').addEventListener('blur', function(e){
 
         switch (true) {
@@ -32,11 +33,7 @@ window.onload = async function(e){
             case this.value.trim().length < 2:
                 $('msgError-description').innerHTML = "Mínimo dos letras";
                 this.classList.add('is-invalid')
-                break
-            case !/^[ a-zA-ZñÑáéíóúÁÉÍÓÚ]+$/.test(this.value.trim()):
-                $('msgError-description').innerHTML = "Solo se permiten letras";
-                this.classList.add('is-invalid')
-                break
+                break;
             default:
                 $('msgError-description').innerHTML = null;
                 this.classList.add('is-valid')
