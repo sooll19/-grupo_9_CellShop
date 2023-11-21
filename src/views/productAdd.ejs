@@ -19,7 +19,7 @@
                             <!-- FORMULARIO -->
                             <form action="" method="POST" class="row" enctype="multipart/form-data">
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="formGroupExampleInput2" class="form-label">Marca</label>
+                                    <label for= "brand" class="form-label">Marca</label>
                                     <select class="form-select <%= locals.errors && (errors.brand && 'is-invalid') %>" 
                                         aria-label="Default select example" name="brand" id="brand">
                                     <option selected hidden value="">Seleccione...</option>
@@ -31,7 +31,7 @@
                                               </option>
                                               <% }) %>
                                           </select>
-                                    <small class="ms-2 text-danger">
+                                    <small class="ms-2 text-danger" id="msgError-brand" >
                                         <%= locals.errors && (errors.brand && errors.brand.msg) %>
                                     </small>
                                 </div>
@@ -47,21 +47,21 @@
                                             </option>
                                             <% }) %>
                                     </select>
-                                    <small class="ms-2 text-danger">
+                                    <small class="ms-2 text-danger" id="msgError-section">
                                         <%= locals.errors && (errors.section && errors.section.msg) %>
                                     </small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="formGroupExampleInput" class="form-label">Modelo</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                    <label for="model" class="form-label">Modelo</label>
+                                    <input type="text" class="form-control" id="model"
                                         placeholder="Modelo del producto" name="model">
-                                    <small class="ms-2 text-danger"><%= locals.errors && (errors.model && errors.model.msg)%></small>    
+                                    <small class="ms-2 text-danger"id="msgError-model" ><%= locals.errors && (errors.model && errors.model.msg)%></small>    
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="formGroupExampleInput" class="form-label">Color</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                    <label for="color" class="form-label">Color</label>
+                                    <input type="text" class="form-control" id="color"
                                         placeholder="Color del producto" name="color">
-                                 <small class="ms-2 text-danger"><%= locals.errors && (errors.color && errors.color.msg)%></small>    
+                                 <small class="ms-2 text-danger"id="msgError-color" ><%= locals.errors && (errors.color && errors.color.msg)%></small>    
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="year" class="form-label">Año de lanzamiento</label>
@@ -71,7 +71,7 @@
                                     <label for="description" class="form-label">Descripción</label>
                                     <textarea class="form-control" style="resize: none;" name="description"
                                         id="description"></textarea>
-                                    <small class="ms-2 text-danger"><%= locals.errors && (errors.description && errors.description.msg)%></small>    
+                                    <small class="ms-2 text-danger"id="msgError-description"><%= locals.errors && (errors.description && errors.description.msg)%></small>    
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="discount" class="form-label">Descuento</label>
@@ -80,7 +80,7 @@
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="price" class="form-label">Precio</label>
                                     <input type="number" class="form-control" id="price" name="price">
-                                    <small class="ms-2 text-danger"><%= locals.errors && (errors.price && errors.price.msg)%></small>
+                                    <small class="ms-2 text-danger"id="msgError-price"><%= locals.errors && (errors.price && errors.price.msg)%></small>
                                 </div>
                                 <div class="col-12  mb-3">
                                     <label for="technicalSpecifications" class="form-label">Especificaciones técnicas</label>
@@ -89,8 +89,8 @@
                                 <small class="ms-2 text-danger"><%= locals.errors && (errors.technicalSpecifications && errors.technicalSpecifications.msg)%></small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for="formGroupExampleInput2" class="form-label">Categoría</label>
-                                    <select class="form-select" aria-label="Default select example" name="category">
+                                    <label for="category" class="form-label">Categoría</label>
+                                    <select class="form-select" aria-label="Default select example" name="category" id="category">
                                         <option selected hidden value="">Seleccione...</option>
                                         <option value="accesorios">Accesorios</option>
                                         <option value="celular">Celular</option>
@@ -110,5 +110,7 @@
                 </div>
             </div>
         </main>
+
+        <script src="/javascripts/addValidator.js"></script>
     </body>
 </html>

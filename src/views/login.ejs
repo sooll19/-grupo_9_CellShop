@@ -17,14 +17,14 @@
                                         <input
                                             class="form-control <%= locals.errors && (errors.email && 'is-invalid') %>"
                                             type="email" id="email" name="email" />
-                                        <small class="text-danger ms-2">
+                                        <small id="msgError-email" class="text-danger ms-2">
                                             <%= locals.errors && (errors.email && errors.email.msg) %>
                                         </small>
                                     </div>
                                     <div class="col-12 mb-3">
                                         <label class="form-label" for="password">Contraseña</label>
                                         <input class="form-control" type="password" id="password" name="password" />
-                                        <small class="text-danger ms-2">
+                                        <small id="msgError-password" class="text-danger ms-2">
                                             <%= locals.errors && (errors.password && errors.password.msg) %>
                                         </small>
                                         <a style="font-size: 12px;" class="text-dark small" href="">Olvidé mi
@@ -49,12 +49,11 @@
                     </div>
                 </div>
             </main>
-            <script src="/javascripts/validationLogin.js"></script>
+            <script src="/javascripts/loginValidator.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
                 crossorigin="anonymous">
                 </script>
     </body>
-    <%- include('partial/footer') %>
-
+    <%- include('partial/footer')  %>
 </html>
