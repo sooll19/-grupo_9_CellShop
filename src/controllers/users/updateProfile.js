@@ -3,11 +3,11 @@ const { validationResult } = require("express-validator");
 const db = require("../../database/models");
 
 module.exports = async (req, res) => {
-  try {
+  
     const errors = validationResult(req);
     const user = await db.User.findByPk(req.session.userLogin.id);
     const location = await db.Address.findOne({
-      where: { userId: user.id },
+      where: { isPrimary: true, userId: user.id },
     });
 
     if (errors.isEmpty()) {
@@ -15,30 +15,42 @@ module.exports = async (req, res) => {
         req.body;
       const image = req.file?.filename;
 
-      console.log(image)
-      user.name = name?.trim() || user.name;
-      user.surname = surname?.trim() || user.surname;
-      user.birthday= birthday || null,
-      user.about = about?.trim() || user.about;
-      user.image = image || user.image;
-
+     
+      db.User.update(
+        {
+            name : name.trim(),
+            surname: surname.trim(),
+            birthday : birthday || null,
+            about : about.trim(),
+            image,
+        },
+        {
+            where : {
+                id : req.session.userLogin.id
+            }
+        }
+    )
+        .then(response => {
+            console.log(response);
+            return res.redirect('/')
+        })
+        .catch(error => console.log(error))
    
-  
+}else {
+    db.User.findByPk(req.session.userLogin.id)
+    .then(user => {
+        return res.render('profile', {
+            ...user.dataValues,
+            errors : errors.mapped()
+        })
+    })
+    .catch(error => console.log(error))
+}
+
+
+}
      
 
-      await user.save();
-     
-      return res.redirect("/");
-    } else {
-      return res.render("profile", {
-        ...user.dataValues,
-        errors: errors.mapped(),
-      });
-    }
-  } catch (error) {
-    console.log(error.message)
-  }
-};
 
 /*Valores obtenidos desde el req.body
   nombre

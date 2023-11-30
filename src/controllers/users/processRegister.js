@@ -17,7 +17,8 @@ module.exports = async (req, res) => {
             })
             .then(user => {
                 db.Address.create({
-                    userId : user.id
+                    userId : user.id,
+                    isPrimary : true
                 })
                 .then(() => res.redirect('/'))
             })
