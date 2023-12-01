@@ -5,10 +5,22 @@ module.exports = (req, res) => {
         .then(user => {
             const birthday = user.birthday ? new Date(user.birthday).toISOString() : null;
             const locationPrimary = user.addresses.find(({isPrimary}) => isPrimary)
+            const province = user.province
+            const  address = user.address
+             const city = user.city
+
+            
+            
+            
             return res.render('profile', {
                 ...user.dataValues,
+
                 location: locationPrimary,
               birthday: birthday ? birthday.split('T')[0] : null,
+              province: province,
+              address:address,
+              city:city
+              
     
             })
         })

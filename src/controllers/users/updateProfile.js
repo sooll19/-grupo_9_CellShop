@@ -11,12 +11,12 @@ module.exports = async (req, res) => {
     });
 
     if (errors.isEmpty()) {
-      const { name, surname, birthday, about, address, city, province } =
+      const { name, surname, birthday, about, city, address,province } =
         req.body;
       const image = req.file?.filename;
 
      
-      db.User.update(
+   let user = db.User.update(
         {
             name : name.trim(),
             surname: surname.trim(),
@@ -30,9 +30,26 @@ module.exports = async (req, res) => {
             }
         }
     )
-        .then(response => {
+    let adress = db.Address.update(
+      {
+        province,
+        city,
+        address
+       
+      },
+      {
+        where : {
+          userId : req.session.userLogin.id
+        }
+      }
+    )
+        /*.then(response => {
             console.log(response);
             return res.redirect('/')
+        })*/
+        Promise.all([user,adress])
+        .then(() => {
+          return res.redirect('/')
         })
         .catch(error => console.log(error))
    
