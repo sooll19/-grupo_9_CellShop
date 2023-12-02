@@ -112,4 +112,17 @@ window.onload = async function(e){
 
         }
     });
+
+    $('image').addEventListener('change', function(e){
+        let newImage = new FileReader();
+
+        newImage.onload = function(e){
+
+            let previewImage = document.querySelector('.img');
+
+            previewImage.src = e.target.result;
+        }
+
+        newImage.readAsDataURL(image.files[0]);
+    });
 }
