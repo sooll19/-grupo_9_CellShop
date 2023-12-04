@@ -32,7 +32,22 @@
                                             <% }) %>
                                     </select>
                                 </div>
-
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="section" class="form-label">Sección</label>
+                                    <select class="form-select <%= locals.errors && (errors.section && 'is-invalid') %>"
+                                        aria-label="Default select example" name="section" id="section">
+                                        <option selected hidden value="">Seleccione...</option>
+                                        <% sections.forEach(section=> { %>
+                                            <option value="<%= section.id %>" <%=locals.old && (old.section===section.id
+                                                && 'selected' )%> >
+                                                <%= section.name %>
+                                            </option>
+                                            <% }) %>
+                                    </select>
+                                    <small class="ms-2 text-danger" id="msgError-section">
+                                        <%= locals.errors && (errors.section && errors.section.msg) %>
+                                    </small>
+                                </div>
                                 <div class="col-12 mb-3">
                                     <label for="model" class="form-label">Modelo</label>
                                     <input type="text" class="form-control" id="model" placeholder="Modelo del producto"
