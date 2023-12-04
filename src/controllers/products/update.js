@@ -3,7 +3,7 @@ const db = require("../../database/models");
 
 module.exports = (req, res) => {
   const id = req.params.id;
-  const { model, brand, section, description, price, discount } = req.body;
+  const { model, brand, section, description, price,categories, discount } = req.body;
 
   db.Product.findByPk(id, {
     include: ["images"],
@@ -20,6 +20,7 @@ module.exports = (req, res) => {
           discount,
           brandId: brand,
           sectionId: section,
+          categoryId: categories,
           description: description.trim(),
           image: req.files.image ? req.files.image[0].filename : product.image,
         },
