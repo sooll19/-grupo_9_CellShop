@@ -1,9 +1,17 @@
 .login {
-    background-color: var(--colorCeleste);
+    background-color: var(--colorAzulOscuro);
 }
-
+.login .card {
+    background-color: rgba(255, 255, 255, 0.1);
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+    }
+    .login label {
+        color: rgb(201, 179, 153);
+    }
 .login .contenedor {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-align: left;
 }
 
