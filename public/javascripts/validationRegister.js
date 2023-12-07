@@ -1,5 +1,3 @@
-const $ = id => document.getElementById(id)
-
 window.onload = function () {
 
     $('name').addEventListener('blur', function (e) {
