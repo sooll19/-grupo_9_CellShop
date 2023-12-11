@@ -23,6 +23,15 @@ module.exports = (req, res) => {
         maxAge : 8000 * 60
     })
 
+/*carrito*/
+
+db.Order.findOne({
+    where : {
+        userId
+    }
+})
+
+
     return res.redirect('/')
   })
   .catch(error => console.log(error))

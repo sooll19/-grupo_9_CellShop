@@ -8,9 +8,11 @@ module.exports = (req, res) => {
         : null;
       const locationPrimary = user.addresses.find(({ isPrimary }) => isPrimary);
 
-      const province = user.province; 
-      const address = user.address;
-      const city = user.city;
+      const province = locationPrimary.province; 
+      const address = locationPrimary.address;
+      const city = locationPrimary.city;
+
+      console.log(locationPrimary,'**********');
 
       res.render("profile", {
         ...user.dataValues,

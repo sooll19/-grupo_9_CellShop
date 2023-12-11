@@ -1,5 +1,3 @@
-const $ = id => document.getElementById(id)
-
 window.onload = function () {
 
     $('name').addEventListener('blur', function (e) {
@@ -194,7 +192,7 @@ window.onload = function () {
         const elementsForm = this.elements; // Accedes a todos los elementos del formulario
         let error = false;
 
-        for (let i = 0; i < elementsForm.length - 1; i++) { // Recorre todos los elementos del formulario
+        for (let i = 0; i < elementsForm.length - 2; i++) { // Recorre todos los elementos del formulario
 
             if (!elementsForm[i].value.trim() || elementsForm[i].classList.contains('is-invalid')) {
                 error = true;
