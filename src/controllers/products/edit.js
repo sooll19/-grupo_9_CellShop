@@ -10,11 +10,15 @@ module.exports = async (req, res) => {
     })
     const sections = await db.Section.findAll({
       order: ['name']
+    });
+    const categories = await db.Category.findAll({
+      order: ['name']
     });  
     return res.render("productEdit", {
       product,
       brands,
-      sections
+      sections,
+      categories,
     });
 
   } catch (error) {
