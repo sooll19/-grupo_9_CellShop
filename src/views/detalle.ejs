@@ -38,40 +38,48 @@
                                         <h3 style="color: black">
                                             <%= product.brand.name %>
                                         </h3>
-                                        <% if(product.discount > 0) { %>
-                                            <small class="card-text"  style="text-decoration: line-through;">$<%=product.price%></small>
-                                            <p class="card-text text-success"><b><%=product.discount%>%</b></p>
-                                            
-                                        <% } %>
-                                        <h2 class="card-text" style="color: black">$<%=product.price * (1 - product.discount/100)%></h2>
-                                      
-                                        </h2>
-                                        <p>
-                                            <%= product.description %>
-                                        </p>
-                        *************** <button type="button" name="" id="" class="btn btn-dark">Comprar</button>
-                                        <hr>
-                                        <div class="row">
-                                            <ul>
-                                                <% product.technicalSpecifications.forEach(spec=> { %>
-                                                    <li>
-                                                        <%= spec %>
-                                                    </li>
-                                                    <% }); %>
-                                            </ul>
-                                        </div>
-                                        <button class="btn btn-primary btn-sm" id="volverAtras" style="color:white;">Volver atrás</button>
+                                        <% if(product.discount> 0) { %>
+                                            <small class="card-text" style="text-decoration: line-through;">$
+                                                <%=product.price%></small>
+                                            <p class="card-text text-success"><b>
+                                                    <%=product.discount%>%
+                                                </b></p>
+
+                                            <% } %>
+                                                <h2 class="card-text" style="color: black">$<%=product.price * (1 -
+                                                        product.discount/100)%>
+                                                </h2>
+
+                                                </h2>
+                                                <p>
+                                                    <%= product.description %>
+                                                </p>
+                                               
+            <a onclick="addProductToCart('<%= product.id %>')" href="#">Agregar al carrito<i class="p-2 fa-solid fa-cart-shopping"></i></a>
                                     </div>
+                                    <hr>
+                                    <div class="row">
+                                        <ul>
+                                            <% product.technicalSpecifications.forEach(spec=> { %>
+                                                <li>
+                                                    <%= spec %>
+                                                </li>
+                                                <% }); %>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-primary btn-sm" id="volverAtras" style="color:white;">Volver
+                                        atrás</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                </div>
                 <script> //Script para volver atrás
-                    document.getElementById("volverAtras").addEventListener("click", function() {
+                    document.getElementById("volverAtras").addEventListener("click", function () {
                         window.history.back(); // Esto volverá a la página anterior en el historial de navegación
                     });
-                    </script>
+                </script>
             </main>
             <%- include('partial/footer') %>
     </body>

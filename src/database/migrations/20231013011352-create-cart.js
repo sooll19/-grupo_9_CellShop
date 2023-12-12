@@ -9,9 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      subtotal: {
-        type: Sequelize.INTEGER
-      },
+     
       productId: {
         type: Sequelize.INTEGER,
         references :{

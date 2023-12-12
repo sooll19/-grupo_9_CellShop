@@ -1,13 +1,21 @@
 const express = require('express');
-const { showAll, addItem, removeItem, emptyCart } = require('../controllers/apiCartController');
+const {
+    getCart,
+    clearCart,
+    addProduct,
+    removeProduct,
+    updateTotal,
+  } = require("../controllers/apiCartController");
 const router = express.Router();
 
 
 /* /cart */
 router
-.get('/',showAll) //envio todo
-.post('/add',addItem) //agrego producto
-.delete('/:id',removeItem) //elimino un producto
-.delete('/all',emptyCart) //vacio el carrito
+.post('/',addProduct) //agrego un producto
+.delete('/clear',clearCart) // Eliminamos todos los productos de la orden
+.get('/', getCart) // Obtengo los productos de la orden
+.delete('/:id',removeProduct) //elimino un producto
+.patch("/total", updateTotal);//el total de la compra
+                              //completa la compra
 
 module.exports = router;

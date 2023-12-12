@@ -15,13 +15,32 @@ module.exports = (sequelize, DataTypes) => {
         as : 'user',
         foreignKey : 'userId'
       })
+      Order.belongsToMany(models.Product, {
+        through: "Carts",
+        foreignKey: "orderId",
+        otherKey: "productId",
+        as: "products",
+      });
     }
   }
-  Order.init({
-    total: DataTypes.INTEGER,
-    userId: DataTypes.INTEGER
-  }, {
+  Order.init(
+    {
+      total: { type: DataTypes.INTEGER, defaultValue: 0 },
+      status: {
+        type: DataTypes.STRING,
+        defaultValue: "pending",
+        validate: {
+          isIn: {
+            args: [["pending", "completed", "canceled"]],
+            msg: "Los valores validos son: ['pending','completed','canceled']",
+          },
+        },
+      },
+      userId: DataTypes.INTEGER,
+  }, 
+  {
     sequelize,
+    timestamps: true,
     modelName: 'Order',
   });
   return Order;
