@@ -10,7 +10,7 @@
 @import './cart.css';
 @import'./productos.css';
 @import './celulares.css';
-@import './accesoriosParaCelu.css';
+@import './accesorios.css';
 
 
 /*import views*/
@@ -24,7 +24,7 @@
 @import './registro.css';
 
 /*glider*/
-@import './glider.css';
+/* @import './glider.css'; */
 
 /*import login*/
 @import './login.css';

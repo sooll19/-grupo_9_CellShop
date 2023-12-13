@@ -32,7 +32,7 @@
 
                         <button class="btn btn-info dropdown-toggle mb-5" type="button" data-bs-toggle="dropdown"
                             data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
-                            Ver solo
+                            Ver
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
@@ -128,34 +128,47 @@
                 <div class="container">
                     <div class="row">
                         <h3 class="mb-4">#OFERTAS!! </h3>
-                        <%oferta.forEach(product=> { %>
-                            <div class="col-lg-4 col-md-4 mb-4 card-hover-zoom">
-                                <div class="card h-100" style="max-width: 12rem; margin: auto;">
-                                    <img src="/images/products/<%=product.image ||'default.png' %>" class="card-img-top"
-                                        alt="Imagen">
-                                    <div class="card-body">
-                                        <p class="card-title">
-                                            <%=product.model%>
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5">
+                                <%oferta.forEach(product=> { %>
+                                    <div class="col mb-4 card-hover-zoom">
 
-                                    </div>
-                                    <div class="card-footer">
-                                        </p>
-                                        <% if(product.discount> 0) { %>
-                                            <small class="card-text" style="text-decoration: line-through;">$
-                                                <%=product.price%></small>
-                                            <p class="card-text text-success"><b>
-                                                    <%=product.discount%>%
-                                                </b></p>
+                                        <div class="card h-100" style="max-width: 15rem; margin: auto;">
+                                            <img src="/images/products/<%=product.image || 'default.png' %>"
+                                                class="card-img-top img-fluid" alt="Imagen">
 
-                                            <% } %>
-                                                <p class="card-text">$<%=product.price * (1 - product.discount/100)%>
+                                            <div class="card-body">
+                                                <p class="card-title">
+                                                    <%=product.model%>
                                                 </p>
-                                                <a href="/products/detalle/<%=product.id%>" class="btn btn-primary">Ver
-                                                    más</a>
+
+                                            </div>
+                                            <div class="card-footer">
+
+                                                <% if(product.discount> 0) { %>
+                                                    <div class="container">
+                                                        <small class="card-text"
+                                                            style="text-decoration: line-through;">$
+                                                            <%=product.price%>
+                                                        </small>
+                                                        <p class="card-text text-success"><b>
+                                                                <%=product.discount%>%
+                                                            </b></p>
+                                                        <% } %>
+                                                    </div>
+                                                    <p class="card-text"><b>$<%=product.price * (1 -
+                                                                product.discount/100)%></b>
+                                                    </p>
+                                                    <a href="/products/detalle/<%=product.id%>"
+                                                        class="btn btn-primary">Ver
+                                                        más</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                    <% }) %>
                             </div>
-                            <% }) %>
+                        </div>
+
                     </div>
                 </div>
 
