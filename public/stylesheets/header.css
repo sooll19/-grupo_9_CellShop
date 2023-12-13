@@ -17,14 +17,14 @@ header {
 
 /* LOGO */
 
-.container {
+header .container {
     margin: 2%;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
 }
 
-.container a img {
+header .container a img {
     width: 100px;
     position: relative;
     left: 7%;
@@ -32,12 +32,12 @@ header {
 
 /* BURGUER MENU */
 
-.container .contenedor-burger-menu {
+header .container .contenedor-burger-menu {
     text-align: center;
     order: -1;
 }
 
-.container .contenedor-burger-menu button {
+header .container .contenedor-burger-menu button {
     background: none;
     color: #fff;
     border: none;
@@ -45,7 +45,7 @@ header {
     /*   padding: 8px 10px; */
 }
 
-.container .contenedor-burger-menu button i {
+header .container .contenedor-burger-menu button i {
     font-size: 1.2rem;
 }
 
@@ -55,7 +55,7 @@ header {
 
 .contenedor-menu nav {} */
 
-.contenedor-menu nav ul.menu-desplegable {
+header .contenedor-menu nav ul.menu-desplegable {
     display: none;
 }
 
@@ -65,12 +65,12 @@ header {
 
 /* OPCIONES */
 
-.opciones {
+header .opciones {
     display: inline-flex;
     font-size: 1rem;
 }
 
-.opciones1 {
+header .opciones1 {
     display: none;
 }
 
@@ -78,11 +78,11 @@ header {
 
 .opciones1 li a {} */
 
-.opciones1 li a i {
+header .opciones1 li a i {
     margin-left: 5px;
 }
 
-.opciones2 {
+header .opciones2 {
     display: flex;
     padding-left: 0
 }

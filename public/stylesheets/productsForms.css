@@ -2,10 +2,10 @@
     margin: 0 auto;
 }
 
-.card-header{
+/* .card-header{
     background-color: var(--colorGris);
     color: var(--colorAzulOscuro);
-}
+} */
 
 .btn-guardar{
     background-color: var(--colorAzulOscuro);

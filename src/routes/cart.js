@@ -11,10 +11,10 @@ const router = express.Router();
 
 /* /cart */
 router
-.post('/',addProduct) //agrego un producto
+.post('/add',addProduct) //agrego un producto
 .delete('/clear',clearCart) // Eliminamos todos los productos de la orden
 .get('/', getCart) // Obtengo los productos de la orden
-.delete('/:id',removeProduct) //elimino un producto
+.delete('/remove',removeProduct) //elimino un producto
 .patch("/total", updateTotal);//el total de la compra
                               //completa la compra
 

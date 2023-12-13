@@ -14,34 +14,9 @@
                 </div>
 
                 <!-- PRODUCTO -->
-               <div class="contenedor-producto">
-                    <img src="">
-
-                    <div class="container-precio">
-                        <h2></h2>
-                        <!-- Precio -->
-                        <div class="contenedor-precio">
-                            <p>Precio:</p>
-                            <p></p>
-                        </div>
-
-                        <!-- Cantidad-->
-                        <form action="/" method="get">
-                            <label for="cant">Cantidad:</label>
-                            <select name="cant">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </form>
-
-                        <!-- Trash-->
-                        <div class="contenedor-icon">
-                            <i class="fas fa-trash"></i>
-                            <p>Eliminar Producto</p>
-                        </div>
+                <div class="container m-4">
+                    <div class="contenedor-producto row m-0 p-0 gap-1">
+                        <!-- LISTADO PRODUCTOS -->
                     </div>
                 </div>
 
@@ -55,28 +30,27 @@
                         <button type="submit">Aplicar</button>
                     </div>
 
-                    <div class="contenedor-item">
-                        <p class="item">SUBTOTAL</p>
-                        <p class="precio"></p>
+                   <!-- RESUMEN -->
+                <div class="carrito__box_resumen">
+                    <div class="carrito__conteiner_resumen">
+                        <div class="carrito__conteiner_arti">
+                            <div class="carrito_arti">
+                                <p>Total de articulos:</p>
+                                <h4 id="totalArts">0</h4>
+                            </div>
+                            <div class="carrito_total">
+                                <p>Total:</p>
+                                <h4>$<span id="totalPriceOrder">0</span></h4>
+                            </div>
+                        </div>
+                        <div class="carrito__conteiner_finCompr">
+                            <a href="#"><button class="btn btn-success m-4" type="button">Realizar compra</button></a>
+                        </div>
+                        <div class="carrito__conteiner_nextTrash">
+                            <a class="btn btn-primary m-2" href="/">Continuar comprando</a>
+                            <a class="btn btn-danger m-2" href="#">Vaciar carrito</a>
+                        </div>
                     </div>
-
-                    <div class="contenedor-item">
-                        <p class="item">DESCUENTOS</p>
-                        <p class="precio"></p>
-                    </div>
-                    <hr>
-
-                    <div class="contenedor-item">
-                        <p class="item">TOTAL</p>
-                        <p class="precio"></p>
-                    </div>
-                </div>
-
-                <!-- BOTONES -->
-                <div class="botones">
-                    <button href="/">Seguir Comprando</button>
-                    <button type="submit">Finalizar Compra</button>
-                    <button type="reset">Vaciar Carrito</button>
                 </div>
 
                 <!-- PROMOS -->
@@ -91,7 +65,7 @@
             </main>
 
             <%- include('partial/footer') %>
-
+            <script src="/javascripts/cart.js"></script>
 
     </body>
 

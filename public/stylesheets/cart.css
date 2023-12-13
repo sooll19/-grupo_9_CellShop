@@ -33,11 +33,11 @@
 
 /* --- PRODUCTO --- */
 
-.contenedor-producto {
+/* .contenedor-producto {
     display: flex;
     margin: 20px 25px;
     align-items: center;
-}
+} */
 
 .contenedor-producto img {
     width: 100px;
@@ -234,10 +234,10 @@
 
     /* --- PRODUCTO --- */
 
-    .contenedor-producto {
+  /*   .contenedor-producto {
         justify-content: space-around;
         margin-top: 30px;
-    }
+    } */
 
     .contenedor-producto img {
         width: 250px;
