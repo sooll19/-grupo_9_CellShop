@@ -9,29 +9,28 @@
             <div class="row mt-5">
                 <div class="col-12 col-md-12 col-lg-10 mx-auto">
                     <div class="card">
-
                         <!-- HEADER TABLA -->
                         <div class="card-header">
-                            <h4 class="card-title">Nuevo Producto</h4>
+                            <a href="/admin" class="btn btn-light" style="color: black;">Todos los productos</a>
+                            <a href="/products/add" class="btn btn-light" style="color: black;">Agregar producto</a>
+                            <a href="/" class="btn btn-light" style="color: black;">Ir al home</a>
                         </div>
                         <div class="card-body">
-
                             <!-- FORMULARIO -->
                             <form action="" method="POST" class="row" enctype="multipart/form-data">
                                 <div class="col-12 col-md-6 mb-3">
-                                    <label for= "brand" class="form-label">Marca</label>
-                                    <select class="form-select <%= locals.errors && (errors.brand && 'is-invalid') %>" 
+                                    <label for="brand" class="form-label">Marca</label>
+                                    <select class="form-select <%= locals.errors && (errors.brand && 'is-invalid') %>"
                                         aria-label="Default select example" name="brand" id="brand">
-                                    <option selected hidden value="">Seleccione...</option>
-                                            <% brands.forEach(brand=> { %>
-                                              <option value="<%= brand.id %>" <%= locals.old && (old.brand===brand.id 
-                                              
-                                              && 'selected' )%> >
+                                        <option selected hidden value="">Seleccione...</option>
+                                        <% brands.forEach(brand=> { %>
+                                            <option value="<%= brand.id %>" <%=locals.old && (old.brand===brand.id
+                                                && 'selected' )%> >
                                                 <%= brand.name %>
-                                              </option>
-                                              <% }) %>
-                                          </select>
-                                    <small class="ms-2 text-danger" id="msgError-brand" >
+                                            </option>
+                                            <% }) %>
+                                    </select>
+                                    <small class="ms-2 text-danger" id="msgError-brand">
                                         <%= locals.errors && (errors.brand && errors.brand.msg) %>
                                     </small>
                                 </div>
@@ -53,15 +52,19 @@
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="model" class="form-label">Modelo</label>
-                                    <input type="text" class="form-control" id="model"
-                                        placeholder="Modelo del producto" name="model">
-                                    <small class="ms-2 text-danger"id="msgError-model" ><%= locals.errors && (errors.model && errors.model.msg)%></small>    
+                                    <input type="text" class="form-control" id="model" placeholder="Modelo del producto"
+                                        name="model">
+                                    <small class="ms-2 text-danger" id="msgError-model">
+                                        <%= locals.errors && (errors.model && errors.model.msg)%>
+                                    </small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="color" class="form-label">Color</label>
-                                    <input type="text" class="form-control" id="color"
-                                        placeholder="Color del producto" name="color">
-                                 <small class="ms-2 text-danger"id="msgError-color" ><%= locals.errors && (errors.color && errors.color.msg)%></small>    
+                                    <input type="text" class="form-control" id="color" placeholder="Color del producto"
+                                        name="color">
+                                    <small class="ms-2 text-danger" id="msgError-color">
+                                        <%= locals.errors && (errors.color && errors.color.msg)%>
+                                    </small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="year" class="form-label">Año de lanzamiento</label>
@@ -71,7 +74,9 @@
                                     <label for="description" class="form-label">Descripción</label>
                                     <textarea class="form-control" style="resize: none;" name="description"
                                         id="description"></textarea>
-                                    <small class="ms-2 text-danger"id="msgError-description"><%= locals.errors && (errors.description && errors.description.msg)%></small>    
+                                    <small class="ms-2 text-danger" id="msgError-description">
+                                        <%= locals.errors && (errors.description && errors.description.msg)%>
+                                    </small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="discount" class="form-label">Descuento</label>
@@ -80,28 +85,33 @@
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="price" class="form-label">Precio</label>
                                     <input type="number" class="form-control" id="price" name="price">
-                                    <small class="ms-2 text-danger"id="msgError-price"><%= locals.errors && (errors.price && errors.price.msg)%></small>
+                                    <small class="ms-2 text-danger" id="msgError-price">
+                                        <%= locals.errors && (errors.price && errors.price.msg)%>
+                                    </small>
                                 </div>
                                 <div class="col-12  mb-3">
-                                    <label for="technicalSpecifications" class="form-label">Especificaciones técnicas</label>
+                                    <label for="technicalSpecifications" class="form-label">Especificaciones
+                                        técnicas</label>
                                     <textarea class="form-control" style="resize: none;" name="technicalSpecifications"
                                         id="technicalSpecifications"></textarea>
-                                <small class="ms-2 text-danger"><%= locals.errors && (errors.technicalSpecifications && errors.technicalSpecifications.msg)%></small>
+                                    <small class="ms-2 text-danger">
+                                        <%= locals.errors && (errors.technicalSpecifications &&
+                                            errors.technicalSpecifications.msg)%>
+                                    </small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <label for="category" class="form-label">Categoría</label>
-                                    <select class="form-select" aria-label="Default select example" name="category" id="category">
+                                    <select class="form-select" aria-label="Default select example" name="category"
+                                        id="category">
                                         <option selected hidden value="">Seleccione...</option>
                                         <option value="accesorios">Accesorios</option>
                                         <option value="celular">Celular</option>
                                     </select>
                                 </div>
-
                                 <div class="col-12 d-flex justify-content-end gap-2 mb-3">
-                                    <button class="btn btn-secondary"><a href="/admin" style="color:white;">Volver al ADMIN</a></button>
-                                    <label for="image" class="btn btn-secondary">Agregar imagen</label>
+                                    <label for="image" class="btn btn-dark">Elegir imagen</label>
                                     <input hidden class="form-control" type="file" id="image" name="image" multiple>
-                                    <button class="btn btn-guardar" type="submit">Agregar producto</button>
+                                    <button class="btn btn-success" type="submit">Agregar el producto</button>
                                 </div>
                             </form>
 
@@ -113,5 +123,10 @@
 
         <script src="/javascripts/addValidator.js"></script>
     </body>
+<<<<<<< HEAD
 </html>
  
+=======
+
+</html>
+>>>>>>> ff4b284166995cc0f20d1a2661c66b3918c95fd1

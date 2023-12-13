@@ -27,7 +27,7 @@ module.exports = (req, res) => {
 
 db.Order.findOne({
     where : {
-        userId
+        userId : user.id
     }
 })
 

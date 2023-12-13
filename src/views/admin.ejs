@@ -6,22 +6,18 @@
 
         <main class="container">
             <div class="row mt-5">
-                <div class="col-12 col-md-12 col-lg-10 mx-auto">
+                <div class="col-12 col-md-10 mx-auto">
                     <div class="card">
-                        <div class="card-header"></div>
+                        <div class="card-header">
+                            <a href="/admin" class="btn btn-light" style="color: black;">Productos</a>
+                            <a href="/products/add" class="btn btn-light" style="color: black;">Agregar producto</a>
+                            <a href="/" class="btn btn-light" style="color: black;">Ir al home</a>
+                        </div>
                         <div class="card-body">
-                            <nav>
-                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                        aria-selected="true">Productos</button>
-                                </div>
-                            </nav>
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                     aria-labelledby="nav-home-tab" tabindex="0">
                                     <div class="d-flex flex-column flex-md-rowflex justify-content-between my-3">
-
                                         <div style="display: flex; gap: 2rem;">
                                             <form action="/products/filter" class="d-flex flex-column flex-md-row gap-2"
                                                 method="GET" style="flex: 1;">
@@ -47,7 +43,7 @@
                                                     Filtrar
                                                 </button>
                                             </form>
-                                            <form action="/products/search" class="d-flex flex-column flex-md-row gap-2"
+                                            <form action="/products/search" class="d-flex flex-column flex-md-row"
                                                 method="GET" style="flex: 1;">
                                                 <input type="text" class="form-control" placeholder="Buscar..."
                                                     name="keyword">
@@ -56,9 +52,6 @@
                                                 </button>
                                             </form>
                                         </div>
-
-
-
                                     </div>
                                     <div class="table-responsive">
                                         <table class="table table-striped">
@@ -74,7 +67,8 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <% products.forEach(({id,brand,model,price,discount})=> { %>
+                                                <% products.forEach(({id,brand,model,price,discount, image,
+                                                    description})=> { %>
                                                     <tr>
                                                         <th scope="row">
                                                             <%= id %>
@@ -98,16 +92,17 @@
                                                         <td>
                                                             <div class="d-flex gap-2">
 
+                                                                <!-- Modal detalle de producto -->
                                                                 <!-- Button trigger modal -->
-                                                                <button type="button" class="btn btn-sm btn-info"
+                                                                <button type="button" class="btn btn-sm btn-primary"
                                                                     data-bs-toggle="modal"
-                                                                    data-bs-target="#exampleModal">
+                                                                    data-bs-target="#exampleModal<%= id %>">
                                                                     <i class="fas fa-eye"></i>
                                                                 </button>
 
-                                                                <!-- Modal detalle producto-->
-                                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                                    aria-labelledby="exampleModalLabel"
+                                                                <!-- Modal -->
+                                                                <div class="modal fade" id="exampleModal<%= id %>"
+                                                                    tabindex="-1" aria-labelledby="exampleModalLabel"
                                                                     aria-hidden="true">
                                                                     <div class="modal-dialog modal-dialog-centered">
                                                                         <div class="modal-content">
@@ -121,40 +116,74 @@
                                                                                     aria-label="Close"></button>
                                                                             </div>
                                                                             <div class="modal-body">
-                                                                                ...
-                                                                            </div>
-                                                                            <div class="modal-footer">
-                                                                                <button type="button"
-                                                                                    class="btn btn-secondary"
-                                                                                    data-bs-dismiss="modal">Close</button>
-                                                                                <button type="button"
-                                                                                    class="btn btn-primary">Save
-                                                                                    changes</button>
+                                                                                <div class="row">
+                                                                                    <div class="col-12 col-md-4">
+                                                                                        <img src="/images/products/<%= image %>"
+                                                                                            class="img-fluid"
+                                                                                            alt="img-product">
+                                                                                    </div>
+                                                                                    <div class="col-12 col-md-8">
+                                                                                        <h3 style="color: black">
+                                                                                            <%= brand.name %>
+                                                                                        </h3>
+                                                                                        <% if(discount> 0) { %>
+                                                                                            <small class="card-text"
+                                                                                                style="text-decoration: line-through;">$
+                                                                                                <%=price%>
+                                                                                            </small>
+                                                                                            <p
+                                                                                                class="card-text text-success">
+                                                                                                <b>
+                                                                                                    <%=discount%>
+                                                                                                        %
+                                                                                                </b>
+                                                                                            </p>
+
+                                                                                            <% } %>
+                                                                                                <h2 class="card-text"
+                                                                                                    style="color: black">
+                                                                                                    $<%=price * (1 -
+                                                                                                        discount/100)%>
+                                                                                                </h2>
+
+                                                                                                </h2>
+                                                                                                <p>
+                                                                                                    <%= description %>
+                                                                                                </p>
+                                                                                                <button type="button"
+                                                                                                    name="" id=""
+                                                                                                    class="btn btn-dark disabled">Comprar</button>
+                                                                                                <hr>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
+                                                                <!-- Botón editar producto -->
                                                                 <a href="/products/edit/<%= id %>"
                                                                     class="btn btn-sm btn-warning">
                                                                     <i class="fas fa-edit"></i>
                                                                 </a>
 
+                                                                <!-- Modal eliminar producto -->
                                                                 <!-- Button trigger modal -->
                                                                 <button type="button" class="btn btn-sm btn-danger"
                                                                     data-bs-toggle="modal"
-                                                                    data-bs-target="#exampleModal<%= id %>">
+                                                                    data-bs-target="#exampleModal">
                                                                     <i class="fas fa-trash"></i>
                                                                 </button>
 
-                                                                <!-- Modal eliminar producto -->
-                                                                <div class="modal fade" id="exampleModal<%= id %>"
-                                                                    tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                                    aria-labelledby="exampleModalLabel"
                                                                     aria-hidden="true">
                                                                     <div class="modal-dialog modal-dialog-centered">
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
-                                                                                <h1 class="modal-title fs-5"
-                                                                                    id="exampleModalLabel">Advertencia
+                                                                                <h1 class="modal-title fs-1"
+                                                                                    id="exampleModalLabel">
+                                                                                    Advertencia
                                                                                 </h1>
                                                                                 <button type="button" class="btn-close"
                                                                                     data-bs-dismiss="modal"
@@ -163,14 +192,14 @@
                                                                             <div class="modal-body">
                                                                                 <p>¿Estás seguro que querés eliminar el
                                                                                     producto <b>
-                                                                                        <%= brand %>
-                                                                                            <%= model %>
+                                                                                        <%= model %>
                                                                                     </b>?</p>
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button"
-                                                                                    class="btn btn-secondary"
-                                                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                                                    class="btn btn-dark"
+                                                                                    data-bs-dismiss="modal">Cancelar
+                                                                                </button>
                                                                                 <form
                                                                                     action="/products/remove/<%= id %>?_method=DELETE"
                                                                                     method="POST">
@@ -191,21 +220,13 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                    aria-labelledby="nav-profile-tab" tabindex="0"></div>
-                                <!-- <div class="tab-pane fade" id="nav-disabled" role="tabpanel"
-                                        aria-labelledby="nav-disabled-tab" tabindex="0">...</div> -->
+                                    aria-labelledby="nav-profile-tab" tabindex="0">
+                                </div>
                             </div>
-                            <button class="btn btn-sm btn-dark"><a href="/" style="color: white;">Volver al
-                                    HOME</a></button>
-                            <button class="btn btn-sm btn-secondary"> <a href="/products/add"
-                                    style="color: white;">Agregar producto</a></button>
-
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
