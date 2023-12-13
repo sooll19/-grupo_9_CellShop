@@ -96,9 +96,14 @@
                         </div>
 
                         <div class="col-12  mb-3">
-                            <label for="technicalSpecifications" class="form-label">Especificaciones técnicas</label>
+                            <label for="technicalSpecifications" class="form-label">Especificaciones
+                                técnicas</label>
                             <textarea class="form-control" style="resize: none;" name="technicalSpecifications"
-                                id="technicalSpecifications"></textarea>
+                                id="technicalSpecifications"><%= product.technicalSpecifications %></textarea>
+                            <small class="ms-2 text-danger">
+                                <%= locals.errors && (errors.technicalSpecifications &&
+                                    errors.technicalSpecifications.msg)%>
+                            </small>
                         </div>
 
                         <div class="col-12 col-md-6 mb-3">
