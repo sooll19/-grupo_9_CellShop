@@ -14,58 +14,70 @@
                 </div>
 
                 <!-- PRODUCTO -->
-                <div class="container m-4">
-                    <div class="contenedor-producto row m-0 p-0 gap-1">
-                        <!-- LISTADO PRODUCTOS -->
-                    </div>
-                </div>
-
-                <!-- RESUMEN DE COMPRA -->
-                <div class="contenedor-resumen-compra">
-                    <h3>RESUMEN DE COMPRA</h3>
-
-                    <div class="cupon">
-                        <label for="cupon"></label>
-                        <input type="text" id="cupon" placeholder="Ingresar código descuento">
-                        <button type="submit">Aplicar</button>
-                    </div>
-
-                   <!-- RESUMEN -->
-                <div class="carrito__box_resumen">
-                    <div class="carrito__conteiner_resumen">
-                        <div class="carrito__conteiner_arti">
-                            <div class="carrito_arti">
-                                <p>Total de articulos:</p>
-                                <h4 id="totalArts">0</h4>
-                            </div>
-                            <div class="carrito_total">
-                                <p>Total:</p>
-                                <h4>$<span id="totalPriceOrder">0</span></h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="contenedor-producto row m-0 p-0 gap-1">
+                                <!-- LISTADO PRODUCTOS -->
                             </div>
                         </div>
-                        <div class="carrito__conteiner_finCompr">
-                            <a href="#"><button class="btn btn-success m-4" type="button">Realizar compra</button></a>
-                        </div>
-                        <div class="carrito__conteiner_nextTrash">
-                            <a class="btn btn-primary m-2" href="/">Continuar comprando</a>
-                            <a class="btn btn-danger m-2" href="#">Vaciar carrito</a>
-                        </div>
-                    </div>
-                </div>
+                        <div class="col-12 col-md-6">
+                            <!-- RESUMEN DE COMPRA -->
+                            <div class="card">
+                                <h3 class="text-dark text-center">RESUMEN DE COMPRA</h3>
 
-                <!-- PROMOS -->
-                <div class="promos">
-                    <i class="fas fa-credit-card"></i>
-                    <div class="credit-card">
-                        <p>Ver medios de pago y cuotas</p>
-                        <a href="#">VER PROMOCIONES BANCARIAS</a>
+                                <div class="card-body">
+                                    <form class="row justify-content-center">
+                                        <div class="col-10 d-flex gap-2">
+                                            <input type="text" id="cupon" class="form-control " placeholder="Ingresar código descuento">
+                                            <button type="submit" class="btn btn-dark">Aplicar</button>
+                                        </div>
+                                        
+                                    </form>
+    
+                                    <!-- RESUMEN -->
+                                    
+                                        <div class="mt-4">
+                                            <div class="carrito__conteiner_arti">
+                                                <div class="carrito_arti">
+                                                    
+                                                    <h5><span>Total de articulos:</span> <span id="countArticles"></span></h5>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <h5><span>Total a pagar:</span> $<span id="totalPrice">0</span></h5>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+                                                <a href="#"><button class="btn btn-success btn-sm" type="button">Realizar
+                                                        compra</button></a>
+                                                        <a class="btn btn-primary btn-sm" href="/">Continuar comprando</a>
+                                                        <a class="btn btn-danger btn-sm" href="#">Vaciar carrito</a>
+                                            </div>
+                                           
+                                        </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+
+
+
+                    <!-- PROMOS -->
+                    <div class="promos">
+                        <i class="fas fa-credit-card"></i>
+                        <div class="credit-card">
+                            <p>Ver medios de pago y cuotas</p>
+                            <a href="#">VER PROMOCIONES BANCARIAS</a>
+                        </div>
+                    </div>
 
             </main>
 
             <%- include('partial/footer') %>
-            <script src="/javascripts/cart.js"></script>
+                <script src="/javascripts/cart.js"></script>
 
     </body>
 

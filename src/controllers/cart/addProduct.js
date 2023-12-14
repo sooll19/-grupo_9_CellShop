@@ -3,7 +3,7 @@ const { sendResponse } = require("../../utils/sendResponse");
 
 module.exports = async (req, res) => {
   try {
-    const { productId, userId } = req.body;
+    const { productId, userId, quantity } = req.body;
     const {price,discount} = await db.Product.findByPk(productId)
     const [order, __] = await db.Order.findOrCreate({
       where: { userId: req.session.userLogin?.id || userId, status: "pending" },
@@ -13,13 +13,17 @@ module.exports = async (req, res) => {
     });
     const [_, isCCreate] = await db.Cart.findOrCreate({
       where: { productId, orderId: order.id },
-      defaults: { productId, orderId: order.id },
+      defaults: { productId, orderId: order.id, quantity },
     });
 
+    //hacer el update del quatity del producto
+
     if(isCCreate) {
-      order.total += discount ? price - (price * discount / 100) : price
+      order.total += discount ? price - (price * discount / 100) : price //ojo!! agregar a la ecuación el quantity!!
       await order.save()
     }
+
+    
     
     return sendResponse(
       res,
