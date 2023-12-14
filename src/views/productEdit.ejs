@@ -36,7 +36,18 @@
                                             <% }) %>
                                     </select>
                                 </div>
-
+                                <div class="col-12 col-md-6 mb-3">
+                                    <label for="section" class="form-label">Sección</label>
+                                    <select class="form-select" aria-label="Default select example" name="section"
+                                        id="section">
+                                        <% sections.forEach(section=> { %>
+                                            <option <%=section.id===product.sectionId && 'selected' %> value="<%= section.id
+                                                    %>"><%= section.name %>
+                                            </option>
+                                            <% }) %>
+                                    </select>
+                                </div>
+                                 
                                 <div class="col-12 mb-3">
                                     <label for="model" class="form-label">Modelo</label>
                                     <input type="text" class="form-control" id="model" placeholder="Modelo del producto"
@@ -85,19 +96,27 @@
                         </div>
 
                         <div class="col-12  mb-3">
-                            <label for="technicalSpecifications" class="form-label">Especificaciones técnicas</label>
+                            <label for="technicalSpecifications" class="form-label">Especificaciones
+                                técnicas</label>
                             <textarea class="form-control" style="resize: none;" name="technicalSpecifications"
-                                id="technicalSpecifications"></textarea>
+                                id="technicalSpecifications"><%= product.technicalSpecifications %></textarea>
+                            <small class="ms-2 text-danger">
+                                <%= locals.errors && (errors.technicalSpecifications &&
+                                    errors.technicalSpecifications.msg)%>
+                            </small>
                         </div>
 
                         <div class="col-12 col-md-6 mb-3">
                             <label for="category" class="form-label">Categoría</label>
                             <select class="form-select" aria-label="Default select example" name="category"
-                                id="category">
-                                <option selected hidden value="">Seleccione...</option>
-                                <option value="accesorios">Accesorios</option>
-                                <option value="celulares">Celulares</option>
-                            </select>
+                            id="category">
+                            <% categories.forEach(category=> { %>
+                                <option <%=category.id===product.categoryId && 'selected' %> value="<%= category.id
+                                        %>"><%= category.name %>
+                                </option>
+                                <% }) %>
+                        </select>
+
                         </div>
 
                         <div class="col-12 d-flex justify-content-end gap-2 mb-3">

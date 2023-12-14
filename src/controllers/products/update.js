@@ -1,9 +1,11 @@
+
 const { unlinkSync, existsSync } = require("fs");
 const db = require("../../database/models");
 
 module.exports = (req, res) => {
   const id = req.params.id;
-  const { model, brand, section, description, price, discount } = req.body;
+  const { model, brand, section, description, price,category, discount } = req.body;
+
 
   db.Product.findByPk(id, {
     include: ["images"],
@@ -12,17 +14,18 @@ module.exports = (req, res) => {
       req.files.image &&
         existsSync(`./public/images/${product.image}`) &&
         unlinkSync(`./public/images/${product.image}`);
-
-      db.Product.update(
-        {
-          model,
-          price,
-          discount,
-          brandId: brand,
-          sectionId: section,
-          description: description.trim(),
-          image: req.files.image ? req.files.image[0].filename : product.image,
-        },
+  db.Product.update(
+          {
+            model,
+            price,
+            discount,
+            brandId: brand,
+            sectionId: section,
+            categoryId: category,
+            description: description.trim(),
+            image: req.files.image ? req.files.image[0].filename : product.image,
+          },
+     
         {
           where: {
             id,
@@ -43,7 +46,7 @@ module.exports = (req, res) => {
             const images = req.files.images.map((file) => {
               return {
                 file: file.filename,
-                main : false,
+                main: false,
                 productId: product.id,
               };
             });

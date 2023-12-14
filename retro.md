@@ -102,3 +102,15 @@ Hacer menos:
 Seguir haciendo:  
 
 - Proactividad
+
+## **SPRINT 7**  
+
+Hacer más: Proactividad
+  
+Empezar a hacer:  
+
+Dejar de hacer:  
+
+Hacer menos:  
+
+Seguir haciendo:  

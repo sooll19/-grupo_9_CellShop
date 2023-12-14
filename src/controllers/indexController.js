@@ -8,7 +8,6 @@ module.exports = {
   index: async (req, res) => {
     try {
       // const products = readJSON("products.json");
-
       const products = await db.Product.findAll();
 
       const ultimosProductos = products
@@ -39,7 +38,8 @@ module.exports = {
       include: [
         { model: db.Brand, as: 'brand' },
         { model: db.Section, as: 'section' },
-        { model: db.Image, as: 'images' }
+        { model: db.Image, as: 'images' },
+        { model: db.Category, as: 'category' },
       ]
     });
     const results = products.filter((product) =>
@@ -55,7 +55,7 @@ module.exports = {
 
   admin: (req, res) => {
     const products = db.Product.findAll({
-      include: ["brand", "section", "images"],
+      include: ["brand", "section","category", "images"],
     });
     const brands = db.Brand.findAll({
       order: ["name"],
