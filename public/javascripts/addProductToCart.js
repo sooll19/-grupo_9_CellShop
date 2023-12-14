@@ -17,7 +17,7 @@ const addProductToCart = async (productId) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ productId }),
+      body: JSON.stringify({ productId ,userId : null, quantity : 1}),
     }).then((res) => res.json());
     messageInfo({ok,message})
   } catch (error) {
