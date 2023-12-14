@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('partial/head',{ title : 'DETALLE DE PRODUCTO' }) %>
+   
+   
+   <style>
+    .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 
     <body>
         <%- include('partial/header') %>
@@ -40,7 +64,8 @@
                                         </h3>
                                         <% if(product.discount> 0) { %>
                                             <small class="card-text" style="text-decoration: line-through;">$
-                                                <%=product.price%></small>
+                                                <%=product.price%>
+                                            </small>
                                             <p class="card-text text-success"><b>
                                                     <%=product.discount%>%
                                                 </b></p>
@@ -54,8 +79,9 @@
                                                 <p>
                                                     <%= product.description %>
                                                 </p>
-                                               
-            <a onclick="addProductToCart('<%= product.id %>')" href="#">Agregar al carrito<i class="p-2 fa-solid fa-cart-shopping"></i></a>
+
+                                                <a onclick="addProductToCart('<%= product.id %>')" href="#">Agregar al
+                                                    carrito<i class="p-2 fa-solid fa-cart-shopping"></i></a>
                                     </div>
                                     <hr>
                                     <div class="row">
@@ -67,22 +93,74 @@
                                                 <% }); %>
                                         </ul>
                                     </div>
-                                    <button class="btn btn-primary btn-sm" id="volverAtras" style="color:white;">Volver
-                                        atrás</button>
+                                    <div class="card shadow mt-2">
+                                        <div class="card-body">
+                                            <h4>Productos relacionados</h4>
+                                            <hr>
+                                        </div>
+
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper mb-3">
+                                                <% products.forEach(product=> { %>
+                                                    <div class="swiper-slide ">
+                                                        <a href="/products/detalle/<%= product.id %>">
+                                                            <div class="d-flex flex-column">
+                                                                <img src="/images/products/<%= product.image%>"
+                                                                    style="height: 200px; object-fit: contain;" alt="">
+                                                                <hr>
+                                                                <p class="text-dark">
+                                                                    <%= product.name %>
+                                                                </p>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <% }) %>
+                                            </div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <script> //Script para volver atrás
-                    document.getElementById("volverAtras").addEventListener("click", function () {
-                        window.history.back(); // Esto volverá a la página anterior en el historial de navegación
-                    });
-                </script>
+            </main>
+            <%- include('partial/scripts') %>
+            <button class="btn btn-primary btn-sm" id="volverAtras" style="color:white;">Volver
+                atrás</button>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <script> //Script para volver atrás
+                document.getElementById("volverAtras").addEventListener("click", function () {
+                    window.history.back(); // Esto volverá a la página anterior en el historial de navegación
+                });
+            </script>
             </main>
             <%- include('partial/footer') %>
             <script src="/javascripts/addProductToCart.js"></script>
-    </body>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  freeMode: true,
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                  },
+                  breakpoints: {
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+               
+              },
+                });
+              </script>
+        </body>
 
 </html>
