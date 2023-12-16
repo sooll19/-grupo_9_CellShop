@@ -18,3 +18,11 @@ a {
 li {
   list-style: none;
 }
+
+.card {
+  background-color: rgba(166, 149, 240, 0.959);
+}
+
+label {
+  color: var(--colorAzulOscuro);
+}

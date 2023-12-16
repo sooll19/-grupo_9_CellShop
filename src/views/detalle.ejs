@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('partial/head',{ title : 'DETALLE DE PRODUCTO' }) %>
-   
-   
-   <style>
-    .swiper {
+
+    <style>
+        .swiper {
             width: 100%;
             height: 100%;
         }
@@ -93,6 +92,9 @@
                                                 <% }); %>
                                         </ul>
                                     </div>
+                                    <button class="btn btn-primary btn-sm" id="volverAtras" style="color:white;">Volver
+                                        atrás</button>
+
                                     <div class="card shadow mt-2">
                                         <div class="card-body">
                                             <h4>Productos relacionados</h4>
@@ -121,46 +123,42 @@
                                     </div>
                                 </div>
                             </div>
-            </main>
-            <%- include('partial/scripts') %>
-            <button class="btn btn-primary btn-sm" id="volverAtras" style="color:white;">Volver
-                atrás</button>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            <script> //Script para volver atrás
-                document.getElementById("volverAtras").addEventListener("click", function () {
-                    window.history.back(); // Esto volverá a la página anterior en el historial de navegación
-                });
-            </script>
+
+                            <%- include('partial/scripts') %>
+                                
+                        </div>
+                    </div>
+                </div>
+                <script> //Script para volver atrás
+                    document.getElementById("volverAtras").addEventListener("click", function () {
+                        window.history.back(); // Esto volverá a la página anterior en el historial de navegación
+                    });
+                </script>
             </main>
             <%- include('partial/footer') %>
-            <script src="/javascripts/addProductToCart.js"></script>
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                  freeMode: true,
-                  pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                  },
-                  breakpoints: {
-                320: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
-                },
-               
-              },
-                });
-              </script>
-        </body>
+                <script src="/javascripts/addProductToCart.js"></script>
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        freeMode: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            320: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+
+                        },
+                    });
+                </script>
+    </body>
 
 </html>

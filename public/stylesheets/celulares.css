@@ -9,6 +9,10 @@
     object-fit: contain;
 }
 
+.celular .card {
+    background-color: rgba(166, 149, 240, 0.959);
+}
+
 .card-hover-zoom {
     transition: transform 0.2s;
 }

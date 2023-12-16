@@ -1,15 +1,18 @@
 .login {
     background-color: var(--colorAzulOscuro);
 }
+
 .login .card {
-    background-color: rgba(255, 255, 255, 0.1);
-        border-width: 3px;
-        border-style: solid;
-        border-color: black;
-    }
-    .login label {
-        color: rgb(201, 179, 153);
-    }
+    background-color: rgba(166, 149, 240, 0.959);
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+}
+
+.login label {
+    color: var(--colorAzulOscuro);
+}
+
 .login .contenedor {
     margin-bottom: 0px;
     text-align: left;
@@ -71,18 +74,20 @@
 }
 */
 
-@media(min-width: 768px){
-     .login label {
+@media(min-width: 768px) {
+    .login label {
         font-size: 14px;
     }
 
     .login input {
         font-size: 12px;
     }
-    .login h5{
+
+    .login h5 {
         font-size: 40px;
     }
-   /*  .control input{
+
+    /*  .control input{
         width: 90%;
         font-size: 25px;
     
@@ -104,11 +109,11 @@
     }
     .terminos label{
         font-size: 20px;
-    } */ 
+    } */
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
     .login label {
         font-size: 15px;
     }
@@ -116,6 +121,7 @@
     .login input {
         font-size: 13px;
     }
+
     /*.login h4{
         font-size: 50px;
     }

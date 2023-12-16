@@ -24,12 +24,6 @@ header .container {
     align-items: baseline;
 }
 
-header .container a img {
-    width: 100px;
-    position: relative;
-    left: 7%;
-}
-
 /* BURGUER MENU */
 
 header .container .contenedor-burger-menu {

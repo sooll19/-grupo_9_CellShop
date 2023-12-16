@@ -3,6 +3,10 @@ width: 200px;
 margin:30px ;
 }
 
+.accesorio .card {
+    background-color: rgba(166, 149, 240, 0.959);
+}
+
 .accesorio .card-img-top {
 
     width: 180px;

@@ -2,13 +2,13 @@
     background-color: var(--colorAzulOscuro);
 }
 .registro .card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(166, 149, 240, 0.959);
         border-width: 3px;
         border-style: solid;
-        border-color: black;
+        border-color: white
     }
     .registro label {
-        color: rgb(201, 179, 153);
+        color: var(--colorAzulOscuro);
     }
 .registro .contenedor {
     margin-bottom: 10px;
