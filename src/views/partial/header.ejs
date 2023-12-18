@@ -37,6 +37,10 @@
                 </ul> -->
 
                         <ul class="opciones2">
+
+                            <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
+                            <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
+
                             <% if (!locals.userLogin) { %>
                                 <li><a href="/users/register" class="ocult">Registrate <a href=""><i
                                                 class="far fa-envelope"></i></a></a></li>
@@ -48,16 +52,15 @@
                                         <li><a target="_blank" href="http://localhost:5173">Dashboard</i></a></li>
                                         <% } %>
 
+
+
+                                            <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
+                                            <li><a href="/users/logout">Salir</a></li>
                                             <!-- Button cart -->
                                             <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
                                                 data-bs-target="#exampleModal">
                                                 <a href="/products/cart"><i class="fa-solid fa-cart-shopping"></i></a>
                                             </button>
-
-
-
-                                            <li><a href="/users/profile">Hola <%= userLogin.name %>!</a></li>
-                                            <li><a href="/users/logout">Salir</a></li>
                                             <% } %>
 
                         </ul>

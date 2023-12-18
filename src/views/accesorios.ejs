@@ -4,23 +4,7 @@
 
     <body class="accesorio">
         <%- include('partial/header') %>
-
-            <!-- BOTON FILTRO-->
-            <div>
-                <div class="btn-group">
-
-                    <button class="btn btn-info dropdown-toggle mb-5" type="button" data-bs-toggle="dropdown"
-                        data-bs-auto-close="inside" aria-expanded="false" style="margin-top: 15px;">
-                        Ver solo
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/products/celulares">Celulares</a></li>
-                        <li><a class="dropdown-item" href="/products/accesorios">Accesorios</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- FIN BOTON FILTRO-->
-
+        
             <div class="container">
                 <div class="row">
                     <%accesorios.forEach(product=> { %>

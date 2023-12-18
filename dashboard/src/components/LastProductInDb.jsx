@@ -1,7 +1,6 @@
 
 export const LastProductInDb = () => {
   return (
-    
 
     <div className="col-lg-6 mb-4">
       <div className="card shadow mb-4">
@@ -10,10 +9,24 @@ export const LastProductInDb = () => {
         </div>
         <div className="card-body">
           <div className="text-center">
-            <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" width= "500px;" src="/images/mandalorian.jpg" alt=" Star Wars - Mandalorian " />
+            <h3 className="m-0 font-weight-bold text-gray-800">Motorola Razr 40 Ultra</h3>
+            <p style={{ fontSize: '25px' }}>$599.999</p>
+            <img
+              className="img-fluid px-3 px-sm-4"
+              width="300px;"
+              src="/public/razrUltra.png"
+              alt="Motorola Razr Ultra"
+            />
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
-          <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View movie detail</a>
+          <p>
+            El motorola razr 40 ultra es un teléfono moderno y flexible con un diseño clásico. Cuando se cierra, se dobla por completo a la mitad y los extremos se alinean perfectamente para crear un estilo atractivo y compacto que deja a la vista la pantalla externa más amplia hasta ahora*. Cuando se abre, se puede observar la increíble pantalla pOLED de tamaño completo.
+          </p>
+          <a
+            className="btn btn-danger"
+            rel="nofollow"
+            href="http://localhost:3000/products/detalle/23">
+            Ir al detalle de producto
+          </a>
         </div>
       </div>
     </div>
