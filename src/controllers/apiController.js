@@ -30,14 +30,14 @@ const checkEmail = async (req, res) => {
 
 const createProduct = async (req, res) => {
   try {
-
+    
     const { brandId, sectionId, model, color, year, description, discount, price, technicalSpecifications,
       categoryId } = req.body
 
     const {id} = await db.Product.create({
       model: model.trim(),
       color: color.trim(),
-      year,
+      year: new Date (year).getFullYear(),
       description: description.trim(),
       discount: discount || 0,
       price,
@@ -47,7 +47,6 @@ const createProduct = async (req, res) => {
       categoryId,
       image: req.files[0].filename
     })
-
     /* if (req.files.length) {
       await db.Image.create({
         file: req.files[0].filename,
@@ -69,6 +68,7 @@ const createProduct = async (req, res) => {
     })
 
   } catch (error) {
+    console.log(error)
     return res.status(error.status || 500).json({
       ok: false,
       msg: error.message || "Upss, hubo un error",
