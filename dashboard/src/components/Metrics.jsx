@@ -5,21 +5,21 @@ const data = [
         id: crypto.randomUUID(),
         color: "success",
         title: "Productos en stock",
-        value: 21,
+        value: 30,
         icon: "fa-mobile"
     },
     {
         id: crypto.randomUUID(),
         color: "warning",
         title: "Usuarios registrados",
-        value: 79,
+        value: 2,
         icon: "fa-user"
     },
     {
         id: crypto.randomUUID(),
         color: "danger",
         title: "Marcas comercializadas",
-        value: 49,
+        value: 10,
         icon: "fa-list"
     }
 ]
