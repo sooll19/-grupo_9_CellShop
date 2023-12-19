@@ -42,6 +42,34 @@ export const Sidebar = () => {
         </Link>
       </li>
 
+      <li className={`nav-item ${location.pathname === '/products' && 'active'}`}>
+        <Link className="nav-link" to="/products">
+          <i className="fas fa-fw fa-mobile"></i>
+          <span>Celulares</span>
+        </Link>
+      </li>
+
+      <li className={`nav-item ${location.pathname === '/products' && 'active'}`}>
+        <Link className="nav-link" to="/products">
+          <i className="fas fa-fw fa-headphones"></i>
+          <span>Accesorios</span>
+        </Link>
+      </li>
+
+      <li className={`nav-item ${location.pathname === '/products' && 'active'}`}>
+        <Link className="nav-link" to="/products">
+          <i className="fas fa-fw fa-piggy-bank"></i>
+          <span>Ofertas</span>
+        </Link>
+      </li>
+
+      <li className={`nav-item ${location.pathname === '/products' && 'active'}`}>
+        <Link className="nav-link" to="/products">
+          <i className="fas fa-fw fa-user"></i>
+          <span>Usuarios registrados</span>
+        </Link>
+      </li>
+
       <hr className="sidebar-divider d-none d-md-block" />
     </ul>
   )
