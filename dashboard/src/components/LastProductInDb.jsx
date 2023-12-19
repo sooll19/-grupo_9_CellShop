@@ -14,7 +14,7 @@ export const LastProductInDb = () => {
             <img
               className="img-fluid px-3 px-sm-4"
               width="300px;"
-              src="/public/razrUltra.png"
+              src="/razrUltra.png"
               alt="Motorola Razr Ultra"
             />
           </div>
