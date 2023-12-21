@@ -12,7 +12,7 @@ const data = [
         id: crypto.randomUUID(),
         color: "warning",
         title: "Usuarios registrados",
-        value: 2,
+        value: 5,
         icon: "fa-user"
     },
     {
